@@ -1,0 +1,47 @@
+﻿<div class="navigation-container">
+    <div class="logo">
+        <a href="/">HOME</a>
+    </div>
+    <nav class="main-navigation">
+        <ul>
+            <li><a href="/" class="nav-link {% if page.url == '/' %}active{% endif %}">RESUME</a></li>
+            <li><a href="/portfolio/" class="nav-link {% if page.url == '/portfolio/' %}active{% endif %}">PROJECT</a></li>
+            <li><a href="https://github.com/{{ site.github_username }}" class="nav-link">GITHUB</a></li>
+        </ul>
+    </nav>
+    <div class="navigation-button">
+        <a href="mailto:{{ site.email }}" class="contact-button">CONTACT</a>
+    </div>
+</div>
+
+<div class="container header-container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-8 header-left">
+            <h1>{{ site.name | escape }}</h1>
+            <h2>{{ site.title | escape }}</h2>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 header-right">
+            <ul class="icons no-print">
+                {%- for link in site.additional_links -%}
+                <li>
+                    <a href="{{ link.url }}" class="button button--sacnite button--round-l">
+                        <i class="{{ link.icon }}" title="{{ link.title | escape }}"></i>
+                    </a>
+                </li>
+                {%- endfor -%}
+            </ul>
+
+            {%- if site.darkmode -%}
+            <div class="dark-mode-toggle">
+                <p>Dark Mode
+                    <label class="switch">
+                        <input type="checkbox" id="theme-toggle">
+                        <span class="slider round"></span>
+                    </label>
+                </p>
+            </div>
+            <script src="{{ '/assets/js/themetoggle.js' | relative_url }}"></script>
+            {%- endif -%}
+        </div>
+    </div>
+</div>

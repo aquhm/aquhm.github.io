@@ -1,0 +1,405 @@
+# Site
+repository: sproogen/resume-theme
+favicon: images/favicon.ico
+
+# Content configuration version
+version: 2
+
+# Personal info
+name: 김대호
+title: 소프트웨어 엔지니어
+email: aquhm@naver.com
+# website: www.github.com/sproogen/resume-theme
+
+# Dark Mode (true/false/never)
+darkmode: false
+
+# Social links
+# twitter_username: facespics
+github_username:  aquhm
+# stackoverflow_username: "00000001"
+# dribbble_username: jekyll
+# facebook_username: jekyll
+# flickr_username: jekyll
+# instagram_username: jameswgrant
+# linkedin_username: jameswgrant
+# xing_username: jekyll
+# pinterest_username: jekyll
+# youtube_username: globalmtb
+# googleplus_username: +jekyll
+# orcid_username: 0000-0000-0000-0000
+
+# Additional icon links
+additional_links:
+#  - title: itsgoingto.be
+#    icon: fas fa-globe
+#    url: https://www.itsgoingto.be
+# - title: another link
+#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
+#   url: Link url (eg. https://google.com)
+
+# Google Analytics and Tag Manager
+# Using more than one of these may cause issues with reporting
+# gtm: "GTM-0000000"
+# gtag: "UA-00000000-0"
+# google_analytics: "UA-00000000-0"
+
+# About Section
+# about_title: About Me
+about_profile_image: images/profile.jpg
+about_content: | # this will include new lines to allow paragraphs
+  안녕하세요. 읽기 쉬운 코드를 지향하는 개발자 김대호입니다.
+  
+  C++, C# 기반의 게임 엔진 개발 경험을 바탕으로 PC와 모바일 플랫폼에서 약 10년간의 다양한 개발을 수행해왔습니다.
+  &nbsp;PC MMORPG부터 모바일 전략 시뮬레이션, 3D 메타버스 서비스까지 다양한 프로젝트를 진행했으며, 특히 C++, C#을 활용한 시스템 <mark>FrameWork설계</mark>, <mark>다양한 콘텐츠</mark>, <mark>UI/UX 설계</mark>와 <mark>집요한 테스트 주도</mark>가 강점입니다.
+  WebRTC 기반의 실시간 커뮤니케이션 시스템 구축 경험과 함께, 다양한 플랫폼의 네이티브 기능 연동 및 최적화 작업을 성공적으로 수행했습니다. 객체지향 설계 원칙을 준수한 읽기 쉬운 코드 작성과 팀 전체의 생산성을 고려한 아키텍처 설계를 지향하며, 새로운 기술 습득과 서비스 품질 향상에 대한 끊임없는 열정을 가지고 있습니다.
+
+content:
+  - title: Experience # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: 직방
+        #link: https://www.zigbang.com/
+        # link_text: https://www.zigbang.com/
+        sub_title: Unity Developer
+        caption: 2020. 11 - 2024. 11
+        quote: 3D 아바타 기반의 가상 오피스
+        description: | # this will include new lines to allow paragraphs
+          **2021. 04 - 2024. 11 &nbsp;&nbsp;&nbsp; Soma**
+          * 초기부터 유료화 서비스 런칭 및 유지보수
+          * WebRtc 연동 화면공유 및 영상 통화 시스템 작업
+          * Game, Scene, Packet Process 설계 및 개발
+          * MVP Architecture 기반의 UI Framework 설계
+          * Rest Api 연결 처리 및 확장성 있는 Logging 시스템 설계
+          *	macOS, windows, mobile관련 플러그인 연동 및 크로스플랫폼 대응  
+          * 지속적인 코드 개선 및 리팩토링 작업
+          
+          **주요 성과:**
+            * 재택 근무를 도입하려는 다수의 기업 고객 확보를 통한 유료 서비스 런칭 성공
+            * 실사용자 피드백 기반의 빠른 제품 개선으로 높은 사용자 만족도 달성
+            * 멀티 플랫폼 지원을 통한 폭넓은 접근성 확보
+            * 기존 국내 서비스 대비 시스템 개선으로 전반적인 품질 향상
+          
+          ---
+          <br>
+          <blockquote>Data Driven 방식의 아파트 단지 시뮬레이션</blockquote>
+          
+          **2020. 11 - 2021. 04 &nbsp;&nbsp;&nbsp; 직방 3d 단지**
+          * 런칭 완성도를 위한 전반적인 UI/UX 개발 
+          * 3D상의 아파트 시점별 정보 및 매물 정보 시각화 작업 
+          
+          **주요 성과:**            
+            * 직관적인 UI/UX 설계를 통한 서비스 완성도 향상
+            * 효율적인 리소스 관리로 모바일 환경에서의 성능 최적화 달성
+            
+          
+        skills:
+        - unity3D
+        - C#          
+        - Objective-C
+        - Typescript
+
+      - layout: left
+        title: 메이커스게임즈
+        sub_title: Unity Developer
+        caption: 2018. 01 - 2020. 10
+        quote: SLG장르 모바일 전략 시뮬레이션 게임 
+        description: |
+          **2018. 01 - 2020. 10 &nbsp;&nbsp;&nbsp; ProjectR**          
+          * 전투, 성장, 연맹, 효과, 스킬, 아이템등 각종 컨텐츠 시스템 작업          
+          * 군주, 영웅, 병사, 건물, 자원, 소환수등 각종 객체 생성 관리 작업           
+          * 유니티 에디터 작업 효율을 위한 각종 개발툴 작업
+          * Excel Data Expoter 개발
+  
+          
+      - layout: left
+        title: 위메이드엑스알
+        sub_title: Client Programmer
+        caption: 2015. 10 - 2017. 12
+        quote: PC 3D Online MMORPG
+        description: |
+          **2015. 10 - 2017. 12 &nbsp;&nbsp;&nbsp; 이카루스온라인**
+          **담당 역할:**          
+          * Nexon America 플랫폼 연동 및 북미 런칭 담당
+          * MultiThread Custom Patcher 개발을 통한 Nexon Launcher 연동
+          * 북미 특화 컨텐츠 개발 및 북미 유저 피드백 기반 UI/UX 개선 작업
+          * 다수의 주요 컨텐츠 작업 및 기존 시스템 개선 및 안정화 작업
+          * 로컬라이징 툴 시스템 개선
+          
+          **주요 성과:**
+            * 안정적인 북미 런칭 달성 및 초기 서비스 안정화
+            * Nexon America와의 효율적인 협업 체계 구축
+            * 지역 특화 기능 구현으로 북미 유저 경험 향상
+            * 기존 국내 서비스 대비 시스템 개선으로 전반적인 품질 향상
+          
+        skills:
+          - C++
+          - C#
+          - 3D
+          
+          
+      - layout: left          
+        title: 이야소프트
+        sub_title: Client Programmer
+        caption: 2009. 09 - 2011. 05
+        quote: PC 3D Online MMORPG
+        description: |
+          **2015. 10 - 2017. 12 &nbsp;&nbsp;&nbsp; 아이리스온라인**          
+          * 러시아 런칭 및 현지화, 패치, 유지보수
+          * SNS 연동          
+          * 다수의 주요 컨텐츠 작업
+          * 컨텐츠 단위의 서버, 클라, DB(MSSQL) 풀스택 작업
+
+  - title: Projects
+    layout: list
+    content:
+      - layout: left
+        title: Soma
+        sub_title: WebRTC 기반 3D 아바타 가상 오피스
+        caption: 2021.04 - 2024.11
+        quote: |
+          개발환경: Unity, C#, TypeScript, Electron, Python, Jetbrain Rider, Xcode<br>
+          플랫폼: Windows, macOS, Android, iOS<br>
+          개발규모: 전체 15 ~ 20인 중 클라이언트 2~5인
+        description: |
+          <br>Unity Engine 기반의 메타버스형 3D 가상 오피스 서비스를 기획 단계부터 출시까지 개발했습니다. Windows, macOS, Android, iOS 멀티 플랫폼을 지원하는 화상 통화 기반 재택근무 솔루션으로, 다수의 기업 고객을 대상으로 상용화했습니다. 초기부터 런칭까지 작업하며 게임적 요소와 업무용 서비스 가치를 융합한 경험을 쌓았습니다.
+
+          **커뮤니케이션 시스템 구축**
+          * Agora SDK 기반 WebRTC 화상 솔루션 통합 개발
+          * 물리 디바이스(웹캠, 마이크, 스피커) 제어 시스템 구현
+          * 실시간 음성 채팅 및 Speak-to-Text 기능 연동
+
+          **아키텍처 설계 및 프레임워크 개발**
+          * MV(R)P 아키텍처 기반 UI 프레임워크 설계
+          * Scene 관리 및 Game Framework 구축
+          * REST API 통신 및 Packet Handler 구조 설계
+          * 체계적인 로깅 시스템 설계
+          * UniRx 기반의 반응형 프로그래밍 프로젝트 적용 주도
+
+          **다수의 컨텐츠 및 UI/UX 개발**
+          * UGUI 기반 재사용 가능한 UI Component Kit 제작
+          * DOTween을 활용한 다이나믹한 UI 애니메이션 구현
+          * 직관적인 사용자 인터페이스 설계 (채팅, 인벤토리, 팀 관리, 대시보드 등)
+
+          **크로스 플랫폼 지원**
+          * macOS, Windows 네이티브 플러그인 개발
+          * 플랫폼별 native OS 알림 시스템 구현 (macOS Bundle, Windows DLL)
+          * 디바이스 권한 관리 시스템 구축
+
+          **기타 기능 구현**
+          * Barracuda 모델(ONNX) 활용한 실시간 얼굴 인식
+          * 다양한 화면 공유 기능 개발 (화면, 카메라, 이미지, 유튜브, 화이트보드)
+          * 다국어 지원 시스템
+          * 하드웨어 벤치마크 기반 자동 그래픽 품질 최적화
+
+          **프로젝트 회고**
+          &nbsp;Soma 프로젝트는 기획 단계부터 런칭까지 참여한 의미 있는 경험이었습니다. 코로나19 팬데믹으로 인한 원격 근무 환경에서 시작된 이 프로젝트는 3D 아바타 기반의 영상 통화를 융합하여 새로운 가상 업무 공간을 제공하는 것이었습니다.    
+          개발 초기에는 게임 엔진을 활용한 업무용 서비스 구현이라는 독특한 접근 방식에 대한 의구심이 있었습니다. 그러나 회사 내부 직원들을 첫 번째 사용자로 삼아 실제 업무 환경에서 지속적으로 테스트하고 피드백을 수집함으로써, 게임적 요소(아바타 조작, 인터렉션)와 업무 기능(화면 공유, 화상 회의)을 효과적으로 융합할 수 있었습니다.          
+          특히 Windows, macOS, Android, iOS 등 다양한 플랫폼에서 일관된 사용자 경험을 사용성의 폭과 함께 실시간성을 높였습니다. 각 OS별 네이티브 기능(권한 관리, 알림 시스템, 하드웨어 접근)을 통합하는 과정에서 플랫폼 특화 지식을 크게 확장할 수 있었습니다.         
+          초기 사용자였던 회사 직원들의 지속적인 피드백이 제품의 품질과 사용성 향상에 결정적인 역할을 했습니다. 결과적으로 Soma 프로젝트는 기술적 도전을 넘어, 새로운 형태의 원격 근무 솔루션을 시장에 성공적으로 소개한 의미 있는 여정이었습니다.
+          이 경험을 통해 게임 개발 기술을 다양한 비즈니스 솔루션에 창의적으로 적용할 수 있는 역량을 키울 수 있었습니다.
+        
+      - layout: left
+        title: 직방 3D 단지 투어
+        sub_title: Data Driven 방식의 아파트 단지 시뮬레이션
+        caption: 2020.11 - 2021.04
+        quote: |
+          개발환경: Unity, C#, Visual Studio Code, Slack, Jira, Github<br>
+          플랫폼: Android, iOS<br>
+          개발규모: 전체 6 ~ 8인중 클라이언트 4인
+        description: | # this will include new lines to allow paragraphs
+          <br>React Native 기반 직방 앱에 Unity Engine 모듈을 통합하여 3D 아파트 단지 시뮬레이션 서비스를 개발했습니다. 
+          런칭 3개월 전 합류하여 사용자 UX/UI 개선, 시각적 연출, 튜토리얼 등 최종 완성도를 높이는 작업을 주로 담당했습니다. 
+          아파트 매물 정보 시각화 및 성능 최적화를 통해 모바일 환경에서도 원활하게 작동하는 서비스를 구현했습니다.
+
+          **UI/UX 개발**
+          * UGUI 기반 전체 UI 시스템 개발 및 연출 작업
+          * Room 면적별 정보 표시 UX 설계
+          * 매물 정보 시각화 시스템 구현
+          * 사용자 온보딩을 위한 튜토리얼 시스템 개발
+
+          **성능 최적화**
+          * Object Material Pooling으로 생성시 지연 최적화
+          * 주변건물 Culling 처리
+
+          **데이터 통합**
+          * 서버 API를 통한 실시간 매물 정보 연동
+          * 3D 오브젝트와 매물 데이터 매핑 시스템 구현
+          
+          **프로젝트 회고**
+          &nbsp;직방 3D 단지 투어 프로젝트는 런칭 직전 단계에 합류한 집중적인 마무리 작업 경험이었습니다.
+          특히 다양한 기기에서 일관된 성능을 보장하기 위해 Object Pooling과 Culling 시스템을 세밀하게 조정했습니다. 이를 통해 저사양 모바일 기기에서도 원활한 성능을 확보할 수 있었습니다.
+          짧은 개발 기간 내에 높은 완성도를 달성하기 위해 팀원들과 긴밀한 협업 체계를 구축한 것이 성공적인 런칭의 핵심이었습니다.         
+          폴더블 기기의 동적 해상도 변경 시 발생하는 렌더링 이슈에 직면했습니다. 화면 접힘 상태가 변경될 때 렌더텍스쳐가 올바르게 조정되지 않는 문제를 해결하기 위해, 해상도 변경 이벤트 감지 시 렌더텍스쳐를 동적으로 재생성하는 방식을 구현했습니다. 
+          이 과정에서 다양한 안드로이드 및 iOS 기기에서의 철저한 테스트가 필수적이었으며, 이를 통해 기기별 특성을 고려한 최적화의 중요성을 체득할 수 있었습니다.
+          이 프로젝트는 엔터테인먼트가 아닌 실용적 목적의 서비스에 게임 엔진을 활용할 수 있었던 좋은 경험이었습니다.
+          
+      - layout: left
+        title: ProjectR
+        sub_title: SLG장르 모바일 전략 시뮬레이션 게임
+        caption: 2018.01 - 2020.10
+        quote: |
+          개발환경: Unity, C#, VBA, Visual Studio, Slack, Jira, Github<br>
+          플랫폼: Android, iOS<br>
+          개발규모: 전체 25 ~ 30인중 클라이언트 개발 6인
+        description: | # this will include new lines to allow paragraphs
+          <br>'Clash of Kings'와 'Lords Mobile'과 유사한 쿼터뷰 방식의 모바일 전략 시뮬레이션 게임을 개발했습니다. 프로젝트 초기부터 참여하여 소프트 런칭까지 핵심 성장 시스템 개발을 주도했습니다.
+      
+          **데이터 기반 스킬 시스템 구축**
+          * 연구/재능/연맹 연구 등 다양한 스킬 트리 설계
+          * 효과 시스템 연동 및 적용
+          * 확장성 있는 기능 추가 구조 설계
+          
+          **성장 시스템 개발**
+          * 내성 내의 성장관련 건물 오브젝트 생명주기 관리(건설, 레벨업, 철거)
+          * 군주/영웅/병사 성장 시스템 개발
+          * 소환수 성장 시스템 구현
+          * 자원 수집 및 훈련병 치료 기능 구현
+          
+          **전투 시스템 개발**
+          * 필드에서 주성 이동 및 보호막 처리
+          * 부대 출전 처리 및 전투 덱 설정 시스템 구현
+          * 정찰 기능 구현
+          
+          **아이템/연맹 시스템 구현**
+          * 인벤토리/상점/강화 시스템 개발
+          * 연맹 생성/가입 및 연합 전투 기능 구현
+          * 가속 및 즉시완료 아이템 구현
+          
+          **개발 효율화 도구 제작**
+          * Unity Editor 확장 툴 개발
+          * Excel Data Exporter 구현으로 기획 작업 효율화
+          
+          **프로젝트 회고**
+          &nbsp;이 프로젝트는 개발 중 초기 기획에서 완전히 방향성이 변경되는 상황을 경험했습니다. 이러한 변화에 유연하게 대응하면서도 모바일 전략 시뮬레이션 게임의 핵심 시스템을 효과적으로 구현했습니다.  
+          데이터 주도적 설계를 적용하여 복잡한 스킬 시스템과 성장 시스템을 구축했으며, 특히 다양한 효과가 중첩되는 환경에서 확장성 있는 아키텍처를 설계하는 경험이 가장 유의미했습니다.  
+          개발 효율성 향상을 위해 Excel Data Exporter와 Unity Editor 확장 기능을 개발했으며, 이를 통해 기획자와 개발자 간 업무 흐름이 크게 개선되었습니다. 제한된 일정과 리소스 속에서도 효율적인 개발 프로세스를 구축한 것이 소프트 런칭의 90% 완성도까지 참여 및 작업하였습니다.
+
+      - layout: left
+        title: 이카루스 온라인
+        sub_title: PC 3D MMORPG 게임
+        caption: 2015.10 - 2017.12
+        quote: |
+          개발환경: CryEngine3, C++, WinApi, STL, Visual Studio, Action Script3.0, ScaleForm4.0 Mantis, SVN<br>
+          플랫폼: Windows<br>
+          개발규모: 전체 70~75인 중 클라이언트 6~8인
+        description: |
+          <br>국내에서 성공적으로 서비스 중이던 이카루스 온라인의 북미 런칭 프로젝트에 참여하여 Nexon America 플랫폼 연동 및 북미 시장에 특화된 기능 개발을 담당했습니다. 북미 유저들의 선호도와 사용 패턴을 고려한 다양한 시스템을 구현하여 성공적인 해외 진출에 기여했습니다.
+  
+          **Nexon America 플랫폼 연동**
+          * MultiThread Custom Patcher Cli 개발 및 Nexon Launcher 연동
+  
+          **북미 특화 UI/UX 개선**
+          * 액션 모드 시스템 개발 (크로스헤어 모드, 퀵슬롯 추가, 타겟 유지 시스템)
+          * UI 크기 조절 옵션 및 저사양 모드 설정 구현
+          * 퀘스트 네비게이션 시스템 개발 (목표 지점 방향 및 거리 표시)
+          * 북미 징계 처리 표시 시스템 구현 (계정 제재 만료 기간 및 사유 표시)
+  
+          **게임 컨텐츠 개발 및 최적화**
+          * 3:3 PvP 전장 시스템, 대규모 유물 쟁탈전 PvP 콘텐츠, 통합 던전 용병단 PvE 콘텐츠를 구현
+          * 캐시샵 시스템 개선 (캐시 타입 추가, 아이템 레벨 제한)          
+          * 아이템 강화 시스템 개선
+          * 펫 길들이기/컬렉션 개선, 길드 가입/홍보
+          * 대규모 UI/UX 개편 작업          
+          
+          **시스템 안정화**
+          * 네트워크 안정성 향상 (디스커넥 리커넥팅)
+          * CryPack 분할 패치 개선
+  
+          **로컬라이징 시스템 개선**
+          * Excel Automation Library 기반 텍스트 관리 시스템 개발         
+          * 국가별 이미지 자동 교체 시스템 구현
+          
+          **프로젝트 회고**
+          &nbsp;이카루스 온라인의 북미 런칭 TF팀에 합류하여 글로벌 서비스 준비 과정에서 중요한 역할을 수행했습니다. 본 프로젝트에서 가장 가치 있었던 경험은 Nexon America의 플랫폼 연동을 통한 북미 서비스 런칭이었습니다.          
+          특히, 다중 스레드 기반의 Custom Patcher를 개발하여 Nexon Launcher와 성공적으로 연동했으며, CryPack 파일 분할 패치 시스템을 구현함으로써 대용량 패치 과정에서 발생하던 비정상 현상을 효과적으로 해결했습니다. 이는 패치 안정성을 크게 향상시켜 사용자 경험을 개선하는 데 기여했습니다.          
+          또한 네트워크 단절 시 기존 로비 재진입 방식에서 서버 간 직접 리커넥팅 시스템으로 개선하여 로딩 시간을 단축 및 사용자 경험을 향상시켰습니다. 이러한 기술적 개선과 함께 북미 사용자들의 피드백을 반영한 UI/UX 개선으로 현지 시장 적응력을 강화했습니다.          
+          Nexon America와의 지속적인 협업 과정에서 글로벌 서비스 개발에 대한 깊은 이해를 얻게 되었습니다. 결과적으로 기존 국내 서비스보다 향상된 시스템을 구축하여 성공적인 북미 런칭을 달성했습니다.
+      
+      - layout: left
+        title: 아이리스온라인
+        sub_title: PC 3D MMORPG 게임
+        caption: 2009.09 - 2011.05
+        quote: |
+          개발환경: C++, WinApi, STL, Visual Studio, MFC, GameBryo, Perforce<br>
+          플랫폼: Windows<br>
+          개발규모: 전체 25~30인 중 클라이언트 4~5인
+        description: |
+          <br>아이리스 온라인의 서비스 런칭 3개월 전 합류하여 상용화 준비 및 러시아 진출을 위한 현지화 작업을 담당했습니다. 초기에는 클라이언트 개발에 집중하다가 점차 서버 및 데이터베이스 작업까지 범위를 확장하여 풀스택 개발 경험을 쌓았습니다.
+          
+          **SNS 연동 시스템 개발**
+          * Twitter Open API 및 OAuth 기반 인증 시스템 구현
+          * 게임 내에서 트윗 작성 및 피드 리스트 실시간 표시 기능 개발
+          * 게임 이벤트와 연동된 자동 SNS 알림 시스템 구축
+          
+          **핵심 콘텐츠 개발**
+          * 파티/길드 시스템 개선
+          * 친구 시스템 구현
+          * 캐시 아이템 개발 (외형 변경, 탈것)
+          * 콘텐츠 단위의 서버, 클라이언트, DB(MSSQL) Stored Procedure 통합 개발      
+          
+          **글로벌 서비스 대응**
+          * 러시아 서비스 현지화 및 런칭 지원
+          * 패치 작업 및 유지 보수      
+          
+          **프로젝트 회고**
+          &nbsp;아이리스 온라인 프로젝트는 상용 서비스 직전 단계와 해외 진출 과정에 참여한 귀중한 경험이었습니다. 특히 Twitter API 연동 작업이 가장 흥미롭고 의미 있는 업무였습니다. OAuth 인증 방식과 REST API 활용을 통해 게임 내에서 소셜 기능을 구현하는 과정에서 웹 서비스 연동에 대한 실질적인 경험을 얻을 수 있었습니다.  
+          또한 초기 클라이언트 개발에서 시작하여 점차 서버와 데이터베이스 작업까지 담당하게 되면서, MMORPG의 전체 시스템 아키텍처를 이해하고 능력을 기를 수 있었습니다. 글로벌 서비스를 위한 현지화 과정에서는 다국어 지원을 고려한 개발의 중요성을 체득했습니다.  
+          이 프로젝트를 통해 게임 서비스의 전 주기에 걸친 이해와 함께, 다양한 기술 스택을 활용한 풀스택 개발 역량을 쌓을 수 있었습니다.
+
+  - title: Skills
+    layout: list
+    content:
+      - layout: text      
+        description: |
+          *현재 업무에 사용중 혹은 사용했던 기술들입니다.*
+
+      - layout: left
+        title: Game Development
+        description: |
+          - Unity3D, CryEngine3, SDL
+          - GameBryo, ScaleForm
+          - UGUI, UniRx
+          - Cross-Platform Development
+
+      - layout: left
+        title: Programming Languages
+        description: |
+          - C++, C#
+          - JavaScript/TypeScript
+          - ActionScript, Python
+          - STL, WinApi
+
+      - layout: left
+        title: Tools & Environments
+        description: |
+          - Visual Studio, Jetbrain Rider, Xcode
+          - Git/GitHub, SVN, Perforce
+          - MSSQL, Stored Procedure
+          - REST API, WebRTC
+          - Electron, Slack, Jira
+          
+  - title: Education
+    layout: list
+    content:
+      - layout: left
+        title: 한국공학대학교
+        caption: 2002.03 - 2010.02
+        sub_title: 게임공학과
+        quote: 학점 3.88/4.5
+        description: |
+          학부 과정에서 게임 개발의 기초와 컴퓨터 과학의 핵심 원리를 습득하였으며, 이론적 지식과 실무 경험을 균형있게 갖추기 위해 노력했습니다.
+# Footer
+footer_show_references: true
+# references_title: References on request (Override references text)
+
+# Build settings
+remote_theme: sproogen/resume-theme
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+  - jekyll-seo-tag

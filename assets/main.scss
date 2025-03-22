@@ -1,0 +1,257 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+@import 'modern-resume-theme';
+@import 'portfolio-styles';
+@import 'navigation';
+@import 'portfolio-detail-styles';
+
+/* 헤더에 포트폴리오 링크 추가 */
+.portfolio-link-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.portfolio-text-only {
+  font-size: 1.6rem;
+  color: #333;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.portfolio-text-only:hover {
+  color: #7F52FF;
+  text-decoration: underline;
+}
+
+/* 이메일 텍스트 스타일 */
+.email-text-container {
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+.email-text-container p {
+  margin: 0;
+  font-size: 1.6rem;
+  color: #555;
+}
+
+.email-text-container a {
+  color: #333;
+  text-decoration: none;
+}
+
+.email-text-container a:hover {
+  text-decoration: underline;
+}
+
+/* 회사 정보를 왼쪽 상단으로 정렬 */
+.layout-left {
+  display: flex;
+  align-items: flex-start !important;
+}
+
+.layout-left .col-xs-12 {
+  align-self: flex-start;
+  padding-top: 0;
+}
+
+/* 직방 회사 정보에 추가 스타일 */
+.layout-left h4 {
+  margin-top: 0;
+}
+
+.layout-left p {
+  margin-bottom: 5px;
+}
+
+/* 프로젝트 헤더 사이 간격 늘리기 */
+.layout-left strong {
+  display: block;
+  margin-top: 25px;  /* 이 값을 조정하여 간격 늘리기 */
+}
+
+/* 첫 번째 프로젝트 헤더는 여백 제거 */
+.layout-left ul:first-of-type + strong {
+  margin-top: 35px;  /* 프로젝트 간 간격을 더 크게 */
+}
+
+/* 스킬 태그 스타일 */
+.skill-tags {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+/* quote 강제 좌측정렬 */
+.layout-left blockquote,
+.layout-left .quote,
+body .layout-left blockquote,
+.container .layout-left blockquote,
+.layout .layout-left blockquote {
+  text-align: left !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  border-left: 4px solid #ddd !important;
+  padding-left: 15px !important;
+  width: 100% !important;
+  float: none !important;
+  display: block !important;
+  position: relative !important;
+  font-size: 1.6rem !important;  /* 텍스트 크기 증가 */
+  line-height: 1.6 !important;    /* 줄 간격 증가 */
+}
+
+.layout-left blockquote p,
+.layout-left .quote p,
+body .layout-left blockquote p,
+.container .layout-left blockquote p,
+.layout .layout-left blockquote p {
+  text-align: left !important;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+  width: 100% !important;
+  display: block !important;
+  text-align: left !important;
+}
+
+/* 포트폴리오 버튼 - 우상단 */
+.portfolio-text-link {
+  display: inline-block;
+  margin-right: 5px;
+  background-color: #333;
+  color: white !important;
+  padding: 8px 15px;
+  border-radius: 4px;
+  text-decoration: none !important;
+  transition: all 0.3s;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.portfolio-text-link:hover {
+  background-color: #222;
+  color: white !important;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+///* 네비게이션 스타일 */
+//.navigation-container {
+//  display: flex !important;
+//  justify-content: space-between !important;
+//  align-items: center !important;
+//  padding: 24px 40px !important; /* 패딩 더 증가 */
+//  background-color: white !important;
+//  border-bottom: 1px solid #eee !important;
+//  margin-bottom: 40px !important;
+//  position: sticky !important;
+//  top: 0 !important;
+//  z-index: 100 !important;
+//  height: 90px !important; /* 높이 더 증가 */
+//}
+//
+//.logo a {
+//  font-size: 1.8rem !important; /* 폰트 크기 증가 */
+//  font-weight: 700 !important;
+//  color: #333 !important;
+//  text-decoration: none !important;
+//}
+//
+//.main-navigation ul {
+//  display: flex !important;
+//  list-style: none !important;
+//  margin: 0 !important;
+//  padding: 0 !important;
+//}
+//
+//.main-navigation li {
+//  margin: 0 20px !important; /* 마진 증가 */
+//}
+//
+//.nav-link {
+//  font-size: 1.1rem !important; /* 글자 크기 더 증가 */
+//  font-weight: 500 !important;
+//  color: #666 !important;
+//  text-decoration: none !important;
+//  letter-spacing: 1px !important;
+//  padding: 12px 8px !important; /* 패딩 더 증가 */
+//  transition: color 0.3s !important;
+//  text-transform: uppercase !important;
+//}
+//
+//.nav-link.active {
+//  color: #2e95e5 !important;
+//  font-weight: 600 !important; /* 굵기 증가 */
+//}
+//
+//.nav-link:hover, .nav-link.active {
+//  color: #2e95e5;
+//}
+//
+//.contact-button {
+//  background-color: #2e95e5 !important;
+//  color: white !important;
+//  padding: 12px 24px !important; /* 패딩 더 증가 */
+//  border-radius: 4px !important;
+//  font-size: 1.1rem !important; /* 글자 크기 더 증가 */
+//  font-weight: 500 !important;
+//  text-decoration: none !important;
+//  transition: background-color 0.3s !important;
+//  text-transform: uppercase !important;
+//}
+//
+//.contact-button:hover {
+//  background-color: #1a82d5 !important;
+//  text-decoration: none !important;
+//  color: white !important;
+//}
+//
+//@media (max-width: 768px) {
+//  .navigation-container {
+//    flex-direction: column;
+//    padding: 20px;
+//  }
+//
+//  .logo {
+//    margin-bottom: 15px;
+//  }
+//
+//  .main-navigation ul {
+//    display: flex;
+//    list-style: none;
+//    margin: 0;
+//    padding: 0;
+//  }
+//
+//  .navigation-button {
+//    margin-top: 15px;
+//  }
+//}
+
+.skill-tag {
+  display: inline-block;
+  padding: 4px 10px;
+  background-color: #f1f1f1;
+  color: #555;
+  border-radius: 4px;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  font-size: 0.8rem;
+}
+
+/* 특정 스킬 태그 색상 */
+.skill-tag.unity {  background-color: #000000;color: white;}
+.skill-tag.c-sharp {  background-color: #68217A;color: white;}
+.skill-tag.kotlin { background-color: #7F52FF; color: white; }
+.skill-tag.java { background-color: #007396; color: white; }
+.skill-tag.spring { background-color: #6DB33F; color: white; }
+.skill-tag.node { background-color: #339933; color: white; }
+.skill-tag.typescript { background-color: #3178C6; color: white; }
+.skill-tag.mysql { background-color: #4479A1; color: white; }
+.skill-tag.mongodb { background-color: #47A248; color: white; }
+.skill-tag.redis { background-color: #DC382D; color: white; }
+.skill-tag.kubernetes { background-color: #326CE5; color: white; }
+.skill-tag.docker { background-color: #2496ED; color: white; }
+.skill-tag.kafka { background-color: #231F20; color: white; }
