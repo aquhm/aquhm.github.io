@@ -99,16 +99,16 @@ permalink: /portfolio/puyo_puzzle/
     <h3>기능 스크린샷</h3>
     <div class="gallery-grid">
       <div class="gallery-item">
-        <img src="{{ site.baseurl }}/images/portfolio/puzzle_image2.png" alt="로그인 화면">
-        <p>로그인 화면</p>
+        <img src="{{ site.baseurl }}/images/portfolio/puzzle_image2.png" alt="캐릭터 선택화면">
+        <p>캐릭터 선택화면</p>
       </div>
       <div class="gallery-item">
-        <img src="{{ site.baseurl }}/images/portfolio/puzzle_image3.png" alt="캐릭터 선택 화면">
-        <p>캐릭터 선택 화면</p>
+        <img src="{{ site.baseurl }}/images/portfolio/puzzle_image3.png" alt="플레이 화면">
+        <p>플레이 화면</p>
       </div>
       <div class="gallery-item">
-        <img src="{{ site.baseurl }}/images/portfolio/puzzle_image4.png" alt="게임 플레이 화면">
-        <p>게임 플레이 화면</p>
+        <img src="{{ site.baseurl }}/images/portfolio/puzzle_image4.png" alt="플레이 화면">
+        <p>플레이 화면</p>
       </div>
     </div>
   </div>

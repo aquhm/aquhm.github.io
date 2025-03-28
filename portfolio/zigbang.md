@@ -32,7 +32,7 @@ permalink: /portfolio/zigbang/
   <h2>프로젝트 개요</h2>
 
   <div class="project-details">
-    <p><strong>개발 기간:</strong> 2018.05 - 2020.12</p>  
+    <p><strong>개발 기간:</strong> 2020.11 - 2021.04</p>  
     <p><strong>개발 환경:</strong> Unity, C#, WebGL, Visual Studio, Git</p>  
     <p><strong>플랫폼:</strong> Web, iOS, Android</p>  
     <p><strong>개발 규모:</strong> 전체 5인 중 클라이언트 3~4인</p>
