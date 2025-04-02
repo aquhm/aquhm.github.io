@@ -4,6 +4,7 @@ title: 포트폴리오
 permalink: /portfolio/
 ---
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <div class="navigation-container">
   <div class="logo">
     <a href="/">HOME</a>
@@ -16,6 +17,7 @@ permalink: /portfolio/
     </ul>
   </nav>
   <div class="navigation-button">
+    <a href="/assets/portfolio.pdf" class="download-button" download>Portfolio PDF 다운로드</a>
     <a href="mailto:aquhm@naver.com" class="contact-button">CONTACT</a>
   </div>
 </div>
@@ -584,10 +586,50 @@ body {
   }
 }
 
+.download-button {
+  background-color: #4285F4;
+  color: white;
+  padding: 7px 18px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s;
+  margin-right: 10px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.download-button:hover {
+  background-color: #3367d6;
+  color: white;
+  text-decoration: none;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.download-button:before {
+  content: "\f019";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 8px;
+}
+
 @media (max-width: 768px) {
   .navigation-container {
     flex-direction: column;
     padding: 20px;
+  }
+
+ .download-button, .contact-button {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .download-button {
+    margin-right: 0;
+    margin-bottom: 10px;
   }
   
   .logo {
