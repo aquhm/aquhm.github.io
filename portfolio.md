@@ -132,6 +132,19 @@ permalink: /portfolio/
       <img src="{{ site.baseurl }}/images/portfolio/git_action_runner_image1.png" alt="Git Action Runner 미리보기">
     </div>
   </a>
+
+<a href="/portfolio/finance_sheet_updater" class="project-item">
+  <div class="project-content">
+    <div class="project-category">Python, AWS, Google API</div>
+    <h2 class="project-title">금융 데이터 수집 및 저장 시스템</h2>
+    <p class="project-subtitle">자동화된 금융 데이터 파이프라인</p>
+    <p class="project-description">금융감독원의 금융상품 API, 환율 정보, 금속 시세 등 다양한 금융 데이터를 자동으로 수집하여 Google Sheets와 AWS S3에 저장하는 파이썬 기반 시스템을 개발했습니다.</p>
+    <div class="project-link">프로젝트 보기 →</div>
+  </div>
+  <div class="project-image">
+    <img src="{{ site.baseurl }}/images/portfolio/finance_sheet_updater_image1.png" alt="금융 데이터 수집 시스템 미리보기">
+  </div>
+</a>
 </div>
 
 <div class="skills-section">
