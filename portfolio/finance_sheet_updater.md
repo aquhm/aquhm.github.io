@@ -43,8 +43,7 @@
     <ul>
       <li>금융감독원 오픈 API를 활용한 금융상품 정보 수집 구현</li>
       <li>한국수출입은행 API를 통한 최신 환율 데이터 자동 수집</li>
-      <li>FinanceDataReader 라이브러리를 활용한 금속 및 원자재 시세 정보 수집</li>
-      <li>비동기 요청 처리를 통한 데이터 수집 성능 최적화</li>
+      <li>FinanceDataReader 라이브러리를 활용한 금속 및 원자재 시세 정보 수집</li>      
     </ul>
   </div>
 
