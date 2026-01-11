@@ -121,7 +121,7 @@ permalink: /portfolio/puyo_puzzle/
 </div>
 
 <div class="portfolio-nav">
-  <a href="/portfolio/iris">← 아이리스 온라인</a>
+  <a href="/portfolio/makers_games">← 쿼터뷰 모바일 전략 시뮬레이션</a>
   <a href="/portfolio/">프로젝트 목록</a>
   <a href="/portfolio/sheet_generator">Sheet Generator →</a>
 </div>

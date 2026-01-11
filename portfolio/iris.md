@@ -132,7 +132,7 @@ permalink: /portfolio/iris/
 <div class="portfolio-nav">
   <a href="/portfolio/icarus">← 이카루스 온라인</a>
   <a href="/portfolio/">프로젝트 목록</a>
-  <a href="/portfolio/puyo_puzzle">뿌요뿌요 퍼즐게임 →</a>
+  <a href="/portfolio/makers_games">쿼터뷰 모바일 전략 시뮬레이션 →</a>
 </div>
 
 <style>

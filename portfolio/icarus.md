@@ -149,7 +149,7 @@ permalink: /portfolio/icarus/
 </div>
 
 <div class="portfolio-nav">
-  <a href="/portfolio/zigbang">← 직방 3d 단지 투어</a>
+  <a href="/portfolio/makers_games">← 쿼터뷰 모바일 전략 시뮬레이션</a>
   <a href="/portfolio/">프로젝트 목록</a>
   <a href="/portfolio/iris">아이리스 온라인 →</a>
 </div>

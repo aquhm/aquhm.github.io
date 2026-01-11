@@ -133,7 +133,7 @@ permalink: /portfolio/zigbang/
 <div class="portfolio-nav">
   <a href="/portfolio/soma">← Soma</a>
   <a href="/portfolio/">프로젝트 목록</a>
-  <a href="/portfolio/icarus">이카루스 온라인 →</a>
+  <a href="/portfolio/makers_games">쿼터뷰 모바일 전략 시뮬레이션 →</a>
 </div>
 
 <style>

@@ -26,7 +26,7 @@ permalink: /portfolio/
   <div class="hero-content">
     <h1 class="hero-title">Full of Happiness</h1>
     <p class="hero-description">안녕하세요! 읽기 쉬운 코드를 지향하는 개발자 김대호입니다.</p>
-    <p class="hero-description">C++, C# 기반의 게임 엔진 개발 경험을 바탕으로 PC와 모바일 플랫폼에서 약 10년간의 다양한 개발을 수행해왔습니다.</p>
+    <p class="hero-description">C++, C# 기반의 게임 엔진 개발 경험을 바탕으로 PC와 모바일 플랫폼에서 약 11년간의 다양한 개발을 수행해왔습니다.</p>
     <p class="hero-description">다양한 프레임워크에 대한 관심이 많으며 도전하기를 좋아합니다.</p>
     <a href="#projects" class="hero-button">프로젝트 살펴보기</a>
   </div>
@@ -61,6 +61,19 @@ permalink: /portfolio/
     </div>
     <div class="project-image">
       <img src="{{ site.baseurl }}/images/portfolio/zigbang_image2.png" alt="직방 3D 단지 투어 미리보기">
+    </div>
+  </a>
+
+  <a href="/portfolio/makers_games" class="project-item">
+    <div class="project-content">
+      <div class="project-category">C#, Unity 3D</div>
+      <h2 class="project-title">쿼터뷰 모바일 전략 시뮬레이션</h2>
+      <p class="project-subtitle">모바일 전략 시뮬레이션 게임</p>
+      <p class="project-description">'Game of War'와 유사한 쿼터뷰 방식의 모바일 전략 시뮬레이션 게임을 개발했습니다. 프로젝트 초기부터 참여하여 핵심 성장 시스템 개발을 주도했으며, 데이터 기반 설계를 통해 확장성을 확보하고 기획자용 도구를 제작하여 개발 생산성을 향상시켰습니다.</p>
+      <div class="project-link">프로젝트 보기 →</div>
+    </div>
+    <div class="project-image">
+      <img src="{{ site.baseurl }}/images/portfolio/maker_image2.jpg" alt="모바일 전략 시뮬레이션 게임 미리보기">
     </div>
   </a>
 
