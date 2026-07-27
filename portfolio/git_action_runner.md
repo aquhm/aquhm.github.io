@@ -1,31 +1,17 @@
-﻿---
-layout: page
+---
+layout: portfolio-detail
 title: Git Action Runner
 permalink: /portfolio/git_action_runner/
+description: GitHub Actions 워크플로우를 Windows 데스크톱에서 제어하는 C#/WPF GUI 애플리케이션입니다.
+image: /images/portfolio/git_action_runner_image1.webp
 ---
-
-<div class="navigation-container">
-  <div class="logo">
-    <a href="/">HOME</a>
-  </div>
-  <nav class="main-navigation">
-    <ul>
-      <li><a href="/" class="nav-link {% if page.url == '/' %}active{% endif %}">RESUME</a></li>
-      <li><a href="/portfolio/" class="nav-link {% if page.url == '/portfolio/' %}active{% endif %}">PROJECT</a></li>
-      <li><a href="https://github.com/aquhm" class="nav-link">GITHUB</a></li>
-    </ul>
-  </nav>
-  <div class="navigation-button">
-    <a href="mailto:aquhm@naver.com" class="contact-button">CONTACT</a>
-  </div>
-</div>
 
 <div class="portfolio-header">
   <h1>Git Action Runner</h1>
 </div>
 
 <div class="portfolio-main-image">
-  <img src="{{ site.baseurl }}/images/portfolio/git_action_runner_image1.png" alt="Git Action Runner 메인 화면">
+  <img src="{{ '/images/portfolio/git_action_runner_image1.webp' | relative_url }}" alt="Git Action Runner 메인 화면" width="840" height="500" fetchpriority="high" decoding="async">
 </div>
 
 <div class="project-section">
@@ -98,19 +84,19 @@ permalink: /portfolio/git_action_runner/
     <h3>기능 스크린샷</h3>
     <div class="gallery-grid">
       <div class="gallery-item">
-        <img src="{{ site.baseurl }}/images/portfolio/git_action_runner_image3.png" alt="로그인 화면">
+        <img src="{{ '/images/portfolio/git_action_runner_image3.webp' | relative_url }}" alt="로그인 화면" width="400" height="332" loading="lazy" decoding="async">
         <p>GitHub Personal Access Token을 통한 안전한 인증</p>
       </div>
       <div class="gallery-item">
-        <img src="{{ site.baseurl }}/images/portfolio/git_action_runner_image1.png" alt="리포지토리 목록">
+        <img src="{{ '/images/portfolio/git_action_runner_image1.webp' | relative_url }}" alt="리포지토리 목록" width="840" height="500" loading="lazy" decoding="async">
         <p>사용자 리포지토리 목록 및 워크플로우 상태 확인</p>
       </div>
       <div class="gallery-item">
-        <img src="{{ site.baseurl }}/images/portfolio/git_action_runner_image4.png" alt="워크플로우 실행">
+        <img src="{{ '/images/portfolio/git_action_runner_image4.webp' | relative_url }}" alt="워크플로우 실행" width="780" height="500" loading="lazy" decoding="async">
         <p>브랜치 선택 및 워크플로우 실행 관리</p>
       </div>
       <div class="gallery-item">
-        <img src="{{ site.baseurl }}/images/portfolio/git_action_runner_image2.png" alt="실행 이력">
+        <img src="{{ '/images/portfolio/git_action_runner_image2.webp' | relative_url }}" alt="실행 이력" width="451" height="160" loading="lazy" decoding="async">
         <p>Windows Notification</p>
       </div>
     </div>
@@ -118,301 +104,7 @@ permalink: /portfolio/git_action_runner/
 </div>
 
 <div class="portfolio-nav">
-  <a href="/portfolio/sheet_generator">← Sheet Generator</a>
-  <a href="/portfolio/">프로젝트 목록</a>
-  <a href="/portfolio/finance_sheet_updater">Finance Sheet Updater →</a>
+  <a href="{{ '/portfolio/sheet_generator/' | relative_url }}">← Sheet Generator</a>
+  <a href="{{ '/portfolio/' | relative_url }}">프로젝트 목록</a>
+  <a href="{{ '/portfolio/comment_temperature/' | relative_url }}">댓글온도 →</a>
 </div>
-
-<style>
-.page-content {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 20px;
-  color: #333;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  line-height: 1.6;
-}
-
-h2, h3, h4 {
-  margin-top: 2em;
-  margin-bottom: 1em;
-  color: #1a1a1a;
-  font-weight: 600;
-}
-
-p {
-  margin-bottom: 1.5em;
-}
-
-.portfolio-header {
-  margin-top: 2.5em;
-  margin-bottom: 0.5em;
-  text-align: center;
-}
-
-.portfolio-header h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 0.5em;
-}
-
-.portfolio-main-image {
-  text-align: center;
-  margin-bottom: 3em;
-}
-
-.portfolio-main-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
-}
-
-.project-section {
-  margin-bottom: 40px;
-  margin-left: 40px;
-}
-
-.project-details {
-    font-size: 1rem;
-    color: #555;
-}
-
-.project-details p {
-  margin-bottom: 0.7em;
-}
-
-.feature-section, .challenge-section {
-  margin-bottom: 30px;
-}
-
-ul, ol {
-  padding-left: 2em;
-  margin-bottom: 1.5em;
-}
-
-li {
-  margin-bottom: 0.7em;
-}
-
-.portfolio-media-gallery {
-  margin-left: 2em;
-  border-top: 1px solid #eee;
-  padding-top: 1em;
-}
-
-.image-gallery h3 {
-  margin-bottom: 0.5em;
-}
-
-.portfolio-media-gallery h2 {
-  margin-bottom: 1.5em;
-}
-
-.video-container {
-  margin-bottom: 0em;
-}
-
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  justify-items: center;
-}
-
-.gallery-item {
-  margin-bottom: 30px;
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  overflow: visible;
-}
-
-.gallery-item img {
-  width: 100%;
-  height: 350px;
-  object-fit: contain;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  background-color: #f9f9f9;
-  margin-bottom: 15px;
-  transition: transform 0.3s ease;
-}
-
-.gallery-item img:hover {
-  transform: scale(1.02);
-}
-
-.gallery-item p {  
-  text-align: center;
-  font-size: 1rem;
-  color: #555;
-  margin-top: 5px;
-}
-
-.portfolio-nav {
-  margin-top: 5em;
-  border-top: 1px solid #eee;
-  padding-top: 2.5em;
-  text-align: center;
-}
-
-.portfolio-nav a {
-  display: inline-block;
-  padding: 12px 24px;
-  background-color: #f8f9fa;
-  border-radius: 8px;
-  text-decoration: none;
-  color: #333;
-  margin: 0 15px;
-  transition: all 0.2s ease;
-  font-weight: 500;
-}
-
-
-.portfolio-nav a:hover {
-  background-color: #e9ecef;
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-}
-
-@media (max-width: 768px) {
-  .gallery-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .page-content {
-    padding: 0 25px;
-  }
-  
-  .portfolio-nav a {
-    margin: 10px 5px;
-    display: block;
-    width: 100%;
-  }
-}
-
-/* 네비게이션 스타일 */
-.navigation-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
-  background-color: white;
-  border-bottom: 1px solid #eee;
-  margin-bottom: 40px;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-.logo a {
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: #333;
-  text-decoration: none;
-}
-
-.main-navigation ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.main-navigation li {
-  margin: 0 15px;
-}
-
-.nav-link {
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: #666;
-  text-decoration: none;
-  letter-spacing: 1px;
-  transition: color 0.3s;
-}
-
-.nav-link:hover, .nav-link.active {
-  color: #2e95e5;
-}
-
-.contact-button {
-  background-color: #2e95e5;
-  color: white;
-  padding: 8px 18px;
-  border-radius: 4px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  text-decoration: none;
-  transition: background-color 0.3s;
-}
-
-.contact-button:hover {
-  background-color: #1a82d5;
-  text-decoration: none;
-  color: white;
-}
-
-/* Base Typography */
-body {
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-p, li, td, th {
-  font-size: 1rem;
-}
-
-h1 {
-  font-size: 2.5rem;
-  color: #333;
-  font-weight: 500;
-}
-
-h2 {
-  font-size: 1.8rem;
-  font-weight: 500;
-  color: #333;
-  margin-top: 30px;
-  margin-bottom: 20px;
-}
-
-h3 {
-  font-size: 1.4rem;
-  font-weight: 500;
-  color: #333;
-  margin-top: 25px;
-  margin-bottom: 15px;
-}
-
-p {
-  margin-bottom: 20px;
-  line-height: 1.6;
-  color: #555;
-}
-
-ul {
-  padding-left: 20px;
-  margin-bottom: 20px;
-}
-
-li {
-  margin-bottom: 8px;
-  color: #555;
-}
-
-@media (max-width: 768px) {
-  body {
-    font-size: 15px;
-  }
-  
-  h1 {
-    font-size: 2rem;
-  }
-  
-  h2 {
-    font-size: 1.5rem;
-  }
-}
-</style>

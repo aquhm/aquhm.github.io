@@ -1,0 +1,9 @@
+---
+# 포트폴리오 / 프로젝트 상세 페이지 전용 스타일시트 (_layouts/page.html에서 로드)
+# 이력서 페이지의 assets/main.scss와 분리해 테마 스타일 충돌을 피한다.
+---
+
+@import 'portfolio-base';
+@import 'navigation';
+@import 'portfolio-listing';
+@import 'portfolio-detail';

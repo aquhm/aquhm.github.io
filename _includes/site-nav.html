@@ -1,0 +1,20 @@
+<div class="navigation-container">
+    <div class="logo">
+        <a href="{{ '/' | relative_url }}">HOME</a>
+    </div>
+    <nav class="main-navigation">
+        <ul>
+            <li><a href="{{ '/' | relative_url }}" class="nav-link{% if page.url == '/' %} active{% endif %}">RESUME</a></li>
+            <li><a href="{{ '/portfolio/' | relative_url }}" class="nav-link{% if page.url contains '/portfolio' %} active{% endif %}">PROJECT</a></li>
+            <li><a href="https://github.com/{{ site.github_username }}" class="nav-link" target="_blank" rel="noopener">GITHUB</a></li>
+        </ul>
+    </nav>
+    <div class="navigation-button">
+        {%- if page.url == '/' %}
+        <a href="{{ '/assets/resume.pdf' | relative_url }}" class="download-button" download>이력서 PDF 다운로드</a>
+        {%- elsif page.url == '/portfolio/' %}
+        <a href="{{ '/assets/portfolio.pdf' | relative_url }}" class="download-button" download>Portfolio PDF 다운로드</a>
+        {%- endif %}
+        <a href="mailto:{{ site.email }}" class="contact-button">CONTACT</a>
+    </div>
+</div>

@@ -1,0 +1,377 @@
+// 프로젝트 목록 페이지 (portfolio.md)
+
+/* 히어로 섹션 */
+.hero-section {
+  display: flex;
+  align-items: center;
+  padding: 80px 40px;
+  margin-bottom: 60px;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-content {
+  flex: 1;
+  padding-right: 40px;
+  z-index: 2;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #333;
+  margin: 0 0 10px 0;
+  line-height: 1.2;
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #555;
+  margin: 0 0 15px 0;
+  max-width: 600px;
+}
+
+.hero-button {
+  display: inline-block;
+  background-color: #2e95e5;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 12px 24px;
+  border-radius: 6px;
+  margin-top: 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #1a82d5;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(46, 149, 229, 0.3);
+  text-decoration: none;
+  color: white;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+// img의 width/height 속성(CLS 방지용)은 CSS width/height로도 작용한다.
+// max-height만 걸면 높이만 눌려 가로로 늘어나므로 width도 반드시 auto로 풀어 준다.
+.hero-image img {
+  max-width: 100%;
+  max-height: 400px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+/* 섹션 제목 */
+.section-title {
+  font-size: 2.4rem;
+  margin: 80px 40px 5px;
+  color: #333;
+  font-weight: 700;
+}
+
+.section-description {
+  font-size: 1.1rem;
+  color: #666;
+  margin: 0 40px 40px;
+}
+
+/* 프로젝트 목록 */
+.projects-container {
+  padding: 0 40px;
+}
+
+/* 언어별 필터 칩 (assets/js/project-filter.js가 hidden을 해제한다) */
+.project-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.project-filter[hidden] {
+  display: none;
+}
+
+.filter-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 18px;
+  border: 1px solid #e0e0e0;
+  border-radius: 999px;
+  background-color: #fff;
+  color: #555;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.filter-chip:hover {
+  border-color: #2e95e5;
+  color: #2e95e5;
+}
+
+.filter-chip:focus-visible {
+  outline: 2px solid #2e95e5;
+  outline-offset: 2px;
+}
+
+.filter-chip.is-active {
+  background-color: #2e95e5;
+  border-color: #2e95e5;
+  color: #fff;
+}
+
+.filter-chip__count {
+  font-size: 13px;
+  font-weight: 400;
+  opacity: 0.75;
+}
+
+/* hidden 속성이 .project-item의 display:flex를 이기도록 명시한다 */
+.project-item[hidden] {
+  display: none;
+}
+
+.project-item {
+  display: flex;
+  padding: 40px;
+  margin-bottom: 40px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s ease;
+  border: 1px solid #eee;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  text-decoration: none;
+  color: #333;
+}
+
+.project-item:hover .project-link {
+  color: #2e95e5;
+}
+
+.project-content {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.project-category {
+  font-size: 1rem;
+  color: #888;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.project-title {
+  font-size: 2.2rem;
+  margin: 0 0 10px 0;
+  font-weight: 700;
+}
+
+.project-subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 0 0 15px 0;
+  font-weight: 500;
+}
+
+.project-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0 0 20px 0;
+  color: #666;
+  max-width: 600px;
+}
+
+.project-link {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.project-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 450px;
+  height: 300px;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.5s ease;
+  background-color: #f8f8f8;
+}
+
+.project-item:hover .project-image img {
+  transform: scale(1.05);
+}
+
+/* 스킬 섹션 */
+.skills-section {
+  margin: 60px 0;
+  padding: 0 40px;
+}
+
+.skill-heading {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #4285F4;
+  margin-bottom: 40px;
+}
+
+.skill-row {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.skill-category {
+  width: 300px;
+  font-size: 1.5rem;
+  color: #888;
+  padding-right: 20px;
+  font-weight: 400;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  flex: 1;
+}
+
+.skill-list li {
+  position: relative;
+  padding-left: 20px;
+  margin-right: 50px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  line-height: 1.5;
+  flex-basis: 30%;
+  color: #333;
+}
+
+.skill-list li::before {
+  content: "\2022";
+  position: absolute;
+  left: 0;
+  color: #4285F4;
+  font-weight: bold;
+}
+
+.skill-divider {
+  height: 1px;
+  background-color: #eee;
+  margin: 30px 0;
+}
+
+/* 반응형 */
+@media (max-width: 1200px) {
+  .project-item {
+    flex-direction: column;
+  }
+
+  .project-content {
+    padding-right: 0;
+    padding-bottom: 30px;
+  }
+
+  .project-image {
+    width: 100%;
+    height: 350px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-section {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .hero-content {
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .skill-row {
+    flex-direction: column;
+  }
+
+  .skill-category {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .skill-list li {
+    flex-basis: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.4rem;
+  }
+
+  .section-title {
+    margin: 40px 20px 5px;
+    font-size: 2rem;
+  }
+
+  .section-description {
+    margin: 10px 20px 30px;
+  }
+
+  .projects-container {
+    padding: 0 20px;
+  }
+
+  .project-item {
+    padding: 25px;
+  }
+
+  .project-title {
+    font-size: 1.8rem;
+  }
+
+  .project-image {
+    height: 250px;
+  }
+
+  .skills-section {
+    padding: 0 20px 40px;
+  }
+
+  .skill-list li {
+    flex-basis: 100%;
+  }
+}

@@ -1,0 +1,183 @@
+// 프로젝트 상세 페이지 (portfolio/*.md, layout: portfolio-detail)
+
+.page-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.portfolio-header {
+  margin-top: 2.5em;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+.portfolio-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+.portfolio-main-image {
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+.portfolio-main-image img {
+  max-width: 100%;
+  max-height: 500px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  margin: 0 auto;
+  display: block;
+}
+
+.project-section {
+  margin-bottom: 40px;
+  margin-left: 40px;
+}
+
+.project-details {
+  font-size: 1rem;
+  color: #555;
+}
+
+.project-details p {
+  margin-bottom: 0.7em;
+}
+
+/* 줄바꿈 지점이 없는 긴 저장소 URL이 모바일 폭을 밀어내지 않도록 */
+.project-details a {
+  overflow-wrap: anywhere;
+}
+
+.feature-section,
+.challenge-section {
+  margin-bottom: 30px;
+}
+
+/* 미디어 갤러리 */
+.portfolio-media-gallery {
+  margin-left: 2em;
+  border-top: 1px solid #eee;
+  padding-top: 1em;
+}
+
+.portfolio-media-gallery h2 {
+  margin-bottom: 1.5em;
+}
+
+.image-gallery h3 {
+  margin-bottom: 0.5em;
+}
+
+.video-container {
+  margin-bottom: 0;
+}
+
+/* 16:9 반응형 유튜브 임베드 */
+.video-embed {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: #000;
+}
+
+.video-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.gallery-item {
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  overflow: visible;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 350px;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.02);
+}
+
+.gallery-item p {
+  text-align: center;
+  color: #555;
+  margin-top: 5px;
+}
+
+/* 이전 / 다음 프로젝트 이동 */
+.portfolio-nav {
+  margin-top: 5em;
+  border-top: 1px solid #eee;
+  padding-top: 2.5em;
+  text-align: center;
+}
+
+.portfolio-nav a {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #333;
+  margin: 0 15px;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.portfolio-nav a:hover {
+  background-color: #e9ecef;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 768px) {
+  .page-content {
+    padding: 0 25px;
+  }
+
+  .project-section {
+    margin-left: 0;
+  }
+
+  .portfolio-media-gallery {
+    margin-left: 0;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-nav a {
+    display: block;
+    width: auto;
+    margin: 10px 5px;
+  }
+}

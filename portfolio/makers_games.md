@@ -1,31 +1,17 @@
 ---
-layout: page
+layout: portfolio-detail
 title: 쿼터뷰 모바일 전략 시뮬레이션
 permalink: /portfolio/makers_games/
+description: Game of War 스타일의 쿼터뷰 모바일 전략 시뮬레이션 게임. 프로젝트 초기부터 소프트 런칭 직전까지 참여하며 핵심 성장 시스템 개발을 주도했습니다.
+image: /images/portfolio/maker_image1.webp
 ---
-
-<div class="navigation-container">
-  <div class="logo">
-    <a href="/">HOME</a>
-  </div>
-  <nav class="main-navigation">
-    <ul>
-      <li><a href="/" class="nav-link {% if page.url == '/' %}active{% endif %}">RESUME</a></li>
-      <li><a href="/portfolio/" class="nav-link {% if page.url == '/portfolio/' %}active{% endif %}">PROJECT</a></li>
-      <li><a href="https://github.com/aquhm" class="nav-link">GITHUB</a></li>
-    </ul>
-  </nav>
-  <div class="navigation-button">
-    <a href="mailto:aquhm@naver.com" class="contact-button">CONTACT</a>
-  </div>
-</div>
 
 <div class="portfolio-header">
   <h1>쿼터뷰 모바일 전략 시뮬레이션</h1>
 </div>
 
 <div class="portfolio-main-image">
-  <img src="{{ site.baseurl }}/images/portfolio/maker_image1.jpg" alt="쿼터뷰 모바일 전략 시뮬레이션 메인 이미지">
+  <img src="{{ '/images/portfolio/maker_image1.webp' | relative_url }}" alt="쿼터뷰 모바일 전략 시뮬레이션 메인 이미지" width="1600" height="778" fetchpriority="high" decoding="async">
 </div>
 
 <div class="project-section">
@@ -108,11 +94,11 @@ permalink: /portfolio/makers_games/
     <h3>기능 스크린샷</h3>
     <div class="gallery-grid">
       <div class="gallery-item">
-        <img src="{{ site.baseurl }}/images/portfolio/maker_image1.jpg" alt="게임 플레이 화면 1" style="max-width: 400px; height: auto;">
+        <img src="{{ '/images/portfolio/maker_image1.webp' | relative_url }}" alt="게임 플레이 화면 1" width="1600" height="778" loading="lazy" decoding="async">
         <p>월드맵 화면</p>
       </div>
       <div class="gallery-item">
-        <img src="{{ site.baseurl }}/images/portfolio/maker_image2.jpg" alt="게임 플레이 화면 2" style="max-width: 400px; height: auto;">
+        <img src="{{ '/images/portfolio/maker_image2.webp' | relative_url }}" alt="게임 플레이 화면 2" width="1600" height="778" loading="lazy" decoding="async">
         <p>영지 화면</p>
       </div>
     </div>
@@ -120,229 +106,7 @@ permalink: /portfolio/makers_games/
 </div>
 
 <div class="portfolio-nav">
-  <a href="/portfolio/zigbang">← 직방 3D 단지 투어</a>
-  <a href="/portfolio/">프로젝트 목록</a>
-  <a href="/portfolio/icarus">이카루스 온라인 →</a>
+  <a href="{{ '/portfolio/zigbang/' | relative_url }}">← 직방 3D 단지 투어</a>
+  <a href="{{ '/portfolio/' | relative_url }}">프로젝트 목록</a>
+  <a href="{{ '/portfolio/icarus/' | relative_url }}">이카루스 온라인 →</a>
 </div>
-
-<style>
-.page-content {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 20px;
-  color: #333;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  line-height: 1.6;
-}
-
-h2, h3, h4 {
-  margin-top: 2em;
-  margin-bottom: 1em;
-  color: #1a1a1a;
-  font-weight: 600;
-}
-
-p {
-  margin-bottom: 1.5em;
-}
-
-.portfolio-header {
-  margin-top: 2.5em;
-  margin-bottom: 0.5em;
-  text-align: center;
-}
-
-.portfolio-header h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 0.5em;
-}
-
-.project-section {
-  margin-bottom: 40px;
-  margin-left: 40px;
-}
-
-.project-details {
-    font-size: 1rem;
-    color: #555;
-}
-
-.project-details p {
-  margin-bottom: 0.7em;
-}
-
-.feature-section, .challenge-section {
-  margin-bottom: 30px;
-}
-
-ul, ol {
-  padding-left: 2em;
-  margin-bottom: 1.5em;
-}
-
-li {
-  margin-bottom: 0.7em;
-}
-
-.portfolio-nav {
-  margin-top: 5em;
-  border-top: 1px solid #eee;
-  padding-top: 2.5em;
-  text-align: center;
-}
-
-.portfolio-nav a {
-  display: inline-block;
-  padding: 12px 24px;
-  background-color: #f8f9fa;
-  border-radius: 8px;
-  text-decoration: none;
-  color: #333;
-  margin: 0 15px;
-  transition: all 0.2s ease;
-  font-weight: 500;
-}
-
-
-.portfolio-nav a:hover {
-  background-color: #e9ecef;
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-}
-
-@media (max-width: 768px) {
-  .page-content {
-    padding: 0 25px;
-  }
-  
-  .portfolio-nav a {
-    margin: 10px 5px;
-    display: block;
-    width: 100%;
-  }
-}
-
-/* 네비게이션 스타일 */
-.navigation-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
-  background-color: white;
-  border-bottom: 1px solid #eee;
-  margin-bottom: 40px;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-.logo a {
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: #333;
-  text-decoration: none;
-}
-
-.main-navigation ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.main-navigation li {
-  margin: 0 15px;
-}
-
-.nav-link {
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: #666;
-  text-decoration: none;
-  letter-spacing: 1px;
-  transition: color 0.3s;
-}
-
-.nav-link:hover, .nav-link.active {
-  color: #2e95e5;
-}
-
-.contact-button {
-  background-color: #2e95e5;
-  color: white;
-  padding: 8px 18px;
-  border-radius: 4px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  text-decoration: none;
-  transition: background-color 0.3s;
-}
-
-.contact-button:hover {
-  background-color: #1a82d5;
-  text-decoration: none;
-  color: white;
-}
-
-body {
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-p, li, td, th {
-  font-size: 1rem;
-}
-
-h1 {
-  font-size: 2.5rem;
-  color: #333;
-  font-weight: 500;
-}
-
-h2 {
-  font-size: 1.8rem;
-  font-weight: 500;
-  color: #333;
-  margin-top: 30px;
-  margin-bottom: 20px;
-}
-
-h3 {
-  font-size: 1.4rem;
-  font-weight: 500;
-  color: #333;
-  margin-top: 25px;
-  margin-bottom: 15px;
-}
-
-p {
-  margin-bottom: 20px;
-  line-height: 1.6;
-  color: #555;
-}
-
-ul {
-  padding-left: 20px;
-  margin-bottom: 20px;
-}
-
-li {
-  margin-bottom: 8px;
-  color: #555;
-}
-
-@media (max-width: 768px) {
-  body {
-    font-size: 15px;
-  }
-  
-  h1 {
-    font-size: 2rem;
-  }
-  
-  h2 {
-    font-size: 1.5rem;
-  }
-}
-</style>

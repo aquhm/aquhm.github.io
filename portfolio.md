@@ -1,44 +1,43 @@
-﻿---
+---
 layout: page
 title: 포트폴리오
 permalink: /portfolio/
+description: Unity·C++ 기반 게임 클라이언트와 3D 메타버스 서비스를 개발해 온 소프트웨어 엔지니어 김대호의 프로젝트 포트폴리오입니다.
+image: /images/portfolio/soma_image1.webp
+scripts:
+  - /assets/js/project-filter.js
 ---
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<div class="navigation-container">
-  <div class="logo">
-    <a href="/">HOME</a>
-  </div>
-  <nav class="main-navigation">
-    <ul>
-      <li><a href="/" class="nav-link {% if page.url == '/' %}active{% endif %}">RESUME</a></li>
-      <li><a href="/portfolio/" class="nav-link {% if page.url == '/portfolio/' %}active{% endif %}">PROJECT</a></li>
-      <li><a href="https://github.com/aquhm" class="nav-link">GITHUB</a></li>
-    </ul>
-  </nav>
-  <div class="navigation-button">
-    <a href="/assets/portfolio.pdf" class="download-button" download>Portfolio PDF 다운로드</a>
-    <a href="mailto:aquhm@naver.com" class="contact-button">CONTACT</a>
-  </div>
-</div>
 
 <div class="hero-section">
   <div class="hero-content">
     <h1 class="hero-title">Full of Happiness</h1>
     <p class="hero-description">안녕하세요! 읽기 쉬운 코드를 지향하는 개발자 김대호입니다.</p>
-    <p class="hero-description">C++, C# 기반의 게임 엔진 개발 경험을 바탕으로 PC와 모바일 플랫폼에서 약 11년간의 다양한 개발을 수행해왔습니다.</p>
+    <p class="hero-description">C++, C# 기반의 게임 엔진 개발 경험을 바탕으로 PC와 모바일 플랫폼에서 11년 이상의 다양한 개발을 수행해왔습니다.</p>
     <p class="hero-description">다양한 프레임워크에 대한 관심이 많으며 도전하기를 좋아합니다.</p>
     <a href="#projects" class="hero-button">프로젝트 살펴보기</a>
   </div>
   <div class="hero-image">
-    <img src="{{ site.baseurl }}/images/programming.jpg" alt="개발자 일러스트레이션">
+    <img src="{{ '/images/programming.webp' | relative_url }}" alt="개발자 일러스트레이션" width="1000" height="1000" fetchpriority="high" decoding="async">
   </div>
 </div>
 
 <h1 id="projects" class="section-title">Works</h1>
 
 <div class="projects-container">
-  <a href="/portfolio/soma" class="project-item">
+  <a href="{{ '/portfolio/digital_twin/' | relative_url }}" class="project-item">
+    <div class="project-content">
+      <div class="project-category">C#, Unity 3D</div>
+      <h2 class="project-title">디지털 트윈 건물 관제 시스템</h2>
+      <p class="project-subtitle">디지털 트윈 기반 건물 시뮬레이션 및 실시간 관제</p>
+      <p class="project-description">건물 내외부를 디지털 트윈으로 구현해 시설물 상태를 실시간으로 모니터링·관제하는 SI 프로젝트입니다. 백엔드와 무관하게 동작하는 하이브리드 데이터 통신 구조와 멀티 사이트 운영 도구 Service Builder를 설계했습니다.</p>
+      <div class="project-link">프로젝트 보기 →</div>
+    </div>
+    <div class="project-image">
+      <img src="{{ '/images/portfolio/digital_twin_image1.webp' | relative_url }}" alt="디지털 트윈 건물 관제 시스템 미리보기" width="1280" height="720" loading="lazy" decoding="async">
+    </div>
+  </a>
+
+  <a href="{{ '/portfolio/soma/' | relative_url }}" class="project-item">
     <div class="project-content">
       <div class="project-category">C#, Unity 3D</div>
       <h2 class="project-title">Soma</h2>
@@ -47,11 +46,11 @@ permalink: /portfolio/
       <div class="project-link">프로젝트 보기 →</div>
     </div>
     <div class="project-image">
-      <img src="{{ site.baseurl }}/images/portfolio/soma_image1.jpg" alt="Soma 프로젝트 미리보기">
+      <img src="{{ '/images/portfolio/soma_image1.webp' | relative_url }}" alt="Soma 프로젝트 미리보기" width="600" height="600" loading="lazy" decoding="async">
     </div>
   </a>
 
-  <a href="/portfolio/zigbang" class="project-item">
+  <a href="{{ '/portfolio/zigbang/' | relative_url }}" class="project-item">
     <div class="project-content">
       <div class="project-category">C#, Unity 3D</div>
       <h2 class="project-title">직방 3D 단지 투어</h2>
@@ -60,11 +59,11 @@ permalink: /portfolio/
       <div class="project-link">프로젝트 보기 →</div>
     </div>
     <div class="project-image">
-      <img src="{{ site.baseurl }}/images/portfolio/zigbang_image2.png" alt="직방 3D 단지 투어 미리보기">
+      <img src="{{ '/images/portfolio/zigbang_image2.webp' | relative_url }}" alt="직방 3D 단지 투어 미리보기" width="737" height="1479" loading="lazy" decoding="async">
     </div>
   </a>
 
-  <a href="/portfolio/makers_games" class="project-item">
+  <a href="{{ '/portfolio/makers_games/' | relative_url }}" class="project-item">
     <div class="project-content">
       <div class="project-category">C#, Unity 3D</div>
       <h2 class="project-title">쿼터뷰 모바일 전략 시뮬레이션</h2>
@@ -73,11 +72,11 @@ permalink: /portfolio/
       <div class="project-link">프로젝트 보기 →</div>
     </div>
     <div class="project-image">
-      <img src="{{ site.baseurl }}/images/portfolio/maker_image2.jpg" alt="모바일 전략 시뮬레이션 게임 미리보기">
+      <img src="{{ '/images/portfolio/maker_image1.webp' | relative_url }}" alt="쿼터뷰 모바일 전략 시뮬레이션 미리보기" width="1600" height="778" loading="lazy" decoding="async">
     </div>
   </a>
 
-  <a href="/portfolio/icarus" class="project-item">
+  <a href="{{ '/portfolio/icarus/' | relative_url }}" class="project-item">
     <div class="project-content">
       <div class="project-category">C++, CryEngine3</div>
       <h2 class="project-title">이카루스 온라인</h2>
@@ -86,11 +85,11 @@ permalink: /portfolio/
       <div class="project-link">프로젝트 보기 →</div>
     </div>
     <div class="project-image">
-      <img src="{{ site.baseurl }}/images/portfolio/icarus_image1.png" alt="이카루스 온라인 미리보기">
+      <img src="{{ '/images/portfolio/icarus_image1.webp' | relative_url }}" alt="이카루스 온라인 미리보기" width="822" height="406" loading="lazy" decoding="async">
     </div>
   </a>
 
-  <a href="/portfolio/iris" class="project-item">
+  <a href="{{ '/portfolio/iris/' | relative_url }}" class="project-item">
     <div class="project-content">
       <div class="project-category">C++, GameBryo</div>
       <h2 class="project-title">아이리스 온라인</h2>
@@ -99,15 +98,25 @@ permalink: /portfolio/
       <div class="project-link">프로젝트 보기 →</div>
     </div>
     <div class="project-image">
-      <img src="{{ site.baseurl }}/images/portfolio/iris_image1.jpg" alt="아이리스 온라인 미리보기">
+      <img src="{{ '/images/portfolio/iris_image1.webp' | relative_url }}" alt="아이리스 온라인 미리보기" width="600" height="450" loading="lazy" decoding="async">
     </div>
   </a>
 </div>
 
 <h1 class="section-title">Personal Projects</h1>
 
-<div class="projects-container">
-  <a href="/portfolio/puyo_puzzle" class="project-item">
+<div class="projects-container" data-project-filter>
+  <div class="project-filter" role="group" aria-label="언어별 프로젝트 필터" hidden>
+    <button type="button" class="filter-chip is-active" data-filter="all" aria-pressed="true">전체</button>
+    <button type="button" class="filter-chip" data-filter="cpp" aria-pressed="false">C++</button>
+    <button type="button" class="filter-chip" data-filter="csharp" aria-pressed="false">C#</button>
+    <button type="button" class="filter-chip" data-filter="typescript" aria-pressed="false">TypeScript</button>
+    <button type="button" class="filter-chip" data-filter="dart" aria-pressed="false">Dart</button>
+    <button type="button" class="filter-chip" data-filter="python" aria-pressed="false">Python</button>
+  </div>
+  <p class="visually-hidden" data-filter-status role="status" aria-live="polite"></p>
+
+  <a href="{{ '/portfolio/puyo_puzzle/' | relative_url }}" class="project-item" data-lang="cpp">
     <div class="project-content">
       <div class="project-category">C++, SDL3</div>
       <h2 class="project-title">뿌요뿌요 퍼즐 게임</h2>
@@ -116,11 +125,11 @@ permalink: /portfolio/
       <div class="project-link">프로젝트 보기 →</div>
     </div>
     <div class="project-image">
-      <img src="{{ site.baseurl }}/images/portfolio/puzzle_image1.png" alt="뿌요뿌요 퍼즐 게임 미리보기">
+      <img src="{{ '/images/portfolio/puzzle_image1.webp' | relative_url }}" alt="뿌요뿌요 퍼즐 게임 미리보기" width="889" height="663" loading="lazy" decoding="async">
     </div>
   </a>
 
-  <a href="/portfolio/sheet_generator" class="project-item">
+  <a href="{{ '/portfolio/sheet_generator/' | relative_url }}" class="project-item" data-lang="csharp">
     <div class="project-content">
       <div class="project-category">C#, .NET</div>
       <h2 class="project-title">SheetGenerator</h2>
@@ -129,11 +138,11 @@ permalink: /portfolio/
       <div class="project-link">프로젝트 보기 →</div>
     </div>
     <div class="project-image">
-      <img src="{{ site.baseurl }}/images/portfolio/sheet_generator_image.png" alt="SheetGenerator 미리보기">
+      <img src="{{ '/images/portfolio/sheet_generator_image.webp' | relative_url }}" alt="SheetGenerator 미리보기" width="863" height="481" loading="lazy" decoding="async">
     </div>
   </a>
 
-  <a href="/portfolio/git_action_runner" class="project-item">
+  <a href="{{ '/portfolio/git_action_runner/' | relative_url }}" class="project-item" data-lang="csharp">
     <div class="project-content">
       <div class="project-category">C#, WPF</div>
       <h2 class="project-title">Git Action Runner</h2>
@@ -142,22 +151,61 @@ permalink: /portfolio/
       <div class="project-link">프로젝트 보기 →</div>
     </div>
     <div class="project-image">
-      <img src="{{ site.baseurl }}/images/portfolio/git_action_runner_image1.png" alt="Git Action Runner 미리보기">
+      <img src="{{ '/images/portfolio/git_action_runner_image1.webp' | relative_url }}" alt="Git Action Runner 미리보기" width="840" height="500" loading="lazy" decoding="async">
     </div>
   </a>
 
-<a href="/portfolio/finance_sheet_updater" class="project-item">
-  <div class="project-content">
-    <div class="project-category">Python, AWS, Google API</div>
-    <h2 class="project-title">금융 데이터 수집 및 저장 시스템</h2>
-    <p class="project-subtitle">자동화된 금융 데이터 파이프라인</p>
-    <p class="project-description">금융감독원의 금융상품 API, 환율 정보, 금속 시세 등 다양한 금융 데이터를 자동으로 수집하여 Google Sheets와 AWS S3에 저장하는 파이썬 기반 시스템을 개발했습니다.</p>
-    <div class="project-link">프로젝트 보기 →</div>
-  </div>
-  <div class="project-image">
-    <img src="{{ site.baseurl }}/images/portfolio/finance_sheet_updater_image1.png" alt="금융 데이터 수집 시스템 미리보기">
-  </div>
-</a>
+  <a href="{{ '/portfolio/comment_temperature/' | relative_url }}" class="project-item" data-lang="typescript">
+    <div class="project-content">
+      <div class="project-category">TypeScript, Next.js</div>
+      <h2 class="project-title">댓글온도</h2>
+      <p class="project-subtitle">유튜브 댓글 분위기 분석 및 초안 제안 웹앱</p>
+      <p class="project-description">유튜브 링크를 넣으면 그 영상 댓글이 어떤 분위기인지 보여주고, 어울리는 댓글 초안을 뽑아 주는 웹앱입니다. Claude Code 기반 에이전트 개발 하네스를 직접 설계해서 만들었고, 로컬 LLM을 내장한 Tauri 데스크탑 앱까지 확장했습니다.</p>
+      <div class="project-link">프로젝트 보기 →</div>
+    </div>
+    <div class="project-image">
+      <img src="{{ '/images/portfolio/comment_temperature_image1.webp' | relative_url }}" alt="댓글온도 미리보기" width="1280" height="720" loading="lazy" decoding="async">
+    </div>
+  </a>
+
+  <a href="{{ '/portfolio/haruhoego/' | relative_url }}" class="project-item" data-lang="dart">
+    <div class="project-content">
+      <div class="project-category">Dart, Flutter</div>
+      <h2 class="project-title">하루회고</h2>
+      <p class="project-subtitle">사진·음성 기반 3분 회고 앱</p>
+      <p class="project-description">사진 1장, 음성 30~60초, 텍스트 몇 줄로 하루를 돌아보면 AI가 회고 카드를 만들어 주는 Flutter 앱입니다. 회고 생성과 음성 전사를 온디바이스 Gemma·Whisper로 처리해서 기록이 기기 밖으로 나가지 않습니다.</p>
+      <div class="project-link">프로젝트 보기 →</div>
+    </div>
+    <div class="project-image">
+      <img src="{{ '/images/portfolio/haruhoego_image1.webp' | relative_url }}" alt="하루회고 미리보기" width="1080" height="2340" loading="lazy" decoding="async">
+    </div>
+  </a>
+
+  <a href="{{ '/portfolio/unity_build/' | relative_url }}" class="project-item" data-lang="python">
+    <div class="project-content">
+      <div class="project-category">Python, Tkinter</div>
+      <h2 class="project-title">Unity Build Wizard</h2>
+      <p class="project-subtitle">Unity 로컬 빌드 자동화 도구</p>
+      <p class="project-description">Unity 헤드리스 빌드부터 Zip 압축, NAS 전달, Git 연동, 자동 스케줄까지 한 흐름으로 처리하는 Windows 데스크탑 도구입니다. 표준 라이브러리만 사용해 EXE 하나로 설치 없이 동작합니다.</p>
+      <div class="project-link">프로젝트 보기 →</div>
+    </div>
+    <div class="project-image">
+      <img src="{{ '/images/portfolio/unity_build_image1.webp' | relative_url }}" alt="Unity Build Wizard 미리보기" width="1280" height="800" loading="lazy" decoding="async">
+    </div>
+  </a>
+
+  <a href="{{ '/portfolio/finance_sheet_updater/' | relative_url }}" class="project-item" data-lang="python">
+    <div class="project-content">
+      <div class="project-category">Python, AWS, Google API</div>
+      <h2 class="project-title">금융 데이터 수집 및 저장 시스템</h2>
+      <p class="project-subtitle">자동화된 금융 데이터 파이프라인</p>
+      <p class="project-description">금융감독원의 금융상품 API, 환율 정보, 금속 시세 등 다양한 금융 데이터를 자동으로 수집하여 Google Sheets와 AWS S3에 저장하는 파이썬 기반 시스템을 개발했습니다.</p>
+      <div class="project-link">프로젝트 보기 →</div>
+    </div>
+    <div class="project-image">
+      <img src="{{ '/images/portfolio/finance_sheet_updater_image1.webp' | relative_url }}" alt="금융 데이터 수집 시스템 미리보기" width="1371" height="752" loading="lazy" decoding="async">
+    </div>
+  </a>
 </div>
 
 <div class="skills-section">
@@ -198,516 +246,3 @@ permalink: /portfolio/
     </ul>
   </div>
 </div>
-
-<footer class="site-footer">
-  <div class="footer-container">
-    <div class="footer-info">
-      <h3 class="footer-title">연락처</h3>
-      <p class="footer-email">이메일: <a href="mailto:aquhm@naver.com">aquhm@naver.com</a></p>
-      <p class="footer-github">GitHub: <a href="https://github.com/aquhm" target="_blank">github.com/aquhm</a></p>
-    </div>
-    <div class="footer-copyright">
-      <p>Copyright © 2025 weight500. All Rights Reserved.</p>
-    </div>
-  </div>
-</footer>
-
-<style>
-/* 기본 스타일 리셋 및 폰트 설정 */
-body {
-  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: #333;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-}
-
-/* 네비게이션 스타일 */
-.navigation-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
-  background-color: white;
-  border-bottom: 1px solid #eee;
-  margin-bottom: 40px;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-.logo a {
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: #333;
-  text-decoration: none;
-}
-
-.main-navigation ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.main-navigation li {
-  margin: 0 15px;
-}
-
-.nav-link {
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: #666;
-  text-decoration: none;
-  letter-spacing: 1px;
-  transition: color 0.3s;
-}
-
-.nav-link:hover, .nav-link.active {
-  color: #2e95e5;
-}
-
-.contact-button {
-  background-color: #2e95e5;
-  color: white;
-  padding: 8px 18px;
-  border-radius: 4px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  text-decoration: none;
-  transition: background-color 0.3s;
-}
-
-.contact-button:hover {
-  background-color: #1a82d5;
-  text-decoration: none;
-  color: white;
-}
-
-/* 히어로 섹션 */
-.hero-section {
-  display: flex;
-  align-items: center;
-  padding: 80px 40px;
-  margin-bottom: 60px;
-  overflow: hidden;
-  position: relative;
-}
-
-.hero-content {
-  flex: 1;
-  padding-right: 40px;
-  z-index: 2;
-}
-
-.hero-title {
-  font-size: 3.5rem;
-  font-weight: 800;
-  color: #333;
-  margin: 0 0 10px 0;
-  line-height: 1.2;
-}
-
-.hero-subtitle {
-  font-size: 2.2rem;
-  font-weight: 600;
-  color: #2e95e5;
-  margin: 0 0 20px 0;
-}
-
-.hero-description {
-  font-size: 1.2rem;
-  line-height: 1.7;
-  color: #555;
-  margin: 0 0 15px 0;
-  max-width: 600px;
-}
-
-.hero-button {
-  display: inline-block;
-  background-color: #2e95e5;
-  color: white;
-  font-size: 1.1rem;
-  font-weight: 500;
-  padding: 12px 24px;
-  border-radius: 6px;
-  margin-top: 20px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.hero-button:hover {
-  background-color: #1a82d5;
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(46, 149, 229, 0.3);
-  text-decoration: none;
-  color: white;
-}
-
-.hero-image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-}
-
-.hero-image img {
-  max-width: 100%;
-  max-height: 400px;
-}
-
-/* 섹션 제목 */
-.section-title {
-  font-size: 2.4rem;
-  margin: 80px 40px 5px;
-  color: #333;
-  font-weight: 700;
-  display: flex;
-  align-items: baseline;
-}
-
-.section-title::before {  
-  color: #2e95e5;
-  margin-right: 15px;
-  font-weight: 600;
-}
-
-.section-description {
-  font-size: 1.1rem;
-  color: #666;
-  margin: 0 40px 40px;
-}
-
-/* 프로젝트 컨테이너 */
-.projects-container {
-  padding: 0 40px;
-}
-
-/* 프로젝트 아이템 스타일 */
-.project-item {
-  display: flex;
-  padding: 40px;
-  margin-bottom: 40px;
-  border-radius: 8px;
-  text-decoration: none;
-  color: #333;
-  transition: all 0.3s ease;
-  border: 1px solid #eee;
-  background-color: #fff;
-  overflow: hidden;
-}
-
-.project-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  text-decoration: none;
-  color: #333;
-}
-
-.project-item:hover .project-link {
-  color: #2e95e5;
-}
-
-.project-content {
-  flex: 1;
-  padding-right: 40px;
-}
-
-.project-category {
-  font-size: 1rem;
-  color: #888;
-  margin-bottom: 10px;
-  font-weight: 500;
-}
-
-.project-title {
-  font-size: 2.2rem;
-  margin: 0 0 10px 0;
-  font-weight: 700;
-}
-
-.project-subtitle {
-  font-size: 1.2rem;
-  color: #555;
-  margin: 0 0 15px 0;
-  font-weight: 500;
-}
-
-.project-description {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin: 0 0 20px 0;
-  color: #666;
-  max-width: 600px;
-}
-
-.project-period {
-  display: block;
-  font-size: 0.9rem;
-  color: #888;
-  margin-bottom: 20px;
-}
-
-.project-link {
-  font-size: 1rem;
-  font-weight: 500;
-  color: #333;
-  transition: color 0.3s;
-}
-
-.project-image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  width: 450px;
-  height: 300px;
-  border-radius: 6px;
-  flex-shrink: 0;
-}
-
-.project-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  transition: transform 0.5s ease;
-  background-color: #f8f8f8;
-}
-
-.project-item:hover .project-image img {
-  transform: scale(1.05);
-}
-
-/* 스킬 섹션 스타일 */
-.skills-section {
-  margin: 60px 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  padding: 0 40px;
-}
-
-.skill-heading {
-  font-size: 2.5rem;
-  font-weight: 600;
-  color: #4285F4;
-  margin-bottom: 40px;
-}
-
-.skill-row {
-  display: flex;
-  margin-bottom: 20px;
-}
-
-.skill-category {
-  width: 300px;
-  font-size: 1.5rem;
-  color: #888;
-  padding-right: 20px;
-  font-weight: 400;
-}
-
-.skill-list {
-  display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
-  padding-left: 0;
-  margin: 0;
-  flex: 1;
-}
-
-.skill-list li {
-  position: relative;
-  padding-left: 20px;
-  margin-right: 50px;
-  margin-bottom: 10px;
-  font-size: 1rem;
-  line-height: 1.5;
-  flex-basis: 30%;
-  color: #333;
-}
-
-.skill-list li::before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  color: #4285F4;
-  font-weight: bold;
-}
-
-.skill-divider {
-  height: 1px;
-  background-color: #eee;
-  margin: 30px 0;
-}
-
-/* 푸터 스타일 */
-.site-footer {
-  background-color: #f8f9fa;
-  color: #555;
-  padding: 60px 0;
-  margin-top: 80px;
-  border-top: 1px solid #eee;
-}
-
-.footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 40px;
-}
-
-.footer-title {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.footer-email, .footer-github {
-  margin: 10px 0;
-  font-size: 0.95rem;
-}
-
-.footer-email a, .footer-github a {
-  color: #2e95e5;
-  text-decoration: none;
-}
-
-.footer-copyright {
-  margin-top: 40px;
-  font-size: 0.85rem;
-  color: #888;
-}
-
-/* 반응형 디자인 */
-@media (max-width: 1200px) {
-  .project-item {
-    flex-direction: column;
-  }
-  
-  .project-content {
-    padding-right: 0;
-    padding-bottom: 30px;
-  }
-  
-  .project-image {
-    width: 100%;
-    height: 350px;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-}
-
-@media (max-width: 992px) {
-  .skill-row {
-    flex-direction: column;
-  }
-  
-  .skill-category {
-    width: 100%;
-    margin-bottom: 15px;
-  }
-  
-  .skill-list li {
-    flex-basis: 45%;
-  }
-}
-
-.download-button {
-  background-color: #4285F4;
-  color: white;
-  padding: 7px 18px;
-  border-radius: 4px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  text-decoration: none;
-  transition: all 0.3s;
-  margin-right: 10px;
-  display: inline-flex;
-  align-items: center;
-}
-
-.download-button:hover {
-  background-color: #3367d6;
-  color: white;
-  text-decoration: none;
-  transform: translateY(-1px);
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.download-button:before {
-  content: "\f019";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  margin-right: 8px;
-}
-
-@media (max-width: 768px) {
-  .navigation-container {
-    flex-direction: column;
-    padding: 20px;
-  }
-
- .download-button, .contact-button {
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-  }
-  
-  .download-button {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-  
-  .logo {
-    margin-bottom: 15px;
-  }
-  
-  .main-navigation ul {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .navigation-button {
-    margin-top: 15px;
-  }
-
-  .section-title {
-    margin: 40px 20px 5px;
-    font-size: 2rem;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  .section-title::before {
-    margin-bottom: 5px;
-  }
-  
-  .section-description {
-    margin: 10px 20px 30px;
-  }
-  
-  .projects-container {
-    padding: 0 20px;
-  }
-  
-  .project-item {
-    padding: 25px;
-  }
-  
-  .project-title {
-    font-size: 1.8rem;
-  }
-  
-  .project-image {
-    height: 250px;
-  }
-  
-  .skills-section {
-    padding: 0 20px 40px;
-  }
-  
-  .skill-list li {
-    flex-basis: 100%;
-  }
-}
-</style>

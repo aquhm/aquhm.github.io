@@ -1,19 +1,4 @@
-﻿<div class="navigation-container">
-    <div class="logo">
-        <a href="/">HOME</a>
-    </div>
-    <nav class="main-navigation">
-        <ul>
-            <li><a href="/" class="nav-link {% if page.url == '/' %}active{% endif %}">RESUME</a></li>
-            <li><a href="/portfolio/" class="nav-link {% if page.url == '/portfolio/' %}active{% endif %}">PROJECT</a></li>
-            <li><a href="https://github.com/{{ site.github_username }}" class="nav-link">GITHUB</a></li>
-        </ul>
-    </nav>
-    <div class="navigation-button">
-        <a href="/assets/resume.pdf" class="download-button" download>이력서 PDF 다운로드</a>
-        <a href="mailto:{{ site.email }}" class="contact-button">CONTACT</a>
-    </div>
-</div>
+{% include site-nav.html %}
 
 <div class="container header-container">
     <div class="row">

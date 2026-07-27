@@ -1,31 +1,17 @@
-﻿---
-layout: page
+---
+layout: portfolio-detail
 title: 이카루스 온라인
 permalink: /portfolio/icarus/
+description: PC 3D MMORPG 이카루스 온라인의 북미 런칭 프로젝트. Nexon America 플랫폼 연동과 북미 특화 UI/UX 개발을 담당했습니다.
+image: /images/portfolio/icarus_image4.webp
 ---
-
-<div class="navigation-container">
-  <div class="logo">
-    <a href="/">HOME</a>
-  </div>
-  <nav class="main-navigation">
-    <ul>
-      <li><a href="/" class="nav-link {% if page.url == '/' %}active{% endif %}">RESUME</a></li>
-      <li><a href="/portfolio/" class="nav-link {% if page.url == '/portfolio/' %}active{% endif %}">PROJECT</a></li>
-      <li><a href="https://github.com/aquhm" class="nav-link">GITHUB</a></li>
-    </ul>
-  </nav>
-  <div class="navigation-button">
-    <a href="mailto:aquhm@naver.com" class="contact-button">CONTACT</a>
-  </div>
-</div>
 
 <div class="portfolio-header">
   <h1>이카루스 온라인 - 북미 런칭 프로젝트</h1>  
 </div>
 
 <div class="portfolio-main-image">
-  <img src="{{ site.baseurl }}/images/portfolio/icarus_image4.png" alt="이카루스 온라인 메인 이미지">
+  <img src="{{ '/images/portfolio/icarus_image4.webp' | relative_url }}" alt="이카루스 온라인 메인 이미지" width="1024" height="769" fetchpriority="high" decoding="async">
 </div>
 
 <div class="project-section">
@@ -127,345 +113,29 @@ permalink: /portfolio/icarus/
     <h3>기능 스크린샷</h3>
     <div class="gallery-grid">
       <div class="gallery-item">
-        <img src="{{ site.baseurl }}/images/portfolio/icarus_image2.png" alt="펠로우 소환수">
+        <img src="{{ '/images/portfolio/icarus_image2.webp' | relative_url }}" alt="펠로우 소환수" width="1440" height="901" loading="lazy" decoding="async">
         <p>펠로우 소환수</p>
       </div>
       <div class="gallery-item">
-        <img src="{{ site.baseurl }}/images/portfolio/icarus_image3.png" alt="로비 캐릭터 선택">
+        <img src="{{ '/images/portfolio/icarus_image3.webp' | relative_url }}" alt="로비 캐릭터 선택" width="1599" height="896" loading="lazy" decoding="async">
         <p>로비 캐릭터 선택</p>
       </div>
       <div class="gallery-item">
-        <img src="{{ site.baseurl }}/images/portfolio/icarus_image1.png" alt="거점 콘텐츠">
+        <img src="{{ '/images/portfolio/icarus_image1.webp' | relative_url }}" alt="거점 콘텐츠" width="822" height="406" loading="lazy" decoding="async">
         <p>거점 콘텐츠</p>
       </div>
     </div>
   </div>
   <div class="video-container">
     <h3>프로젝트 소개 영상</h3>
-    <div style="position: relative; padding-bottom: 30%; height: 0; overflow: hidden; max-width: 100%;">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/1mp1ZvCoS40?si=gyy_ZvbtjOkVKG8S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="video-embed">
+      <iframe src="https://www.youtube.com/embed/1mp1ZvCoS40?si=gyy_ZvbtjOkVKG8S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
   </div>
 </div>
 
 <div class="portfolio-nav">
-  <a href="/portfolio/makers_games">← 쿼터뷰 모바일 전략 시뮬레이션</a>
-  <a href="/portfolio/">프로젝트 목록</a>
-  <a href="/portfolio/iris">아이리스 온라인 →</a>
+  <a href="{{ '/portfolio/makers_games/' | relative_url }}">← 쿼터뷰 모바일 전략 시뮬레이션</a>
+  <a href="{{ '/portfolio/' | relative_url }}">프로젝트 목록</a>
+  <a href="{{ '/portfolio/iris/' | relative_url }}">아이리스 온라인 →</a>
 </div>
-
-<style>
-.page-content {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 20px;
-  color: #333; /* portfolio.md와 일치하는 기본 텍스트 색상 */
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  line-height: 1.6;
-}
-
-h2, h3, h4 {
-  margin-top: 2em;
-  margin-bottom: 1em;
-  color: #1a1a1a;
-  font-weight: 600;
-}
-
-p {
-  margin-bottom: 1.5em;
-}
-
-.portfolio-header {
-  margin-top: 2.5em;
-  margin-bottom: 0.5em;
-  text-align: center;
-}
-
-.portfolio-header h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 0.5em;
-}
-
-.portfolio-main-image {
-  text-align: center;
-  margin-bottom: 3em;
-}
-
-.portfolio-main-image img {
-  max-width: 100%;
-  max-height: 500px;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  border-radius: 12px;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
-  margin: 0 auto;
-  display: block;
-}
-
-.project-section {
-  margin-bottom: 40px;
-  margin-left: 40px;
-}
-
-.project-details {
-    font-size: 1rem;
-    color: #555;
-}
-
-.project-details p {
-  margin-bottom: 0.7em;
-}
-
-.feature-section, .challenge-section {
-  margin-bottom: 30px;
-}
-
-ul, ol {
-  padding-left: 2em;
-  margin-bottom: 1.5em;
-}
-
-li {
-  margin-bottom: 0.7em;
-}
-
-.portfolio-media-gallery {
-  margin-left: 2em;
-  border-top: 1px solid #eee;
-  padding-top: 1em;
-}
-
-.image-gallery h3 {
-  margin-bottom: 0.5em;
-}
-
-/* 제목과 내용물 사이 간격 조정 */
-.portfolio-media-gallery h2 {
-  margin-bottom: 1.5em; /* 제목 아래 간격 조정 */
-}
-
-/* 비디오 섹션과 이미지 갤러리 사이 간격 조정 */
-.video-container {
-  margin-bottom: 0em; /* 기존 간격 축소 */
-}
-
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  justify-items: center;
-}
-
-.gallery-item {
-  margin-bottom: 30px;
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  overflow: visible;
-}
-
-.gallery-item img {
-  width: 100%;
-  height: 350px;
-  object-fit: contain;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  background-color: #f9f9f9;
-  margin-bottom: 15px;
-  transition: transform 0.3s ease;
-}
-
-.gallery-item img:hover {
-  transform: scale(1.02);
-}
-
-.gallery-item p {  
-  text-align: center;
-  font-size: 1rem;
-  color: #555;
-  margin-top: 5px;
-}
-
-.portfolio-nav {
-  margin-top: 5em;
-  border-top: 1px solid #eee;
-  padding-top: 2.5em;
-  text-align: center;
-}
-
-.portfolio-nav a {
-  display: inline-block;
-  padding: 12px 24px;
-  background-color: #f8f9fa;
-  border-radius: 8px;
-  text-decoration: none;
-  color: #333;
-  margin: 0 15px;
-  transition: all 0.2s ease;
-  font-weight: 500;
-}
-
-
-.portfolio-nav a:hover {
-  background-color: #e9ecef;
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-}
-
-@media (max-width: 768px) {
-  .gallery-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .page-content {
-    padding: 0 25px;
-  }
-  
-  .portfolio-nav a {
-    margin: 10px 5px;
-    display: block;
-    width: 100%;
-  }
-}
-
-/* 네비게이션 스타일 */
-.navigation-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
-  background-color: white;
-  border-bottom: 1px solid #eee;
-  margin-bottom: 40px;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-.logo a {
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: #333;
-  text-decoration: none;
-}
-
-.main-navigation ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.main-navigation li {
-  margin: 0 15px;
-}
-
-.nav-link {
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: #666;
-  text-decoration: none;
-  letter-spacing: 1px;
-  transition: color 0.3s;
-}
-
-.nav-link:hover, .nav-link.active {
-  color: #2e95e5;
-}
-
-.contact-button {
-  background-color: #2e95e5;
-  color: white;
-  padding: 8px 18px;
-  border-radius: 4px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  text-decoration: none;
-  transition: background-color 0.3s;
-}
-
-.contact-button:hover {
-  background-color: #1a82d5;
-  text-decoration: none;
-  color: white;
-}
-
-/* Base Typography */
-body {
-  font-size: 16px; /* Base font size for all content */
-  line-height: 1.6; /* Comfortable line spacing */
-}
-
-/* Main Text Elements */
-p, li, td, th {
-  font-size: 1rem; /* 16px relative to base */
-}
-
-/* Headings with Clear Hierarchy */
-h1 {
-  font-size: 2.5rem;
-  color: #333;
-  font-weight: 500;
-}
-
-h2 {
-  font-size: 1.8rem;
-  font-weight: 500;
-  color: #333;
-  margin-top: 30px;
-  margin-bottom: 20px;
-}
-
-h3 {
-  font-size: 1.4rem;
-  font-weight: 500;
-  color: #333;
-  margin-top: 25px;
-  margin-bottom: 15px;
-}
-
-/* 단락 스타일 */
-p {
-  margin-bottom: 20px;
-  line-height: 1.6;
-  color: #555;
-}
-
-/* 리스트 스타일 */
-ul {
-  padding-left: 20px;
-  margin-bottom: 20px;
-}
-
-li {
-  margin-bottom: 8px;
-  color: #555;
-}
-
-/* Secondary Elements */
-.meta-info, .project-details span {
-  font-size: 0.9375rem; /* 15px - slightly smaller than body */
-}
-
-/* Caption Text */
-.caption, figcaption, .gallery-item p {
-  font-size: 0.875rem; /* 14px */
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  body {
-    font-size: 15px; /* Slightly smaller base on mobile */
-  }
-  
-  h1 {
-    font-size: 2rem; /* 30px */
-  }
-  
-  h2 {
-    font-size: 1.5rem; /* 24px */
-  }
-}
-</style>
