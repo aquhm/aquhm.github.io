@@ -164,7 +164,7 @@ scripts:
       <div class="project-link">프로젝트 보기 →</div>
     </div>
     <div class="project-image">
-      <img src="{{ '/images/portfolio/comment_temperature_image1.webp' | relative_url }}" alt="댓글온도 미리보기" width="1280" height="720" loading="lazy" decoding="async">
+      <img src="{{ '/images/portfolio/comment_temperature_image1.webp' | relative_url }}" alt="댓글온도 미리보기" width="1228" height="1387" loading="lazy" decoding="async">
     </div>
   </a>
 

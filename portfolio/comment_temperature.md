@@ -11,7 +11,7 @@ image: /images/portfolio/comment_temperature_image1.webp
 </div>
 
 <div class="portfolio-main-image">
-  <img src="{{ '/images/portfolio/comment_temperature_image1.webp' | relative_url }}" alt="댓글온도 메인 화면" width="1280" height="720" fetchpriority="high" decoding="async">
+  <img src="{{ '/images/portfolio/comment_temperature_image1.webp' | relative_url }}" alt="댓글온도 메인 화면" width="1228" height="1387" fetchpriority="high" decoding="async">
 </div>
 
 <div class="project-section">
@@ -136,19 +136,19 @@ image: /images/portfolio/comment_temperature_image1.webp
     <h3>기능 스크린샷</h3>
     <div class="gallery-grid">
       <div class="gallery-item">
-        <img src="{{ '/images/portfolio/comment_temperature_image2.webp' | relative_url }}" alt="댓글 분위기 분석 결과" width="1280" height="720" loading="lazy" decoding="async">
+        <img src="{{ '/images/portfolio/comment_temperature_image2.webp' | relative_url }}" alt="댓글 분위기 분석 결과" width="1230" height="1249" loading="lazy" decoding="async">
         <p>공개 댓글 정제 후 분위기 분석 결과</p>
       </div>
       <div class="gallery-item">
-        <img src="{{ '/images/portfolio/comment_temperature_image3.webp' | relative_url }}" alt="댓글 초안 스튜디오" width="1280" height="720" loading="lazy" decoding="async">
-        <p>목적·톤·길이를 선택해 초안 생성</p>
+        <img src="{{ '/images/portfolio/comment_temperature_image3.webp' | relative_url }}" alt="대댓글 초안 생성" width="1231" height="1391" loading="lazy" decoding="async">
+        <p>방향·페르소나·길이를 골라 대댓글 초안 생성</p>
       </div>
       <div class="gallery-item">
-        <img src="{{ '/images/portfolio/comment_temperature_image4.webp' | relative_url }}" alt="안전성 지표 표시" width="1280" height="720" loading="lazy" decoding="async">
-        <p>자연스러움·스팸 위험·과장도 지표 표시</p>
+        <img src="{{ '/images/portfolio/comment_temperature_image4.webp' | relative_url }}" alt="안전성 지표가 붙은 초안 목록" width="1231" height="1385" loading="lazy" decoding="async">
+        <p>초안마다 자연스러움·스팸 위험·과장도 지표 표시</p>
       </div>
       <div class="gallery-item">
-        <img src="{{ '/images/portfolio/comment_temperature_image5.webp' | relative_url }}" alt="데스크탑 앱 모델 관리" width="1280" height="720" loading="lazy" decoding="async">
+        <img src="{{ '/images/portfolio/comment_temperature_image5.webp' | relative_url }}" alt="데스크탑 앱 모델 관리" width="1226" height="854" loading="lazy" decoding="async">
         <p>데스크탑 앱의 로컬 LLM 모델 관리</p>
       </div>
     </div>
