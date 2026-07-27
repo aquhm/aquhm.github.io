@@ -11,7 +11,7 @@ image: /images/portfolio/digital_twin_image1.webp
 </div>
 
 <div class="portfolio-main-image">
-  <img src="{{ '/images/portfolio/digital_twin_image1.webp' | relative_url }}" alt="디지털 트윈 관제 메인 화면" width="1280" height="720" fetchpriority="high" decoding="async">
+  <img src="{{ '/images/portfolio/digital_twin_image1.webp' | relative_url }}" alt="디지털 트윈 건물 관제 시스템" width="1280" height="720" fetchpriority="high" decoding="async">
 </div>
 
 <div class="project-section">
@@ -88,23 +88,6 @@ image: /images/portfolio/digital_twin_image1.webp
 
   <div class="reflection-content">
     <p>&nbsp;게임 개발에서 몸에 밴 에디터 도구화 습관이 SI에서 그대로 무기가 된다는 걸 확인하고 있습니다. 반복되는 세팅을 도구로 굳히면 실수가 줄고, 시연 준비에 들던 시간이 개발로 돌아옵니다. 진행 중인 프로젝트라 지금도 사이트가 추가될 때마다 도구가 함께 자라는 중입니다.</p>
-  </div>
-</div>
-
-<div class="portfolio-media-gallery">
-  <h2>미디어 갤러리</h2>
-  <div class="image-gallery">
-    <h3>기능 스크린샷</h3>
-    <div class="gallery-grid">
-      <div class="gallery-item">
-        <img src="{{ '/images/portfolio/digital_twin_image2.webp' | relative_url }}" alt="실시간 시설물 데이터 시각화" width="1280" height="720" loading="lazy" decoding="async">
-        <p>시설물 상태의 3D 공간 실시간 시각화</p>
-      </div>
-      <div class="gallery-item">
-        <img src="{{ '/images/portfolio/digital_twin_image3.webp' | relative_url }}" alt="Service Builder 에디터 도구" width="1280" height="720" loading="lazy" decoding="async">
-        <p>Service Builder — 사이트 구성·빌드 일괄 적용</p>
-      </div>
-    </div>
   </div>
 </div>
 
