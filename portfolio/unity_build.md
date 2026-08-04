@@ -11,7 +11,7 @@ image: /images/portfolio/unity_build_image1.webp
 </div>
 
 <div class="portfolio-main-image">
-  <img src="{{ '/images/portfolio/unity_build_image1.webp' | relative_url }}" alt="Unity Build Wizard 마법사 화면" width="1280" height="800" fetchpriority="high" decoding="async">
+  <img src="{{ '/images/portfolio/unity_build_image1.webp' | relative_url }}" alt="Unity Build Wizard 마법사 화면" width="1471" height="1732" fetchpriority="high" decoding="async">
 </div>
 
 <div class="project-section">
@@ -93,20 +93,20 @@ image: /images/portfolio/unity_build_image1.webp
     <h3>기능 스크린샷</h3>
     <div class="gallery-grid">
       <div class="gallery-item">
-        <img src="{{ '/images/portfolio/unity_build_image1.webp' | relative_url }}" alt="빌드 설정 마법사" width="1280" height="800" loading="lazy" decoding="async">
-        <p>3단계 마법사로 빌드 설정 구성</p>
+        <img src="{{ '/images/portfolio/unity_build_image1.webp' | relative_url }}" alt="빌드 설정 마법사 1단계" width="1471" height="1732" loading="lazy" decoding="async">
+        <p>1단계 — Unity 프로젝트와 빌드 출력 경로 설정</p>
       </div>
       <div class="gallery-item">
-        <img src="{{ '/images/portfolio/unity_build_image2.webp' | relative_url }}" alt="실시간 진행 로그" width="1280" height="800" loading="lazy" decoding="async">
-        <p>빌드 진행 상황 실시간 로그</p>
+        <img src="{{ '/images/portfolio/unity_build_image2.webp' | relative_url }}" alt="빌드 설정 마법사 2단계" width="1470" height="1731" loading="lazy" decoding="async">
+        <p>2단계 — Zip 패키징·폴더/NAS 복사·Git Push 후처리 설정</p>
       </div>
       <div class="gallery-item">
-        <img src="{{ '/images/portfolio/unity_build_image3.webp' | relative_url }}" alt="빌드 기록" width="1280" height="800" loading="lazy" decoding="async">
-        <p>빌드 기록과 산출물 폴더 바로 열기</p>
+        <img src="{{ '/images/portfolio/unity_build_image3.webp' | relative_url }}" alt="빌드 설정 마법사 3단계" width="1472" height="1736" loading="lazy" decoding="async">
+        <p>3단계 — 고급 옵션 지정과 최종 설정 검토</p>
       </div>
       <div class="gallery-item">
-        <img src="{{ '/images/portfolio/unity_build_image4.webp' | relative_url }}" alt="자동 스케줄 설정" width="1280" height="800" loading="lazy" decoding="async">
-        <p>주기·매일 지정 시각 자동 빌드</p>
+        <img src="{{ '/images/portfolio/unity_build_image4.webp' | relative_url }}" alt="빌드 완료 화면" width="1471" height="1731" loading="lazy" decoding="async">
+        <p>빌드 완료 — 소요 시간·진행 로그와 최근 성공 빌드 기록</p>
       </div>
     </div>
   </div>

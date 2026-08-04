@@ -190,7 +190,7 @@ scripts:
       <div class="project-link">프로젝트 보기 →</div>
     </div>
     <div class="project-image">
-      <img src="{{ '/images/portfolio/unity_build_image1.webp' | relative_url }}" alt="Unity Build Wizard 미리보기" width="1280" height="800" loading="lazy" decoding="async">
+      <img src="{{ '/images/portfolio/unity_build_image1.webp' | relative_url }}" alt="Unity Build Wizard 미리보기" width="1471" height="1732" loading="lazy" decoding="async">
     </div>
   </a>
 
