@@ -186,7 +186,7 @@ scripts:
       <div class="project-category">Python, Tkinter</div>
       <h2 class="project-title">Unity Build Wizard</h2>
       <p class="project-subtitle">Unity 로컬 빌드 자동화 도구</p>
-      <p class="project-description">Unity 헤드리스 빌드부터 Zip 압축, NAS 전달, Git 연동, 자동 스케줄까지 한 흐름으로 처리하는 Windows 데스크탑 도구입니다. 표준 라이브러리만 사용해 EXE 하나로 설치 없이 동작합니다.</p>
+      <p class="project-description">Unity 빌드부터 Zip 압축, 폴더 전달, Git 연동, 자동 스케줄까지 한 흐름으로 처리하는 Windows 데스크탑 도구입니다. 표준 라이브러리만 사용해 EXE 하나로 설치 없이 동작합니다.</p>
       <div class="project-link">프로젝트 보기 →</div>
     </div>
     <div class="project-image">
