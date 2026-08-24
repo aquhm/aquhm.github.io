@@ -11,7 +11,7 @@ image: /images/portfolio/digital_twin_image1.webp
 </div>
 
 <div class="portfolio-main-image">
-  <img src="{{ '/images/portfolio/digital_twin_image1.webp' | relative_url }}" alt="디지털 트윈 건물 관제 시스템" width="1280" height="720" fetchpriority="high" decoding="async">
+  <img src="{{ '/images/portfolio/digital_twin_image1.webp' | relative_url }}" alt="디지털 트윈 건물 관제 시스템" width="1000" height="750" fetchpriority="high" decoding="async">
 </div>
 
 <div class="project-section">
