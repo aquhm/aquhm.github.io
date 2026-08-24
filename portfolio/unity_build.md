@@ -113,7 +113,7 @@ image: /images/portfolio/unity_build_image1.webp
 </div>
 
 <div class="portfolio-nav">
-  <a href="{{ '/portfolio/haruhoego/' | relative_url }}">← 하루회고</a>
+  <a href="{{ '/portfolio/maumte/' | relative_url }}">← 마음테</a>
   <a href="{{ '/portfolio/' | relative_url }}">프로젝트 목록</a>
   <a href="{{ '/portfolio/finance_sheet_updater/' | relative_url }}">금융 데이터 수집 시스템 →</a>
 </div>

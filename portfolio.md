@@ -12,7 +12,7 @@ scripts:
   <div class="hero-content">
     <h1 class="hero-title">Full of Happiness</h1>
     <p class="hero-description">안녕하세요! 읽기 쉬운 코드를 지향하는 개발자 김대호입니다.</p>
-    <p class="hero-description">C++, C# 기반의 게임 엔진 개발 경험을 바탕으로 PC와 모바일 플랫폼에서 11년 이상의 다양한 개발을 수행해왔습니다.</p>
+    <p class="hero-description">C++, C# 기반의 게임 엔진 개발 경험을 바탕으로 PC와 모바일 플랫폼에서 12년 이상의 다양한 개발을 수행해왔습니다.</p>
     <p class="hero-description">다양한 프레임워크에 대한 관심이 많으며 도전하기를 좋아합니다.</p>
     <a href="#projects" class="hero-button">프로젝트 살펴보기</a>
   </div>
@@ -33,7 +33,7 @@ scripts:
       <div class="project-link">프로젝트 보기 →</div>
     </div>
     <div class="project-image">
-      <img src="{{ '/images/portfolio/digital_twin_image1.webp' | relative_url }}" alt="디지털 트윈 건물 관제 시스템 미리보기" width="1280" height="720" loading="lazy" decoding="async">
+      <img src="{{ '/images/portfolio/digital_twin_image1.webp' | relative_url }}" alt="디지털 트윈 건물 관제 시스템 미리보기" width="1000" height="750" loading="lazy" decoding="async">
     </div>
   </a>
 
@@ -168,16 +168,16 @@ scripts:
     </div>
   </a>
 
-  <a href="{{ '/portfolio/haruhoego/' | relative_url }}" class="project-item" data-lang="dart">
+  <a href="{{ '/portfolio/maumte/' | relative_url }}" class="project-item" data-lang="dart">
     <div class="project-content">
       <div class="project-category">Dart, Flutter</div>
-      <h2 class="project-title">하루회고</h2>
-      <p class="project-subtitle">사진·음성 기반 3분 회고 앱</p>
-      <p class="project-description">사진 1장, 음성 30~60초, 텍스트 몇 줄로 하루를 돌아보면 AI가 회고 카드를 만들어 주는 Flutter 앱입니다. 회고 생성과 음성 전사를 온디바이스 Gemma·Whisper로 처리해서 기록이 기기 밖으로 나가지 않습니다.</p>
+      <h2 class="project-title">마음테</h2>
+      <p class="project-subtitle">기기 안에서 도는 AI 회고 앱</p>
+      <p class="project-description">사진 한 장과 몇 줄의 글로 하루를 돌아보면 기기 안의 Gemma가 회고 카드를 쓰고 Supertonic TTS가 읽어 주는 Flutter 앱입니다. MVP는 백엔드 없이 기기 안에서 돌리되 로컬과 원격을 갈아 끼울 수 있는 구조로 설계했고, 문구·프롬프트·가격을 릴리스 없이 바꾸는 원격 운영 계층과 운영 콘솔(Windows)까지 직접 만들었습니다.</p>
       <div class="project-link">프로젝트 보기 →</div>
     </div>
     <div class="project-image">
-      <img src="{{ '/images/portfolio/haruhoego_image1.webp' | relative_url }}" alt="하루회고 미리보기" width="1080" height="2340" loading="lazy" decoding="async">
+      <img src="{{ '/images/portfolio/maumte_home.webp' | relative_url }}" alt="마음테 미리보기" width="720" height="1469" loading="lazy" decoding="async">
     </div>
   </a>
 
@@ -212,6 +212,17 @@ scripts:
   <h1 class="skill-heading">SKILL</h1>
 
   <div class="skill-row">
+    <div class="skill-category">App Development</div>
+    <ul class="skill-list">
+      <li>Flutter, Dart, Riverpod</li>
+      <li>On-Device LLM, TTS</li>
+      <li>Android, iOS, Windows Desktop</li>
+    </ul>
+  </div>
+
+  <div class="skill-divider"></div>
+
+  <div class="skill-row">
     <div class="skill-category">Game Development</div>
     <ul class="skill-list">
       <li>Unity3D, CryEngine3, SDL</li>
@@ -227,6 +238,7 @@ scripts:
     <div class="skill-category">Programming Languages</div>
     <ul class="skill-list">
       <li>C++, C#</li>
+      <li>Dart</li>
       <li>TypeScript</li>
       <li>ActionScript, Python</li>
       <li>STL, WinApi</li>

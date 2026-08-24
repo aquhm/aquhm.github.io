@@ -158,5 +158,5 @@ image: /images/portfolio/comment_temperature_image1.webp
 <div class="portfolio-nav">
   <a href="{{ '/portfolio/git_action_runner/' | relative_url }}">← Git Action Runner</a>
   <a href="{{ '/portfolio/' | relative_url }}">프로젝트 목록</a>
-  <a href="{{ '/portfolio/haruhoego/' | relative_url }}">하루회고 →</a>
+  <a href="{{ '/portfolio/maumte/' | relative_url }}">마음테 →</a>
 </div>
