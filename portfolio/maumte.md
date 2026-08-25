@@ -26,6 +26,16 @@ image: /images/portfolio/maumte_home.webp
     <p><strong>랜딩페이지:</strong> <a href="https://www.jiteum.com/maumte" target="_blank" rel="noopener noreferrer">https://www.jiteum.com/maumte</a></p>
   </div>
 
+  <div style="display:flex;align-items:center;gap:18px;flex-wrap:wrap;background:#fff;border:1px solid #eee;border-radius:12px;padding:14px 18px;margin:16px 0 6px;">
+    <a href="https://appdistribution.firebase.dev/i/41566751826e9f25" target="_blank" rel="noopener noreferrer" style="flex-shrink:0;">
+      <img src="{{ '/images/portfolio/maumte_install_qr.png' | relative_url }}" alt="마음테 테스트 앱 설치 QR 코드" width="96" height="96" decoding="async" style="display:block;border-radius:6px;">
+    </a>
+    <div style="min-width:200px;flex:1;">
+      <p style="margin:0 0 4px;"><strong><a href="https://appdistribution.firebase.dev/i/41566751826e9f25" target="_blank" rel="noopener noreferrer">테스트 앱 설치하기</a></strong></p>
+      <p style="margin:0;font-size:0.85rem;color:#777;">비공개 테스트 중 — QR을 스캔하거나 링크에서 Google 계정으로 로그인하면 설치할 수 있습니다 (Android · 약 320MB)</p>
+    </div>
+  </div>
+
   <div class="project-description">
     <p>&nbsp;사진 한 장과 몇 줄의 글로 하루를 돌아보는 회고 앱입니다. 기록을 마치면 AI가 회고 카드를 만들어 주고, 기록이 쌓이면 주간 리포트나 발자취 달력에서 흐름이 보입니다.</p>
     <p><strong>가장 큰 결정은 "MVP는 백엔드 없이 로컬 기반으로 간다" 였습니다.</strong> 1인 개발이라 앱과 백엔드를 동시에 떠안는 건 무리라고 봤고, 서버를 세우는 건 사용자 반응과 추이를 보고 판단해도 늦지 않다고 생각했습니다. 그래서 첫 버전은 회고를 쓰는 LLM도, 읽어 주는 TTS도 기기 안에서 돌립니다. 다만 여기서 끝낼 생각은 아니라 <strong>로컬과 원격을 갈아 끼울 수 있는 구조를 처음부터 잡았습니다.</strong> 회고 생성은 인터페이스 하나 뒤에 온디바이스·클라우드 API·서버 함수 구현이 나란히 붙어 있고, 문구와 프롬프트, 가격 정책은 이미 원격에서 내려옵니다. 리텐션과 사용자 반응이 확인되면 클라우드 백엔드로 무게중심을 옮길 계획입니다.</p>
@@ -552,6 +562,20 @@ image: /images/portfolio/maumte_home.webp
       </div>
     </div>
   </div>
+  <div class="video-container">
+    <h3>직접 설치해 보기</h3>
+    <div style="display:flex;align-items:center;gap:28px;flex-wrap:wrap;background:#fff;border-radius:12px;padding:20px 24px;">
+      <a href="https://appdistribution.firebase.dev/i/41566751826e9f25" target="_blank" rel="noopener noreferrer" style="flex-shrink:0;">
+        <img src="{{ '/images/portfolio/maumte_install_qr.png' | relative_url }}" alt="마음테 테스트 앱 설치 QR 코드" width="160" height="160" loading="lazy" decoding="async" style="display:block;border-radius:8px;">
+      </a>
+      <div style="min-width:220px;flex:1;">
+        <p style="margin:0 0 8px;">현재 Google Play 비공개 테스트 중입니다. QR을 스캔하거나 아래 링크를 열고 Google 계정으로 로그인하면 테스터로 참여해 앱을 설치할 수 있습니다.</p>
+        <p style="margin:0 0 8px;"><a href="https://appdistribution.firebase.dev/i/41566751826e9f25" target="_blank" rel="noopener noreferrer">테스트 앱 설치하기 (Firebase App Distribution)</a></p>
+        <p style="margin:0;font-size:0.85rem;color:#777;">Android 전용 · arm64 기기(2018년 이후 대부분의 폰) 지원 · 설치 파일 약 320MB</p>
+      </div>
+    </div>
+  </div>
+
   <div class="video-container">
     <h3>프로젝트 실행 영상</h3>
     <div class="video-embed">
