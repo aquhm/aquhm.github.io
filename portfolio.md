@@ -177,7 +177,7 @@ scripts:
       <div class="project-link">프로젝트 보기 →</div>
     </div>
     <div class="project-image">
-      <img src="{{ '/images/portfolio/maumte_home.webp' | relative_url }}" alt="마음테 미리보기" width="720" height="1469" loading="lazy" decoding="async">
+      <img src="{{ '/images/portfolio/maumte_preview.webp' | relative_url }}" alt="마음테 미리보기" width="1440" height="1080" loading="lazy" decoding="async">
     </div>
   </a>
 

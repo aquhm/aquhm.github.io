@@ -3,7 +3,7 @@ layout: portfolio-detail
 title: 마음테
 permalink: /portfolio/maumte/
 description: 사진 한 장과 몇 줄의 글로 하루를 돌아보는 Flutter 앱. MVP는 백엔드 없이 — 회고를 쓰는 LLM도, 읽어 주는 TTS도 기기 안에서 돕니다. 로컬과 원격을 갈아 끼울 수 있는 구조로 처음부터 설계했습니다.
-image: /images/portfolio/maumte_home.webp
+image: /images/portfolio/maumte_preview.webp
 ---
 
 <div class="portfolio-header">
@@ -11,7 +11,7 @@ image: /images/portfolio/maumte_home.webp
 </div>
 
 <div class="portfolio-main-image">
-  <img src="{{ '/images/portfolio/maumte_home.webp' | relative_url }}" alt="마음테 홈 화면" width="720" height="1469" fetchpriority="high" decoding="async">
+  <img src="{{ '/images/portfolio/maumte_preview.webp' | relative_url }}" alt="마음테 — 오늘의 한 문장 연출 화면" width="1440" height="1080" fetchpriority="high" decoding="async">
 </div>
 
 <div class="project-section">
