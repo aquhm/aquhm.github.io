@@ -12,8 +12,8 @@ scripts:
   <div class="hero-content">
     <h1 class="hero-title">Full of Happiness</h1>
     <p class="hero-description">안녕하세요! 읽기 쉬운 코드를 지향하는 개발자 김대호입니다.</p>
-    <p class="hero-description">C++, C# 기반의 게임 엔진 개발 경험을 바탕으로 PC와 모바일 플랫폼에서 12년 이상의 다양한 개발을 수행해왔습니다.</p>
-    <p class="hero-description">다양한 프레임워크에 대한 관심이 많으며 도전하기를 좋아합니다.</p>
+    <p class="hero-description">C#·C++ 기반으로 12년 이상 PC·모바일 클라이언트와 실시간 3D 서비스를 개발해왔습니다.</p>
+    <p class="hero-description">디지털 트윈, WebRTC 가상 오피스, 모바일 3D 시뮬레이션에서 실시간 데이터 연동과 멀티 플랫폼 구조를 설계했습니다.</p>
     <a href="#projects" class="hero-button">프로젝트 살펴보기</a>
   </div>
   <div class="hero-image">
@@ -29,7 +29,7 @@ scripts:
       <div class="project-category">C#, Unity 3D</div>
       <h2 class="project-title">디지털 트윈 건물 관제 시스템</h2>
       <p class="project-subtitle">디지털 트윈 기반 건물 시뮬레이션 및 실시간 관제</p>
-      <p class="project-description">건물 내외부를 디지털 트윈으로 구현해 시설물 상태를 실시간으로 모니터링·관제하는 SI 프로젝트입니다. 백엔드와 무관하게 동작하는 하이브리드 데이터 통신 구조와 멀티 사이트 운영 도구 Service Builder를 설계했습니다.</p>
+      <p class="project-description">Kafka·REST API 실시간 연동, 네트워크와 분리된 하이브리드 데이터 통신, 비주얼 스크립팅 코드 생성기와 멀티 사이트 빌드 도구를 개발했습니다. 국내 대형 전자 제조사 건물 3개 사이트의 실시간 관제에 적용했습니다.</p>
       <div class="project-link">프로젝트 보기 →</div>
     </div>
     <div class="project-image">
@@ -42,7 +42,7 @@ scripts:
       <div class="project-category">C#, Unity 3D</div>
       <h2 class="project-title">Soma</h2>
       <p class="project-subtitle">WebRTC 기반 3D 아바타 가상 오피스</p>
-      <p class="project-description">Unity Engine 기반 메타버스형 3D 가상 오피스 서비스로, Windows, macOS, Android, iOS 멀티 플랫폼을 지원하는 화상 통화 기반 재택근무 솔루션입니다.</p>      
+      <p class="project-description">초기 개발부터 B2B 유료 런칭과 운영까지 참여한 WebRTC 기반 3D 가상 오피스입니다. Windows, macOS, Android, iOS를 지원하고 Objective-C 네이티브 플러그인과 Electron·TypeScript 런처도 개발·유지보수했습니다.</p>
       <div class="project-link">프로젝트 보기 →</div>
     </div>
     <div class="project-image">
@@ -68,7 +68,7 @@ scripts:
       <div class="project-category">C#, Unity 3D</div>
       <h2 class="project-title">쿼터뷰 모바일 전략 시뮬레이션</h2>
       <p class="project-subtitle">모바일 전략 시뮬레이션 게임</p>
-      <p class="project-description">'Game of War'와 유사한 쿼터뷰 방식의 모바일 전략 시뮬레이션 게임을 개발했습니다. 프로젝트 초기부터 참여하여 핵심 성장 시스템 개발을 주도했으며, 데이터 기반 설계를 통해 확장성을 확보하고 기획자용 도구를 제작하여 개발 생산성을 향상시켰습니다.</p>
+      <p class="project-description">프로젝트 초기부터 소프트 런칭까지 참여한 모바일 전략 시뮬레이션입니다. XML 기반 성장·전투 콘텐츠와 Unity Editor 테스트 도구, Excel 데이터 변환·검증 흐름을 개발했습니다.</p>
       <div class="project-link">프로젝트 보기 →</div>
     </div>
     <div class="project-image">
@@ -81,7 +81,7 @@ scripts:
       <div class="project-category">C++, CryEngine3</div>
       <h2 class="project-title">이카루스 온라인</h2>
       <p class="project-subtitle">PC 3D Online MMORPG</p>
-      <p class="project-description">국내에서 성공적으로 서비스 중이던 이카루스 온라인의 북미 런칭 프로젝트에 참여하여 Nexon America 플랫폼 연동 및 북미 시장에 특화된 기능 개발을 담당했습니다.</p>
+      <p class="project-description">북미 런칭을 위해 Nexon America 플랫폼을 연동하고, 약 9만 개 파일의 병렬 패치·검증 시스템과 북미 사용자 대상 클라이언트 기능을 개발했습니다.</p>
       <div class="project-link">프로젝트 보기 →</div>
     </div>
     <div class="project-image">
@@ -94,7 +94,7 @@ scripts:
       <div class="project-category">C++, GameBryo</div>
       <h2 class="project-title">아이리스 온라인</h2>
       <p class="project-subtitle">PC 3D Online MMORPG</p>
-      <p class="project-description">아이리스 온라인의 서비스 런칭 3개월 전 합류하여 상용화 준비 및 러시아 진출을 위한 현지화 작업을 담당했습니다. 초기에는 클라이언트 개발에 집중하다가 점차 서버 및 데이터베이스 작업까지 범위를 확장하여 풀스택 개발 경험을 쌓았습니다.</p>
+      <p class="project-description">상용화와 러시아 런칭을 준비하며 Twitter 연동과 주요 게임 기능을 개발했습니다. 클라이언트부터 서버·MSSQL Stored Procedure까지 콘텐츠 단위로 구현했습니다.</p>
       <div class="project-link">프로젝트 보기 →</div>
     </div>
     <div class="project-image">
@@ -121,7 +121,7 @@ scripts:
       <div class="project-category">C++, SDL3</div>
       <h2 class="project-title">뿌요뿌요 퍼즐 게임</h2>
       <p class="project-subtitle">C++/SDL3 기반 네트워크 대전 퍼즐 게임</p>
-      <p class="project-description">SDL3 라이브러리를 활용하여 네트워크 대전이 가능한 뿌요뿌요 스타일의 퍼즐 게임을 개발했습니다. P2P기반의 서버, 클라이언트 로직을 구현하였습니다.</p>
+      <p class="project-description">SDL3 라이브러리를 활용하여 네트워크 대전이 가능한 뿌요뿌요 스타일의 퍼즐 게임을 개발했습니다. P2P 기반의 서버·클라이언트 로직을 구현했습니다.</p>
       <div class="project-link">프로젝트 보기 →</div>
     </div>
     <div class="project-image">

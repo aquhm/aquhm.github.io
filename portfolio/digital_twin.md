@@ -25,7 +25,7 @@ image: /images/portfolio/digital_twin_image1.webp
   </div>
 
   <div class="project-description">
-    <p>&nbsp;주요 기업 사옥 같은 건물을 내외부까지 디지털 트윈으로 구현하고, 시설물 상태를 실시간으로 모니터링·관제하는 SI 프로젝트입니다. 현재 재직 중인 이에이트에서 클라이언트 파트를 담당하고 있습니다.</p>
+    <p>&nbsp;건물 내외부를 디지털 트윈으로 구현해 시설물 상태와 알림을 실시간으로 관제하는 이에이트의 SI 프로젝트입니다. Unity·C# 클라이언트 개발과 아키텍처 설계를 맡고 있으며, Kafka와 REST API로 연동한 데이터를 3D 공간에 표시합니다.</p>
     <p>SI 프로젝트는 시연이 곧 마일스톤입니다. 백엔드 개발 상황이나 현장 네트워크 사정에 시연이 좌우되지 않도록 데이터 통신 계층을 백엔드와 분리하는 데 가장 공을 들였습니다.</p>
     <p>또 하나의 축은 멀티 사이트입니다. 고객사 현장(사이트)마다 건물도 설비도 API 엔드포인트도 다른데 코드는 하나로 유지해야 합니다. 이 문제를 풀기 위해 사이트 구성부터 빌드까지 자동화하는 에디터 도구 Service Builder를 만들었습니다.</p>
   </div>
@@ -55,6 +55,7 @@ image: /images/portfolio/digital_twin_image1.webp
     <h3>Visual Scripting 기반 콘텐츠 제작</h3>
     <ul>
       <li>GameCreator 기반 Visual Scripting 환경 구축 — 3D 오브젝트 인터랙션과 UI 연동 로직 컴포넌트화</li>
+      <li>변수 생성 및 형식별 Get/Set 접근 코드를 자동 생성해 문자열 키 오타를 줄이고 IDE 자동완성과 컴파일 검증 지원</li>
       <li>스크립트 기반 핵심 엔진 로직과 비주얼 스크립팅 기반 콘텐츠 로직 분리</li>
     </ul>
   </div>
@@ -64,9 +65,19 @@ image: /images/portfolio/digital_twin_image1.webp
     <ul>
       <li>사이트 분기 로직을 ScriptableObject 설정 에셋으로 외부화, 활성 사이트는 단일 출처(SSOT)로 관리</li>
       <li>매니저 배치, 데이터 베이크, system.ini 프로파일, 사이트별 빌드를 에디터 버튼 한 번으로 일괄 수행</li>
-      <li>사이트별 빌드 씬·출력·옵션 관리와 CLI 빌드 지원</li>
+      <li>사이트별 씬 GUID, 제품명, 빌드 옵션, Git SHA를 관리하고 CLI 빌드를 지원해 CI 연동 가능</li>
+      <li>씬 구성, 베이크, 환경 설정, 사이트별 콘텐츠 노출을 일괄 적용</li>
     </ul>
   </div>
+</div>
+
+<div class="project-section">
+  <h2>적용 성과</h2>
+  <ul>
+    <li>국내 대형 전자 제조사의 건물 3개 사이트를 디지털 트윈으로 구축해 실시간 관제에 적용</li>
+    <li>서버와 네트워크 상태에 좌우되지 않는 독립적인 개발·테스트·시연 환경 마련</li>
+    <li>사이트별 기능과 빌드 구성을 설정 데이터로 관리해 신규 현장 추가 시 코드 수정 최소화</li>
+  </ul>
 </div>
 
 <div class="project-section">

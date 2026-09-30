@@ -2,7 +2,7 @@
 layout: portfolio-detail
 title: 직방 3D 단지 투어
 permalink: /portfolio/zigbang/
-description: React Native 기반 직방 앱에 Unity 모듈을 통합한 3D 아파트 단지 시뮬레이션. 매물 정보 시각화와 모바일 성능 최적화를 담당했습니다.
+description: React Native 기반 직방 앱에 Unity 모듈을 연동한 3D 아파트 단지 시뮬레이션. API 메타데이터 시각화, UI 개선과 모바일 성능 최적화를 담당했습니다.
 image: /images/portfolio/zigbang_image2.webp
 ---
 
@@ -19,13 +19,13 @@ image: /images/portfolio/zigbang_image2.webp
 
   <div class="project-details">
     <p><strong>개발 기간:</strong> 2020.11 - 2021.04</p>  
-    <p><strong>개발 환경:</strong> Unity, C#, WebGL, Visual Studio, Git</p>  
-    <p><strong>플랫폼:</strong> Web, iOS, Android</p>  
-    <p><strong>개발 규모:</strong> 전체 5인 중 클라이언트 3~4인</p>
+    <p><strong>개발 환경:</strong> Unity, C#, React Native, REST API, Visual Studio Code, GitHub</p>
+    <p><strong>플랫폼:</strong> iOS, Android</p>
+    <p><strong>개발 규모:</strong> 전체 6인 중 클라이언트 3~4인</p>
   </div>
 
   <div class="project-description">
-    <p>직방의 부동산 중개 플랫폼에 3D 가상 투어 기능을 개발하여 사용자가 직접 방문하지 않고도 현장감 있게 아파트 단지와 호실을 둘러볼 수 있는 서비스를 구현했습니다. Unity 기반의 경량화된 3D 렌더링과 사용자 친화적인 인터페이스를 통해 모바일 환경에서도 빠르고 안정적인 가상 투어 경험을 제공했습니다.</p>
+    <p>런칭 3개월 전 합류해 React Native 기반 직방 앱에 Unity Engine 모듈을 연동한 3D 아파트 단지 시뮬레이션을 개발했습니다. API로 받은 매물 메타데이터 시각화와 UI/UX 개선, 모바일 성능 최적화를 맡았습니다.</p>
   </div>
 </div>
 
@@ -53,8 +53,8 @@ image: /images/portfolio/zigbang_image2.webp
   <div class="feature-section">
     <h3>데이터 통합</h3>
     <ul>
-      <li>서버 API를 통한 실시간 매물 정보 연동</li>      
-      <li>매물 정보 필터링 및 표시 기능 개발</li>
+      <li>REST API Metadata 기반 아파트·매물 정보 시각화</li>
+      <li>로컬 캐시를 활용한 사용자 온보딩 튜토리얼 구현</li>
     </ul>
   </div>
 
@@ -75,8 +75,8 @@ image: /images/portfolio/zigbang_image2.webp
   </div>
 
   <div class="challenge-section">
-    <h3>폴더블 기기 대응</h3>
-    <p>폴더블 기기의 동적 해상도 변경 시 발생하는 렌더링 이슈를 해결했습니다. 화면 접힘 상태가 변경될 때 렌더텍스쳐가 올바르게 조정되지 않는 문제를 위해, 해상도 변경 이벤트 감지 시 렌더텍스쳐를 동적으로 재생성하는 방식을 구현했습니다. 다양한 안드로이드 및 iOS 기기에서의 철저한 테스트를 통해 기기별 특성을 고려한 최적화를 진행했습니다.</p>
+    <h3>모바일 렌더링 최적화</h3>
+    <p>아파트 단지 주변의 다수 건물을 Culling해 불필요한 렌더링을 줄이고, 건물 객체의 Material 정보를 Pooling해 객체 생성 지연과 메모리 사용을 줄였습니다.</p>
   </div>
 </div>
 

@@ -1,11 +1,11 @@
 # 👋 김대호 | Unity Client Developer
 
 안녕하세요.  
-**Unity 기반 실시간 3D 서비스와 게임 클라이언트 개발**을 주로 해온 개발자 김대호입니다.
+**Unity·C#·C++ 기반 클라이언트 소프트웨어 엔지니어 김대호**입니다. 12년 이상 PC·모바일 게임, WebRTC 가상 오피스, 건물 디지털 트윈을 개발했습니다.
 
 PC MMORPG부터 모바일 게임,  
 그리고 최근에는 **디지털 트윈 · 3D 메타버스 · 가상 오피스**까지  
-다양한 플랫폼과 도메인에서 **유지보수성과 확장성을 고려한 클라이언트 아키텍처**를 설계하고 구현해왔습니다.
+실시간 데이터 통신과 시각화, 멀티 플랫폼 대응, 유지보수 가능한 클라이언트 구조와 개발 도구를 설계하고 구현해왔습니다.
 
 ---
 
@@ -52,21 +52,21 @@ PC MMORPG부터 모바일 게임,
 ### 🏢 이에이트 (2025.08 ~ 현재)
 **Unity Developer | Digital Twin**
 
-- Unity 기반 **건물 디지털 트윈 시뮬레이션** 클라이언트 개발
-- Command Pattern 기반 **하이브리드 데이터 통신 아키텍처** 설계
-- 서버 의존성 없는 오프라인 시연 환경 구축
-- Visual Scripting 도입으로 콘텐츠 로직 생산성 향상
+- Unity·C# 클라이언트와 아키텍처 개발, Kafka·REST API 기반 실시간 데이터 시각화
+- Command 패턴 기반 하이브리드 통신으로 서버 연결에 독립적인 테스트·시연 환경 구축
+- Visual Scripting 변수 접근 코드 생성기와 멀티 사이트 Service Builder 개발
+- 대형 전자 제조사 건물 3개 사이트 관제 적용
 
 ---
 
 ### 🏠 직방 (2020.11 ~ 2024.11)
 **Unity Developer | 3D Virtual Office & Simulation**
 
-- **3D 아바타 기반 가상 오피스(Soma)** 개발
+- **Soma** 초기 개발부터 B2B 유료 런칭과 운영까지 참여
 - WebRTC(Agora SDK) 기반 실시간 음성/영상 커뮤니케이션 구현
 - MVP + UniRx 기반 UI 프레임워크 설계
-- Windows / macOS / iOS / Android 크로스 플랫폼 지원
-- 실제 사용자 피드백 기반 서비스 개선 및 상용 런칭 경험
+- Windows / macOS / iOS / Android 지원, Objective-C 플러그인 및 Electron·TypeScript 런처 유지보수
+- React Native 앱에 Unity를 연동한 3D 단지 시뮬레이션 런칭 및 모바일 최적화
 
 ---
 
@@ -80,7 +80,7 @@ PC MMORPG부터 모바일 게임,
 
 ---
 
-### 🐉 위메이드엑스알 (2015.10 ~ 2017.12)
+### 🐉 위메이드엑스알 (2015.10 ~ 2018.01)
 **Client Programmer | PC MMORPG**
 
 - CryEngine3, C++ 기반 MMORPG 클라이언트 개발

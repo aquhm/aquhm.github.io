@@ -35,9 +35,9 @@ image: /images/portfolio/iris_image1.webp
   <div class="feature-section">
     <h3>SNS 연동 시스템 개발</h3>
     <ul>
-      <li>Twitter Open API 및 OAuth 기반 인증 시스템 구현</li>
+      <li>Twitcurl 라이브러리와 Twitter Open API, OAuth 기반 인증 연동</li>
       <li>게임 내에서 트윗 작성 및 피드 리스트 실시간 표시 기능 개발</li>
-      <li>게임 이벤트와 연동된 자동 SNS 알림 시스템 구축</li>
+      <li>로그인·로그아웃, 타임라인 조회, 트윗·리트윗·팔로우 및 게임 이벤트 연동 자동 알림 구현</li>
     </ul>
   </div>
 
@@ -56,7 +56,6 @@ image: /images/portfolio/iris_image1.webp
     <ul>
       <li>러시아 서비스 현지화 및 런칭 지원</li>
       <li>패치 작업 및 유지 보수</li>
-      <li>국가별 정책에 맞는 게임 시스템 조정</li>
     </ul>
   </div>
 </div>

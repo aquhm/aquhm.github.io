@@ -18,7 +18,7 @@ image: /images/portfolio/icarus_image4.webp
   <h2>프로젝트 개요</h2>
 
   <div class="project-details">
-    <p><strong>개발 기간:</strong> 2015.10 - 2017.12</p>  
+    <p><strong>개발 기간:</strong> 2015.10 - 2018.01</p>
     <p><strong>개발 환경:</strong> CryEngine3, C++, WinApi, STL, Visual Studio, Action Script3.0, ScaleForm4.0, Mantis, SVN</p>  
     <p><strong>플랫폼:</strong> Windows</p>  
     <p><strong>개발 규모:</strong> 전체 70~75인 중 클라이언트 6~8인</p>
@@ -36,8 +36,8 @@ image: /images/portfolio/icarus_image4.webp
     <h3>Nexon America 플랫폼 연동</h3>
     <ul>
       <li>MultiThread Custom Patcher CLI 개발 및 Nexon Launcher 연동</li>
-      <li>안정적인 패치 시스템 구현으로 런칭 초기 이탈률 감소</li>
-      <li>Nexon America 로그인 시스템 연동</li>
+      <li>약 9만 개 파일의 병렬 다운로드, gzip 압축 해제와 무결성 검증을 처리하는 패처 구현</li>
+      <li>Nexon 패치 SDK에 JSON 기반 패치 상태를 전달하고 다운로드·적용 진행 상황 관리</li>
     </ul>
   </div>
 
@@ -66,7 +66,7 @@ image: /images/portfolio/icarus_image4.webp
     <h3>시스템 안정화</h3>
     <ul>
       <li>네트워크 안정성 향상 (디스커넥 리커넥팅)</li>
-      <li>CryPack 분할 패치 개선</li>      
+      <li>크기 제한을 넘는 패치 파일을 분할 처리해 비정상 패치 문제 개선</li>
     </ul>
   </div>
 

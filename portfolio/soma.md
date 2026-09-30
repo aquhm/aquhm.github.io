@@ -2,7 +2,7 @@
 layout: portfolio-detail
 title: Soma 프로젝트
 permalink: /portfolio/soma/
-description: WebRTC 기반 3D 아바타 가상 오피스 Soma. Unity로 Windows·macOS·Android·iOS 멀티 플랫폼 화상 협업 솔루션을 기획부터 상용화까지 개발했습니다.
+description: WebRTC 기반 3D 아바타 가상 오피스 Soma. 초기 개발부터 B2B 유료 런칭과 운영까지 참여하고 네이티브 플러그인과 멀티 플랫폼 기능을 개발했습니다.
 image: /images/portfolio/soma_image1.webp
 ---
 
@@ -19,13 +19,13 @@ image: /images/portfolio/soma_image1.webp
 
   <div class="project-details">
     <p><strong>개발 기간:</strong> 2021.04 - 2024.11</p>  
-    <p><strong>개발 환경:</strong> Unity, C#, TypeScript, Electron, Python, Jetbrain Rider, Xcode</p>  
+    <p><strong>개발 환경:</strong> Unity, C#, TypeScript, Electron, Python, Objective-C, WebRTC(Agora SDK), REST API, WebSocket</p>
     <p><strong>플랫폼:</strong> Windows, macOS, Android, iOS</p>  
-    <p><strong>개발 규모:</strong> 전체 15 ~ 20인 중 클라이언트 2~5인</p>
+    <p><strong>개발 규모:</strong> 전체 8 ~ 15인 중 클라이언트 2~5인</p>
   </div>
 
   <div class="project-description">
-    <p>Unity Engine 기반의 메타버스형 3D 가상 오피스 서비스를 기획 단계부터 출시까지 개발했습니다. Windows, macOS, Android, iOS 멀티 플랫폼을 지원하는 화상 통화 기반 재택근무 솔루션으로, 다수의 기업 고객을 대상으로 상용화했습니다. 초기부터 런칭까지 작업하며 게임적 요소와 업무용 서비스 가치를 융합한 경험을 쌓았습니다.</p>
+    <p>프로젝트 초기부터 참여해 Unity 기반 3D 가상 오피스를 개발하고 여러 기업 고객 대상 B2B 유료 런칭과 운영까지 함께했습니다. Windows, macOS, Android, iOS를 지원했으며, 사용자 피드백을 바탕으로 기능과 운영 안정성을 개선했습니다.</p>
   </div>
 </div>
 
@@ -36,8 +36,9 @@ image: /images/portfolio/soma_image1.webp
     <h3>커뮤니케이션 시스템 구축</h3>
     <ul>
       <li>Agora SDK 기반 WebRTC 화상 솔루션 통합 개발</li>
-      <li>물리 디바이스(웹캠, 마이크, 스피커) 제어 시스템 구현</li>
-      <li>실시간 음성 채팅 및 Speech-to-Text 기능 연동</li>
+      <li>미디어 디바이스 목록과 변경 이벤트, 권한 및 하드웨어 접근 처리</li>
+      <li>화면 공유 기능을 UniRx 기반 반응형 구조로 구현</li>
+      <li>수신 영상 RGBA 데이터를 메모리 풀링으로 관리해 메모리 오버헤드와 GC 부담 완화</li>
     </ul>
   </div>
 
@@ -47,7 +48,9 @@ image: /images/portfolio/soma_image1.webp
       <li>MV(R)P 아키텍처 기반 UI 프레임워크 설계</li>
       <li>Scene 관리 및 Game Framework 구축</li>
       <li>REST API 통신 및 Packet Handler 구조 설계</li>
-      <li>체계적인 로깅 시스템 설계</li>
+      <li>UniTask 기반 REST API 비동기 처리와 타임아웃·오류 처리·재시도 구현</li>
+      <li>JSON, multipart form, 파일 업로드 요청 처리</li>
+      <li>Strategy·Factory 기반 패킷 타입별 동적 라우팅 및 이벤트 로깅 구조 설계</li>
       <li>UniRx 기반의 반응형 프로그래밍 프로젝트 적용 주도</li>
     </ul>
   </div>
@@ -76,7 +79,8 @@ image: /images/portfolio/soma_image1.webp
       <li>Barracuda 모델(ONNX) 활용한 실시간 얼굴 인식</li>
       <li>다양한 화면 공유 기능 개발 (화면, 카메라, 이미지, 유튜브, 화이트보드)</li>
       <li>다국어 지원 시스템</li>
-      <li>하드웨어 벤치마크 기반 자동 그래픽 품질 최적화</li>
+      <li>MD5 중복 제거와 만료 파일 정리를 지원하는 이미지 로컬 캐시 시스템</li>
+      <li>크롤링·벤치마크 데이터를 활용한 기기별 최소 사양 판정 및 그래픽 품질 설정</li>
     </ul>
   </div>
 </div>
