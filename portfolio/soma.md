@@ -19,13 +19,13 @@ image: /images/portfolio/soma_image1.webp
 
   <div class="project-details">
     <p><strong>개발 기간:</strong> 2021.04 - 2024.11</p>  
-    <p><strong>개발 환경:</strong> Unity, C#, TypeScript, Electron, Python, Objective-C, WebRTC(Agora SDK), REST API, WebSocket</p>
+    <p><strong>개발 환경:</strong> Unity, C#, Typescript, Electron, Python, Objective-C(iOS/macOS 플러그인), WebRTC(Agora SDK), REST API, WebSocket, Jira, ClickUp, Slack</p>
     <p><strong>플랫폼:</strong> Windows, macOS, Android, iOS</p>  
-    <p><strong>개발 규모:</strong> 전체 8 ~ 15인 중 클라이언트 2~5인</p>
+    <p><strong>개발 규모:</strong> 전체 8~15인 중 클라이언트 2~5인</p>
   </div>
 
   <div class="project-description">
-    <p>프로젝트 초기부터 참여해 Unity 기반 3D 가상 오피스를 개발하고 여러 기업 고객 대상 B2B 유료 런칭과 운영까지 함께했습니다. Windows, macOS, Android, iOS를 지원했으며, 사용자 피드백을 바탕으로 기능과 운영 안정성을 개선했습니다.</p>
+    <p>프로젝트 초기부터 합류하여 Unity Engine을 활용하여 재택근무 시 활용할 수 있는 메타버스 아바타 3D 기반의 화상 통화(WebRTC) 가상 오피스 서비스를 작업하였습니다. Window, MacOS, Android, iOS 4개 PC/mobile 플랫폼을 지원하기 때문에 관련 macOS/ iOS의 경우에는 Objective-C로 native 플러그인 작업을 진행하였습니다. 그리고 PC의 경우 Launcher로 구동하는 구조여서 Electron framework와 typescript로 유지보수도 병행하였습니다. 재택을 도입하는 여러 업체를 대상으로 유료화 런칭 서비스하였습니다. REST API와 웹 소켓 통신으로 시스템과 콘텐츠에 따라 구분하여 처리되어 있습니다. 직접 개발한 프로젝트로 회사 업무도 진행하였기에 직원들의 VOC, feedback을 빠르게 수집 및 대응할 수 있었습니다. 초기부터 런칭까지 작업 및 기여했던 프로젝트로 기존 게임적인 value뿐만 아니라 업무에 필요한 서비스적인 value와 가치도 융합하여 다양한 방식으로 생각하고 경험하게 되었습니다.</p>
   </div>
 </div>
 
@@ -33,56 +33,59 @@ image: /images/portfolio/soma_image1.webp
   <h2>주요 기능 및 담당 업무</h2>
 
   <div class="feature-section">
-    <h3>커뮤니케이션 시스템 구축</h3>
+    <h3>커뮤니케이션 시스템 구축(Agora SDK 활용)</h3>
     <ul>
-      <li>Agora SDK 기반 WebRTC 화상 솔루션 통합 개발</li>
-      <li>미디어 디바이스 목록과 변경 이벤트, 권한 및 하드웨어 접근 처리</li>
-      <li>화면 공유 기능을 UniRx 기반 반응형 구조로 구현</li>
-      <li>수신 영상 RGBA 데이터를 메모리 풀링으로 관리해 메모리 오버헤드와 GC 부담 완화</li>
+      <li>Agora SDK를 기반으로 미디어 디바이스 목록 관리, 변경 이벤트 처리, 화면 공유 기능을 UniRx 기반 반응형 아키텍처로 구현</li>
+      <li>Barracuda ONNX Model 정보를 활용해 얼굴 인식 기능 연동</li>
+      <li>수신하는 영상 RGBA Byte 정보를 메모리 풀링 기법 관리. 메모리 오버헤드를 최소화 및 GC 부담 줄이도록 구현</li>
     </ul>
   </div>
 
   <div class="feature-section">
     <h3>아키텍처 설계 및 프레임워크 개발</h3>
     <ul>
-      <li>MV(R)P 아키텍처 기반 UI 프레임워크 설계</li>
-      <li>Scene 관리 및 Game Framework 구축</li>
-      <li>REST API 통신 및 Packet Handler 구조 설계</li>
-      <li>UniTask 기반 REST API 비동기 처리와 타임아웃·오류 처리·재시도 구현</li>
-      <li>JSON, multipart form, 파일 업로드 요청 처리</li>
-      <li>Strategy·Factory 기반 패킷 타입별 동적 라우팅 및 이벤트 로깅 구조 설계</li>
-      <li>UniRx 기반의 반응형 프로그래밍 프로젝트 적용 주도</li>
+      <li>서비스 지향 아키텍처로 도메인 로직과 프레젠테이션 로직을 명확히 분리되도록 구성. 도메인별 로직을 서비스 캡슐화로 관심사 분리되도록 프로젝트 프레임워크 구성</li>
+      <li>MVP 아키텍처를 적용한 제네릭 기반의 Presenter 구조를 통해 UI 생명주기를 관리하고, UniRx를 활용한 이벤트 기반 아키텍처로 UI 상태 전환을 관리하는 UI 프레임워크 설계</li>
+      <li>UniTask 기반 REST API 비동기 처리. 타임아웃, 에러 핸들링, 재시도 메커니즘 구현 및 데이터 전송 시나리오(JSON, 멀티파트 폼, 파일 업로드)를 처리</li>
+      <li>전략 패턴과 팩토리 패턴을 결합한 인터페이스를 설계하여, 패킷 타입별 등록 관리 및 동적으로 라우팅하는 시스템을 구축. 기능 추가시 코드 수정을 최소화 및 확장이 용이하도록 구성</li>
+      <li>템플릿 메소드와 전략 패턴을 활용한 확장 가능한 로깅 아키텍처를 설계 RESTful API와 비동기 처리를 통해 이벤트 기반 구조로 다양한 사용자 인터렉션(앱 사용, 화면 전환, UI 조작)을 체계적으로 추적 및 데이터 기반 UX 개선에 기여</li>
     </ul>
   </div>
 
   <div class="feature-section">
     <h3>다수의 콘텐츠 및 UI/UX 개발</h3>
     <ul>
-      <li>UGUI 기반 재사용 가능한 UI Component Kit 제작</li>
-      <li>DOTween을 활용한 다이나믹한 UI 애니메이션 구현</li>
-      <li>채팅, 인벤토리, 집중 모드, 팀 관리, 대시보드, 관리자창 다수의 주요 컨텐츠 시스템 개발</li>      
+      <li>재사용 가능한 UI 요소들을 캡슐화 및 프리팹화한 UI KIT를 에디터에 통합 및 구성하여 디자인의 일관성을 유지 및 UI 개발 시간을 단축되도록 구성</li>
+      <li>상태 패턴 활용하여 다양한 공유 타입(카메라, 화면, 이미지, 유튜브, 협업 보드)을 지원하는 크로스 플랫폼 화면 공유 시스템을 설계 및 새로운 공유 모드 추가 시 기존 코드 수정 없이 확장 가능한 구조를 구현</li>
+      <li>로그인, 로비, 접속자, 대시보드, 집중모드, 그룹창, 인벤토리, 메뉴, 네비게이션, 온보딩, 채팅, 화면공유, 시스템 메시지, 팀관리 다수의 콘텐츠 작업</li>
+      <li>DOTween을 활용한 UI연출처리 담당</li>
     </ul>
   </div>
 
   <div class="feature-section">
     <h3>크로스 플랫폼 지원</h3>
     <ul>
-      <li>macOS, Windows 네이티브 플러그인 개발</li>
-      <li>플랫폼별 native OS 알림 시스템 구현 (macOS Bundle, Windows DLL)</li>
-      <li>디바이스 권한 관리 시스템 구축</li>
+      <li>macOS, Windows 네이티브 플러그인 제작하여 OS 알림 시스템 구현 및 연동. (macOS Bundle, Windows DLL)</li>
+      <li>웹캠, 마이크 등 하드웨어 디바이스의 유무와 접근 권한을 플랫폼별로 대응 처리하여 다양한 환경에서 안정적인 동작을 보장</li>
     </ul>
   </div>
 
   <div class="feature-section">
-    <h3>기타 기능 구현</h3>
+    <h3>최적화 및 기타 기능 구현</h3>
     <ul>
-      <li>Barracuda 모델(ONNX) 활용한 실시간 얼굴 인식</li>
-      <li>다양한 화면 공유 기능 개발 (화면, 카메라, 이미지, 유튜브, 화이트보드)</li>
-      <li>다국어 지원 시스템</li>
-      <li>MD5 중복 제거와 만료 파일 정리를 지원하는 이미지 로컬 캐시 시스템</li>
-      <li>크롤링·벤치마크 데이터를 활용한 기기별 최소 사양 판정 및 그래픽 품질 설정</li>
+      <li>웹 크롤링과 벤치마크 데이터를 활용한 디바이스 성능 평가 시스템을 구현. 데스크톱 GPU, 안드로이드, iOS 기기별로 최소 사양 충족 여부를 판단하는 로직으로 플랫폼별 그래픽 품질 설정으로 일관된 사용자 경험 제공</li>
+      <li>효율적인 리소스 관리를 위한 로컬 캐시 파일 시스템을 구현. 각종 이미지 캐시 데이터 관리하여 MD5 해시 기반 중복 파일 제거, 만료된 캐시 자동 정리를 구현하여 네트워크 트래픽 감소, 앱 성능 향상 및 오프라인 사용성을 개선</li>
     </ul>
   </div>
+</div>
+
+<div class="project-section">
+  <h2>주요 성과</h2>
+  <ul>
+    <li>재택 근무를 도입하려는 다수의 기업 고객 확보를 통한 유료 서비스 런칭 성공</li>
+    <li>실사용자 피드백을 기반으로 기능을 개선하고 서비스에 반영</li>
+    <li>멀티 플랫폼 지원을 통한 폭넓은 접근성 확보</li>
+  </ul>
 </div>
 
 <div class="project-section">

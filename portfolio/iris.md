@@ -19,13 +19,13 @@ image: /images/portfolio/iris_image1.webp
 
   <div class="project-details">
     <p><strong>개발 기간:</strong> 2009.09 - 2011.05</p>  
-    <p><strong>개발 환경:</strong> C++, WinApi, STL, Visual Studio, MFC, GameBryo, Perforce</p>  
+    <p><strong>개발 환경:</strong> C++, WinAPI, STL, Visual Studio, MFC, GameBryo, Perforce</p>  
     <p><strong>플랫폼:</strong> Windows</p>  
     <p><strong>개발 규모:</strong> 전체 25~30인 중 클라이언트 4~5인</p>
   </div>
 
   <div class="project-description">
-    <p>&nbsp;아이리스 온라인의 서비스 런칭 3개월 전 합류하여 상용화 준비 및 러시아 진출을 위한 현지화 작업을 담당했습니다. 초기에는 클라이언트 개발에 집중하다가 점차 서버 및 데이터베이스 작업까지 범위를 확장하여 풀스택 개발 경험을 쌓았습니다.</p>
+    <p>서비스 런칭 3개월 전 합류하여 상용화 및 러시아 진출을 위한 현지화 업무를 담당했습니다. 외부 SNS 서비스 연동, 사용자 및 콘텐츠 관련 기능 개발, 클라이언트·서버·DB 연계 개발 등을 수행했으며, 러시아 서비스 런칭 이후 패치 및 유지보수 업무를 진행했습니다.</p>
   </div>
 </div>
 
@@ -33,31 +33,39 @@ image: /images/portfolio/iris_image1.webp
   <h2>주요 기능 및 담당 업무</h2>
 
   <div class="feature-section">
-    <h3>SNS 연동 시스템 개발</h3>
+    <h3>외부 SNS 서비스 연동</h3>
     <ul>
-      <li>Twitcurl 라이브러리와 Twitter Open API, OAuth 기반 인증 연동</li>
-      <li>게임 내에서 트윗 작성 및 피드 리스트 실시간 표시 기능 개발</li>
-      <li>로그인·로그아웃, 타임라인 조회, 트윗·리트윗·팔로우 및 게임 이벤트 연동 자동 알림 구현</li>
+      <li>Twitcurl 라이브러리를 활용하여 Twitter 기능을 클라이언트에 연동</li>
+      <li>게임 내 Twitter 로그인/로그아웃, 타임라인 조회, 트윗 작성, 리트윗, 팔로우 기능 구현</li>
+      <li>게임 이벤트와 연동하여 Twitter 자동 알림 기능 구현</li>
     </ul>
   </div>
 
   <div class="feature-section">
-    <h3>핵심 콘텐츠 개발</h3>
+    <h3>사용자 및 콘텐츠 기능 개발</h3>
     <ul>
-      <li>파티/길드 시스템 개선</li>
-      <li>친구 시스템 구현</li>
-      <li>캐시 아이템 개발 (외형 변경, 탈것)</li>
-      <li>콘텐츠 단위의 서버, 클라이언트, DB(MSSQL) Stored Procedure 통합 개발</li>
+      <li>파티·길드·친구 등 사용자 간 커뮤니티 기능 개발 및 개선</li>
+      <li>캐시 아이템 기능과 외형 변경, 탈것 기능 구현</li>
+      <li>콘텐츠 단위의 서버·클라이언트·DB(MSSQL Stored Procedure) 연계 개발</li>
     </ul>
   </div>
 
   <div class="feature-section">
     <h3>글로벌 서비스 대응</h3>
     <ul>
-      <li>러시아 서비스 현지화 및 런칭 지원</li>
-      <li>패치 작업 및 유지 보수</li>
+      <li>러시아 서비스 진출을 위한 클라이언트 현지화 및 런칭 업무 수행</li>
+      <li>국가별 서비스에 필요한 패치 및 유지보수 업무 수행</li>
     </ul>
   </div>
+</div>
+
+<div class="project-section">
+  <h2>주요 성과</h2>
+  <ul>
+    <li>Twitter API 및 Twitcurl 라이브러리를 활용한 외부 서비스 연동 기능 구현</li>
+    <li>콘텐츠 단위의 서버·클라이언트·DB 연계 개발 경험 확보</li>
+    <li>러시아 서비스 현지화 및 런칭, 이후 패치 및 유지보수 수행</li>
+  </ul>
 </div>
 
 <div class="project-section">

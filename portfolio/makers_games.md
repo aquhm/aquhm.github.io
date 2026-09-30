@@ -19,13 +19,13 @@ image: /images/portfolio/maker_image1.webp
 
   <div class="project-details">
     <p><strong>개발 기간:</strong> 2018.01 - 2020.10</p>
-    <p><strong>개발 환경:</strong> Unity, C#, Visual Studio, Slack, Jira, Github, RESTful API</p>
+    <p><strong>개발 환경:</strong> Unity, C#, Visual Studio, REST API, GitHub, Jira, Slack</p>
     <p><strong>플랫폼:</strong> Android, iOS</p>
     <p><strong>개발 규모:</strong> 전체 25~30인 중 클라이언트 6인</p>
   </div>
 
   <div class="project-description">
-    <p>쿼터뷰 방식의 모바일 전략 시뮬레이션 게임 개발 초기부터 참여해 소프트 런칭까지 클라이언트 기능을 개발했습니다. MVC와 이벤트 기반 구조, XML 데이터 설계로 주요 성장·전투 시스템을 구현하고 기획 데이터 변환·검증 도구를 유지보수했습니다.</p>
+    <p>모바일 전략 시뮬레이션 프로젝트의 초기 개발부터 소프트 런칭까지 참여하여 데이터 기반 시스템과 다양한 클라이언트 기능을 개발했습니다. MVC 및 이벤트 기반 아키텍처를 적용하여 비즈니스 로직과 UI를 분리하고, 반복적인 개발 및 테스트 작업을 효율화하기 위한 Editor 기반 개발 도구와 데이터 검증 도구를 구축했습니다.</p>
   </div>
 </div>
 
@@ -33,36 +33,41 @@ image: /images/portfolio/maker_image1.webp
   <h2>주요 기능 및 담당 업무</h2>
 
   <div class="feature-section">
-    <h3>스킬 시스템 구축</h3>
+    <h3>데이터 기반 시스템 및 상태 관리 아키텍처</h3>
     <ul>
-      <li>XML 데이터 기반의 연구/재능/연맹 등 다양한 스킬 트리 설계 및 UI/UX 연동</li>
+      <li>이벤트 기반 아키텍처를 적용하여 데이터와 비즈니스 로직, UI를 분리하고 기능별 상태 및 객체 생명주기를 체계적으로 관리</li>
+      <li>XML 기반 데이터를 활용하여 다양한 객체의 생성, 상태 변경, 레벨 변화 및 소멸 등의 생명주기를 관리하는 시스템 구현</li>
+      <li>XML 기반 스킬·성장·자원·아이템·연맹 관련 데이터를 활용한 클라이언트 기능 개발</li>
     </ul>
   </div>
 
   <div class="feature-section">
-    <h3>성장 시스템 개발</h3>
+    <h3>개발 및 테스트 도구 구축</h3>
     <ul>
-      <li>MVC 패턴과 이벤트 기반 아키텍처를 활용하여 군주, 영웅, 병사 등 성장 관련 오브젝트의 생명주기(생성, 레벨업, 소멸) 관리</li>
-      <li>자원 수집 및 훈련병 훈련 시스템 개발</li>
+      <li>Unity EditorWindow 기반의 개발·테스트 도구를 제작하여 테스트 환경 설정과 반복 작업을 간소화</li>
+      <li>Excel 기반 기획 데이터를 XML로 변환하는 Serialize 도구를 유지보수하고 VBA Macro를 활용하여 Excel과 개발 도구 간 데이터 연동 작업을 자동화</li>
+      <li>XML 데이터 무결성 검증 모듈을 구현하여 빌드 전 데이터 오류를 사전 검증하고 런타임 오류 발생 가능성을 감소시킴</li>
     </ul>
   </div>
 
   <div class="feature-section">
-    <h3>전투 및 아이템 시스템</h3>
+    <h3>콘텐츠 시스템 개발</h3>
     <ul>
-      <li>부대 출전, 전투 덱 설정 등 전투 준비 기능 및 정찰 기능 구현</li>
-      <li>인벤토리, 상점, 아이템 강화 시스템 및 연맹 생성/가입, 연합 전투 기능 구현</li>
+      <li>데이터 기반의 연구, 재능, 연맹 연구, 스킬 트리 등 다양한 성장 콘텐츠 개발</li>
+      <li>이벤트 기반 아키텍처를 활용하여 군주·영웅·병사·소환수 등의 성장 시스템과 객체 생명주기 구현</li>
+      <li>월드 맵 이동·전투·정찰, 인벤토리·상점·아이템 강화, 연맹 및 가속 아이템 등 다양한 콘텐츠 시스템 개발</li>
     </ul>
   </div>
+</div>
 
-  <div class="feature-section">
-    <h3>개발 효율화 도구 제작</h3>
-    <ul>
-      <li>Unity EditorWindow를 활용한 편집 도구를 개발하여 기획자가 테스트 환경을 쉽게 설정할 수 있도록 지원</li>
-      <li>Excel 데이터를 XML로 변환하는 Serialize 도구를 유지보수하고, VBA Macro 연동을 통해 기획자 작업 효율성 향상</li>
-      <li>XML 데이터 무결성 검증 모듈을 구현하여 빌드 전 오류 발생률 감소</li>
-    </ul>
-  </div>
+<div class="project-section">
+  <h2>주요 성과</h2>
+  <ul>
+    <li>이벤트 기반 아키텍처를 적용하여 데이터와 비즈니스 로직, UI를 분리하고 기능 확장성과 유지보수성을 확보</li>
+    <li>개발·테스트 도구와 데이터 검증 기능을 구축하여 반복적인 작업과 테스트 과정의 효율성 향상</li>
+    <li>데이터 기반 구조를 통해 신규 기능 및 콘텐츠 추가에 유연하게 대응할 수 있는 클라이언트 시스템 구축</li>
+    <li>프로젝트 초기 개발부터 소프트 런칭까지 클라이언트 기능 개발에 참여</li>
+  </ul>
 </div>
 
 <div class="project-section">

@@ -19,15 +19,13 @@ image: /images/portfolio/digital_twin_image1.webp
 
   <div class="project-details">
     <p><strong>개발 기간:</strong> 2025.08 - 재직중 (이에이트)</p>
-    <p><strong>개발 환경:</strong> Unity, C#, RESTful API, Kafka, Visual Studio, Git, Notion</p>
+    <p><strong>개발 환경:</strong> Unity, C#, JSON, REST API, Kafka, Git, Notion, Visual Studio, Rider, Claude Code</p>
     <p><strong>플랫폼:</strong> Windows</p>
-    <p><strong>개발 규모:</strong> 전체 10 ~ 12인 중 클라이언트 4 ~ 6인</p>
+    <p><strong>개발 규모:</strong> 전체 10~12인 중 클라이언트 4~6인</p>
   </div>
 
   <div class="project-description">
-    <p>&nbsp;건물 내외부를 디지털 트윈으로 구현해 시설물 상태와 알림을 실시간으로 관제하는 이에이트의 SI 프로젝트입니다. Unity·C# 클라이언트 개발과 아키텍처 설계를 맡고 있으며, Kafka와 REST API로 연동한 데이터를 3D 공간에 표시합니다.</p>
-    <p>SI 프로젝트는 시연이 곧 마일스톤입니다. 백엔드 개발 상황이나 현장 네트워크 사정에 시연이 좌우되지 않도록 데이터 통신 계층을 백엔드와 분리하는 데 가장 공을 들였습니다.</p>
-    <p>또 하나의 축은 멀티 사이트입니다. 고객사 현장(사이트)마다 건물도 설비도 API 엔드포인트도 다른데 코드는 하나로 유지해야 합니다. 이 문제를 풀기 위해 사이트 구성부터 빌드까지 자동화하는 에디터 도구 Service Builder를 만들었습니다.</p>
+    <p>건물 내외부를 디지털 트윈으로 구현하여 실시간 모니터링 및 관제할 수 있는 시스템을 개발하고 있습니다. 대규모 데이터 시각화와 실시간 API 연동이 핵심인 프로젝트로, 백엔드 개발 상황이나 네트워크 환경에 구속받지 않고 안정적인 개발 및 시연이 가능한 데이터 통신 아키텍처를 구축하는 데 주력했습니다. 또한, Visual Scripting 도구를 활용하여 Presenter Layer 로직 구현 속도를 높이고 유지보수 효율성을 높였습니다.</p>
   </div>
 </div>
 
@@ -35,48 +33,47 @@ image: /images/portfolio/digital_twin_image1.webp
   <h2>주요 기능 및 담당 업무</h2>
 
   <div class="feature-section">
-    <h3>하이브리드 데이터 통신</h3>
+    <h3>하이브리드 데이터 통신 시스템 설계</h3>
     <ul>
-      <li>API 통신 로직을 Command 패턴으로 추상화 — Remote API와 로컬 파일을 동일 인터페이스로 실행</li>
-      <li>실시간 통신으로 받은 JSON을 로컬에 캐싱하고 통신 불가 시 사용하는 Fallback 메커니즘</li>
-      <li>설정 파일로 실시간 모드와 캐시 모드를 동적 전환 (서버 점검, 오프라인 시연 대응)</li>
+      <li>REST API 통신 로직을 Command 패턴으로 추상화하여, 데이터 소스(Remote API vs Local File)에 관계없이 동일한 인터페이스로 기능을 실행할 수 있도록 설계</li>
+      <li>백엔드 통신 불가 상황(서버 점검, 오프라인 시연 등)을 대비하여, 실시간 통신 시 획득한 JSON 데이터를 로컬 시스템에 캐싱하고 필요 시 호출하는 Fallback 메커니즘 구현</li>
+      <li>별도의 JSON Config 파일 내 프로퍼티 설정에 따라 실시간 통신 모드와 캐시 데이터 모드를 동적으로 전환할 수 있는 기능을 구현하여 시연 및 테스트 안정성 확보</li>
     </ul>
   </div>
 
   <div class="feature-section">
-    <h3>실시간 데이터 시각화</h3>
+    <h3>Visual Scripting을 통한 개발 생산성 향상</h3>
     <ul>
-      <li>시설물 상태·알림 정보를 Kafka, REST API로 수신해 3D 공간에 실시간 표시</li>
-      <li>UniTask 비동기 처리와 UniRx 반응형 프로그래밍으로 수신 데이터 처리와 UI 반영</li>
+      <li>Visual Scripting SDK(GameCreator)를 활용한 UI 연동 로직을 컴포넌트화</li>
+      <li>반복적인 UI 상호작용 및 로직을 Instruction Command 기반으로 작업하여 코드 복잡도를 낮추고, 프로토타이핑 및 기능 수정 작업의 효율 향상</li>
+      <li>Visual Scripting 변수 생성 및 타입별 Get/Set 접근 코드를 자동 생성하는 코드 제너레이터를 구현, 문자열 키를 직접 다루던 접근 방식을 정적 API로 대체하여 문자열 오타로 인한 런타임 오류와 수작업 동기화 비용을 제거하고, IDE 자동완성·컴파일 타임 검증을 확보해 스크립트에서의 비주얼 스크립팅 연동 작업 효율 향상</li>
     </ul>
   </div>
 
   <div class="feature-section">
-    <h3>Visual Scripting 기반 콘텐츠 제작</h3>
+    <h3>디지털 트윈 데이터 연동 및 시각화</h3>
     <ul>
-      <li>GameCreator 기반 Visual Scripting 환경 구축 — 3D 오브젝트 인터랙션과 UI 연동 로직 컴포넌트화</li>
-      <li>변수 생성 및 형식별 Get/Set 접근 코드를 자동 생성해 문자열 키 오타를 줄이고 IDE 자동완성과 컴파일 검증 지원</li>
-      <li>스크립트 기반 핵심 엔진 로직과 비주얼 스크립팅 기반 콘텐츠 로직 분리</li>
+      <li>건물 내 시설물 상태 정보 및 각종 알림 정보를 Kafka, REST API를 통해 수신하여 3D 공간 내에 실시간으로 시각화</li>
+      <li>각종 수신 데이터를 효율적으로 처리하고 UI에 반영하기 위한 비동기 처리(UniTask) 및 Reactive Programming(UniRx)으로 개선</li>
     </ul>
   </div>
 
   <div class="feature-section">
-    <h3>Service Builder — 멀티 사이트 구성·빌드 자동화</h3>
+    <h3>멀티 사이트 운영을 위한 통합 빌드/구성 자동화 툴(Service Builder) 설계 및 개발</h3>
     <ul>
-      <li>사이트 분기 로직을 ScriptableObject 설정 에셋으로 외부화, 활성 사이트는 단일 출처(SSOT)로 관리</li>
-      <li>매니저 배치, 데이터 베이크, system.ini 프로파일, 사이트별 빌드를 에디터 버튼 한 번으로 일괄 수행</li>
-      <li>사이트별 씬 GUID, 제품명, 빌드 옵션, Git SHA를 관리하고 CLI 빌드를 지원해 CI 연동 가능</li>
-      <li>씬 구성, 베이크, 환경 설정, 사이트별 콘텐츠 노출을 일괄 적용</li>
+      <li>사업(사이트)마다 달라지는 기능·데이터·서버 엔드포인트·빌드 설정을 단일 ScriptableObject 설정 에셋으로 외부화하여, 사이트 추가 시 코드 수정 없이 설정만으로 대응 가능한 구조 확립</li>
+      <li>서버 엔드포인트를 Play용·빌드용 프로파일로 분리 관리하고, 씬 목록(GUID)·제품명·빌드 옵션·git SHA 기록을 포함한 사이트별 빌드 파이프라인 자동화(CLI 진입점으로 CI 연동)</li>
+      <li>씬 구성, 베이크, 환경설정, 사이트별 컨텐츠 노출 등 사이트 구성에 필요한 과정을 단일 버튼으로 수행하는 일괄 적용 기능 제공</li>
     </ul>
   </div>
 </div>
 
 <div class="project-section">
-  <h2>적용 성과</h2>
+  <h2>주요 성과</h2>
   <ul>
+    <li>Command 패턴 기반의 백엔드 개발 의존성 분리를 통해 네트워크 환경과 무관한 독립적인 시연 및 테스트 환경 구축</li>
+    <li>사업(사이트)별 분기를 설정 에셋(데이터)으로 외부화하여, 신규 현장 추가 시 코드 수정 없이 설정만으로 대응 가능한 구조 확보</li>
     <li>국내 대형 전자 제조사의 건물 3개 사이트를 디지털 트윈으로 구축해 실시간 관제에 적용</li>
-    <li>서버와 네트워크 상태에 좌우되지 않는 독립적인 개발·테스트·시연 환경 마련</li>
-    <li>사이트별 기능과 빌드 구성을 설정 데이터로 관리해 신규 현장 추가 시 코드 수정 최소화</li>
   </ul>
 </div>
 
