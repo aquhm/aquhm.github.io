@@ -62,7 +62,7 @@ about_profile_image: images/profile.webp
 about_content: | # this will include new lines to allow paragraphs
   안녕하세요. 읽기 쉬운 코드를 지향하는 개발자 김대호입니다.
   
-  C#과 C++을 중심으로 12년 이상 클라이언트 소프트웨어를 개발해왔습니다. PC MMORPG와 모바일 게임부터 WebRTC 기반 가상 오피스, 건물 디지털 트윈까지 Windows·macOS·Android·iOS 환경의 제품을 경험했습니다.
+  C#과 C++을 중심으로 2009년부터 클라이언트 소프트웨어를 개발해왔습니다. PC MMORPG와 모바일 게임부터 WebRTC 기반 가상 오피스, 건물 디지털 트윈까지 Windows·macOS·Android·iOS 환경의 제품을 경험했습니다.
   실시간 데이터 통신과 시각화, 클라이언트 아키텍처 설계, 네이티브 기능 연동, 성능 최적화와 개발 도구 구축을 맡아왔습니다. 네트워크나 하드웨어 환경에 흔들리지 않는 구조와 팀이 함께 유지보수하기 쉬운 코드를 지향합니다.
 
   프로젝트에 필요한 기술을 빠르게 학습해 적용하는 데 주저함이 없습니다. 실제로 실무에서 <mark>TypeScript</mark>와 <mark>Electron</mark>을 새로 습득해 런처 유지보수와 개선을 수행했고, 평소에도 <mark>Flutter</mark>, <mark>React Native</mark> 같은 크로스 플랫폼 프레임워크와 <mark>LLM</mark>에 관심을 두고 학습을 이어가고 있습니다. 익숙한 언어와 프레임워크에 머무르지 않고 문제에 맞는 도구를 골라 쓰는 편이라, 온디바이스 LLM으로 동작하는 모바일 앱을 직접 설계·개발하고 운영 도구와 배포 자동화까지 함께 만드는 등 LLM을 활용한 프로젝트를 꾸준히 진행하고 있습니다.
