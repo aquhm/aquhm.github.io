@@ -12,49 +12,78 @@ profile:
 career_total: 회사별 주요 업무와 프로젝트입니다.
 
 # 경력 요약 — _config.yml Experience 항목의 title과 같은 키로 연결한다.
+# projects: 회사에서 맡은 프로젝트별 요약, stack: 그 회사에서 실제로 쓴 기술
 experience:
   이에이트:
     company: (주)이에이트
     role: 책임연구원 · 클라이언트
     period: 2025.08 – 재직 중
-    project: 건물 디지털 트윈 관제 시스템
-    summary:
-      - Unity·C# 기반 3D 디지털 트윈 클라이언트 개발과 아키텍처 설계
-      - Command 패턴 기반 하이브리드 통신으로 서버와 무관한 개발·시연 환경 구축
-      - 멀티 사이트 구성·빌드 자동화 도구로 신규 현장을 코드 수정 없이 추가
+    projects:
+      - name: 건물 디지털 트윈 관제 시스템
+        sub: Windows
+        items:
+          - Unity·C# 기반 3D 건물 디지털 트윈 클라이언트 개발 및 클라이언트 아키텍처 설계
+          - REST API·Kafka로 수신한 시설물 상태·알림 정보를 3D 공간에 실시간 시각화
+          - 데이터 소스를 Command 패턴으로 추상화한 하이브리드 통신 구조로, 서버·네트워크 상태와 무관한 개발·시연 환경 구축
+          - 멀티 사이트 구성·빌드 자동화 도구(Service Builder)를 설계해 신규 현장을 코드 수정 없이 설정만으로 추가
+          - Visual Scripting 연동 코드 자동 생성 등 반복 작업을 줄이는 개발 도구 제작
+          - 국내 대형 전자 제조사 건물 3개 사이트를 디지털 트윈으로 구축해 실시간 관제에 적용
+    stack: Unity, C#, Kafka, REST API, 비동기·Reactive Programming, Visual Scripting, CLI 빌드·CI 연동
   직방:
     company: (주)직방
     role: Soma/Zed · 클라이언트
     period: 2020.11 – 2024.11
-    project: Soma · 직방 3D 단지 투어
-    summary:
-      - WebRTC 3D 가상 오피스의 초기 개발부터 B2B 유료 런칭·운영까지 참여
-      - Objective-C 네이티브 플러그인과 Electron·TypeScript 런처로 PC·모바일 4개 플랫폼 지원
-      - React Native 앱에 Unity를 연동한 3D 단지 투어 개발 및 런칭
+    projects:
+      - name: Soma · WebRTC 3D 아바타 가상 오피스
+        sub: 2021.04 – 2024.11 · PC·모바일
+        items:
+          - Unity·C# 기반 3D 가상 오피스의 초기 개발부터 B2B 유료 런칭과 운영까지 참여
+          - Agora SDK 기반 화상 통화·화면 공유 등 실시간 커뮤니케이션 기능 개발
+          - MVP 기반 UI 프레임워크와 REST API·WebSocket 통신 구조 설계·개발
+          - Windows·macOS·Android·iOS 지원을 위해 Objective-C 네이티브 플러그인과 Electron·TypeScript 런처 개발·유지보수
+          - 사내 실사용자 피드백을 반영한 기능 개선과 운영 안정화
+      - name: 직방 3D 단지 투어
+        sub: 2020.11 – 2021.04 · Android, iOS
+        items:
+          - React Native 앱에 Unity를 연동한 3D 아파트 단지 시뮬레이션 개발 및 런칭 (런칭 3개월 전 합류)
+          - 매물 메타데이터 시각화와 Material Pooling·Culling 기반 모바일 성능 최적화
+    stack: Unity, C#, WebRTC(Agora SDK), REST API, WebSocket, Objective-C, Electron, TypeScript
   메이커스게임즈:
     company: 메이커스게임즈(주)
     role: 클라이언트
     period: 2018.01 – 2020.10
-    project: Conquest of Arkland
-    summary:
-      - MVC·이벤트 기반 구조와 XML 데이터로 성장·전투·연맹 콘텐츠 개발
-      - 기획자용 Editor 도구와 Excel→XML 변환·검증 자동화
+    projects:
+      - name: Conquest of Arkland · 모바일 전략 시뮬레이션
+        sub: Android, iOS
+        items:
+          - Unity·C# 기반 모바일 전략 시뮬레이션 게임의 초기 개발부터 소프트 런칭까지 클라이언트 개발
+          - MVC·이벤트 기반 구조와 XML 데이터로 성장·전투·연맹 등 주요 콘텐츠 시스템 개발
+          - 기획자용 Unity Editor 테스트 도구와 Excel→XML 변환·검증 자동화 도구 개발·유지보수
+    stack: Unity, C#, XML, VBA, Unity Editor 확장
   위메이드엑스알:
     company: (주)위메이드엑스알
     role: 클라이언트
     period: 2015.10 – 2018.01
-    project: 이카루스 온라인 북미 서비스
-    summary:
-      - Nexon America 플랫폼 연동과 멀티스레드 패치 시스템 설계·개발
-      - 네트워크 재접속·분할 패치 등 서비스 안정화
+    projects:
+      - name: 이카루스 온라인 북미 서비스
+        sub: Windows
+        items:
+          - CryEngine3·C++ 기반 PC MMORPG 클라이언트 개발, Nexon America 플랫폼 연동
+          - 약 9만 개 파일의 병렬 다운로드·압축 해제·무결성 검증을 처리하는 멀티스레드 패치 시스템 설계·개발
+          - 네트워크 재접속·분할 패치 등 서비스 안정화와 북미 대응 UI/UX·콘텐츠 개발
+    stack: C++, CryEngine3, WinAPI, STL, ActionScript 3.0, Scaleform
   이야소프트:
     company: (주)이야소프트
     role: 클라이언트
     period: 2009.09 – 2011.05
-    project: 아이리스 온라인
-    summary:
-      - 러시아 서비스 현지화·런칭, Twitter 연동
-      - 클라이언트·서버·DB(MSSQL) 연계 콘텐츠 개발
+    projects:
+      - name: 아이리스 온라인
+        sub: Windows
+        items:
+          - GameBryo·C++ 기반 PC MMORPG 클라이언트 개발, 러시아 서비스 현지화·런칭
+          - Twitter(Twitcurl) 연동 등 SNS 기능과 파티·길드·캐시 아이템 콘텐츠 개발
+          - 콘텐츠 단위의 클라이언트·서버·DB(MSSQL) 연계 개발
+    stack: C++, GameBryo, MFC, MSSQL
 
 docs:
   - title: 이력서

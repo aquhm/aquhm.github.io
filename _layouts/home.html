@@ -74,12 +74,15 @@ layout: page
           <p class="when">{{ s.period | default: item.caption }}</p>
         </div>
         <div>
-          <p class="proj">{{ s.project | default: item.quote }}</p>
-          {%- if s.summary %}
-          <ul>{% for line in s.summary %}<li>{{ line }}</li>{% endfor %}</ul>
-          {%- endif %}
+          {%- for pj in s.projects %}
+          <div class="exp-proj">
+            <p class="proj">{{ pj.name }}{% if pj.sub %}<span>{{ pj.sub }}</span>{% endif %}</p>
+            <ul>{% for line in pj.items %}<li>{{ line }}</li>{% endfor %}</ul>
+          </div>
+          {%- endfor %}
+          {%- if s.stack %}<p class="exp-stack"><b>사용 기술</b>{{ s.stack }}</p>{% endif %}
           <details>
-            <summary>자세히 보기</summary>
+            <summary>상세 업무·성과·회고 보기</summary>
             <div class="exp-detail">{{ item.description | markdownify }}</div>
           </details>
         </div>

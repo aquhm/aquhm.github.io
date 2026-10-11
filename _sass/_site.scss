@@ -137,6 +137,10 @@ h1, h2, h3 { letter-spacing: -0.015em; }
   .role { color: var(--soft); font-size: 14.5px; margin: 2px 0 0; }
   .when { color: var(--muted); font-size: 14px; font-variant-numeric: tabular-nums; margin: 6px 0 0; }
   .proj { font-weight: 700; margin: 0; }
+  .proj span { font-weight: 400; color: var(--muted); font-size: 14px; margin-left: 8px; }
+  .exp-proj + .exp-proj { margin-top: 14px; }
+  .exp-stack { margin: 12px 0 0; font-size: 14px; color: var(--muted); }
+  .exp-stack b { color: var(--soft); font-weight: 600; margin-right: 8px; }
   ul { margin: 6px 0 0; padding-left: 1.1em; color: var(--soft); }
   li { margin: 3px 0; }
   details { margin-top: 10px; }
