@@ -12,6 +12,10 @@ layout: page
     <div>
       <h1>{{ H.hero.title }}</h1>
       <p class="lead">{{ H.hero.lead }}</p>
+      <div class="strengths">
+        <h2>{{ H.hero.strengths_title }}</h2>
+        <ul>{% for s in H.hero.strengths %}<li>{{ s }}</li>{% endfor %}</ul>
+      </div>
       <div class="cta">
         <a class="btn primary" href="{{ '/portfolio/' | relative_url }}">프로젝트 보기</a>
         <a class="btn" href="#docs">이력서·경력기술서 PDF</a>
