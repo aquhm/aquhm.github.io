@@ -1,0 +1,90 @@
+// 프로젝트 상세 페이지 (portfolio/*.md, layout: portfolio-detail)
+// 본문 마크업(portfolio-header, project-section 등)은 그대로 두고 스타일만 입힌다.
+
+.detail-wrap { max-width: 880px; padding-top: 40px; }
+.crumb {
+  margin: 0; font-size: 14px; color: var(--muted);
+  a { color: var(--accent); text-decoration: none; }
+  a::after { content: " /"; color: var(--muted); }
+}
+
+.portfolio-detail {
+  color: var(--soft);
+
+  // 제목과 대표 이미지
+  .portfolio-header h1 { font-size: clamp(28px, 4vw, 40px); line-height: 1.25; color: var(--ink); margin: 8px 0 20px; }
+  .portfolio-main-image {
+    margin: 0 0 40px; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: var(--panel);
+    img { width: 100%; max-height: 520px; object-fit: contain; margin: 0 auto; cursor: zoom-in; }
+  }
+
+  // 섹션
+  .project-section { margin: 0 0 44px; }
+  .project-section > h2, .portfolio-media-gallery > h2 {
+    font-size: 24px; color: var(--ink); margin: 0 0 16px; padding-bottom: 10px; border-bottom: 1px solid var(--line);
+  }
+  p { margin: 0 0 12px; }
+  ul { padding-left: 1.2em; margin: 6px 0 12px; }
+  li { margin: 4px 0; }
+  strong { color: var(--ink); }
+  a { color: var(--accent); }
+
+  // 개요의 정보 묶음 → 정보 카드
+  .project-details {
+    display: grid; gap: 8px; margin: 0 0 20px; padding: 16px 20px;
+    background: var(--panel); border-radius: var(--radius);
+    p { margin: 0; display: grid; grid-template-columns: 96px 1fr; gap: 12px; font-size: 15px; }
+    strong { color: var(--muted); font-weight: 600; }
+  }
+  .project-description p { color: var(--soft); }
+
+  // 기능 묶음
+  .feature-section {
+    margin: 0 0 18px;
+    h3 { font-size: 18px; color: var(--ink); margin: 0 0 6px; }
+  }
+
+  // 기술 적용 경험 → 왼쪽 강조선
+  .challenge-section {
+    margin: 0 0 18px; padding: 2px 0 2px 16px; border-left: 3px solid var(--accent);
+    h3 { font-size: 18px; color: var(--ink); margin: 0 0 6px; }
+  }
+
+  .reflection-content p { color: var(--soft); }
+
+  // 갤러리·영상
+  .portfolio-media-gallery { margin: 0 0 44px; }
+  .image-gallery h3, .video-container h3 { font-size: 18px; color: var(--ink); margin: 20px 0 12px; }
+  .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; }
+  .gallery-item {
+    margin: 0;
+    img { width: 100%; border-radius: 8px; border: 1px solid var(--line); background: var(--panel); cursor: zoom-in; transition: transform .25s ease; }
+    img:hover { transform: translateY(-2px); }
+    p { margin: 6px 0 0; font-size: 14px; color: var(--muted); text-align: center; }
+  }
+  .video-embed {
+    position: relative; aspect-ratio: 16 / 9; border-radius: var(--radius); overflow: hidden; background: #000;
+    iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  }
+
+  // 본문 안 다이어그램(SVG)과 인라인 박스는 밝은 배경 위에서 읽히도록 둔다
+  figure { margin: 16px 0; }
+  svg { max-width: 100%; height: auto; }
+}
+
+// 이전·목록·다음
+.portfolio-nav {
+  display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+  margin: 24px 0 0; padding-top: 24px; border-top: 1px solid var(--line);
+  a {
+    flex: 1 1 0; min-width: 160px; text-align: center; text-decoration: none; color: var(--ink);
+    border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; font-size: 14px; font-weight: 600;
+    transition: border-color .2s;
+  }
+  a:hover { border-color: var(--accent); color: var(--accent); }
+}
+
+@media (max-width: 860px) {
+  .detail-wrap { padding-top: 24px; }
+  .portfolio-detail .project-details p { grid-template-columns: 1fr; gap: 0; }
+}

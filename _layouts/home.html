@@ -1,0 +1,122 @@
+---
+layout: page
+---
+{%- assign H = site.data.home -%}
+{%- assign P = site.data.projects -%}
+{%- assign experience = site.content | where: "title", "Experience" | first -%}
+{%- assign skills = site.content | where: "title", "Skills" | first -%}
+{%- assign education = site.content | where: "title", "Education" | first -%}
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <h1>{{ H.hero.title }}</h1>
+      <p class="lead">{{ H.hero.lead }}</p>
+      <div class="cta">
+        <a class="btn primary" href="{{ '/portfolio/' | relative_url }}">프로젝트 보기</a>
+        <a class="btn" href="#docs">이력서·경력기술서 PDF</a>
+      </div>
+    </div>
+    <aside class="card-me" aria-label="프로필 요약">
+      <div class="top">
+        <img src="{{ site.about_profile_image | relative_url }}" alt="{{ site.name }} 프로필 사진" width="96" height="128">
+        <div><p class="name">{{ site.name }}</p><p class="aff">{{ H.profile.affiliation }}</p></div>
+      </div>
+      <dl>
+        {%- for f in H.profile.facts %}
+        <dt>{{ f[0] }}</dt><dd>{{ f[1] }}</dd>
+        {%- endfor %}
+        <dt>연락</dt><dd><a href="mailto:{{ site.email }}">{{ site.email }}</a></dd>
+      </dl>
+    </aside>
+  </div>
+</section>
+
+<section class="reel" aria-labelledby="reel-title">
+  <div class="wrap">
+    <h2 id="reel-title">지나온 프로젝트</h2>
+    <p class="desc">2009년 PC MMORPG부터 2026년 온디바이스 AI 앱까지, 연도순으로 넘겨 보세요.</p>
+    <div class="strip" tabindex="0" aria-label="연도순 프로젝트 목록">
+      {%- assign reel = P | where_exp: "p", "p.reel" | sort: "year" -%}
+      {%- for p in reel %}
+      <a class="frame" href="{{ '/portfolio/' | append: p.id | append: '/' | relative_url }}">
+        <img src="{{ p.image | relative_url }}" alt="{{ p.title }} 화면" loading="lazy" decoding="async">
+        <span class="cap"><span class="yr">{{ p.year }}</span><span class="nm">{{ p.title }}</span><span class="dm">{{ p.reel }}</span></span>
+      </a>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="sec" aria-labelledby="featured-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><h2 id="featured-title">주요 프로젝트</h2><p class="desc">최근 작업 중 가장 많은 설계 결정을 내린 세 가지입니다.</p></div>
+      <a href="{{ '/portfolio/' | relative_url }}">전체 프로젝트 보기</a>
+    </div>
+    <div class="featured">
+      {%- assign featured = P | where_exp: "p", "p.featured" | sort: "featured" -%}
+      {%- for p in featured %}{% include project-card.html project=p %}{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="sec" aria-labelledby="exp-title">
+  <div class="wrap">
+    <div class="sec-head"><div><h2 id="exp-title">경력</h2><p class="desc">{{ H.career_total }}</p></div></div>
+    <div class="exp">
+      {%- for item in experience.content %}
+      {%- assign s = H.experience[item.title] %}
+      <article class="exp-row">
+        <div>
+          <h3>{{ s.company | default: item.title }}</h3>
+          <p class="role">{{ s.role | default: item.sub_title }}</p>
+          <p class="when">{{ s.period | default: item.caption }}</p>
+        </div>
+        <div>
+          <p class="proj">{{ s.project | default: item.quote }}</p>
+          {%- if s.summary %}
+          <ul>{% for line in s.summary %}<li>{{ line }}</li>{% endfor %}</ul>
+          {%- endif %}
+          <details>
+            <summary>자세히 보기</summary>
+            <div class="exp-detail">{{ item.description | markdownify }}</div>
+          </details>
+        </div>
+      </article>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="sec" aria-labelledby="about-title">
+  <div class="wrap about">
+    <div>
+      <h2 id="about-title">소개</h2>
+      <div class="prose">{{ site.about_content | markdownify }}</div>
+    </div>
+    <div>
+      <h2>기술</h2>
+      <dl class="skills">
+        {%- for s in skills.content %}{% if s.title %}
+        <dt>{{ s.title }}</dt><dd>{{ s.description | markdownify }}</dd>
+        {%- endif %}{% endfor %}
+      </dl>
+      <h2 class="mt">학력</h2>
+      {%- for e in education.content %}
+      <p class="edu"><b>{{ e.title }}</b> {{ e.sub_title }}<span>{{ e.caption }}</span></p>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="docs" aria-labelledby="docs-title">
+  <div class="wrap">
+    <div class="sec-head"><div><h2 id="docs-title">문서 내려받기</h2><p class="desc">같은 내용을 PDF로도 정리해 두었습니다.</p></div></div>
+    <div class="docs">
+      {%- for d in H.docs %}
+      <a class="doc" href="{{ d.file | relative_url }}" download="{{ d.download }}"><b>{{ d.title }}</b><span>{{ d.desc }}</span><span class="dl">PDF 내려받기</span></a>
+      {%- endfor %}
+    </div>
+  </div>
+</section>

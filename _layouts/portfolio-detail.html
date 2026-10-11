@@ -1,7 +1,10 @@
 ---
 layout: page
 ---
-<div class="page-content portfolio-detail">
-  {{ content }}
+<div class="wrap detail-wrap">
+  <p class="crumb"><a href="{{ '/portfolio/' | relative_url }}">프로젝트</a></p>
+  <article class="portfolio-detail">
+    {{ content }}
+  </article>
 </div>
 <script src="{{ '/assets/js/lightbox.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>

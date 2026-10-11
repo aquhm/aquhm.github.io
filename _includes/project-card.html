@@ -1,0 +1,10 @@
+{%- assign p = include.project -%}
+<a class="pcard" href="{{ '/portfolio/' | append: p.id | append: '/' | relative_url }}" data-kind="{{ p.kind }}">
+  <img src="{{ p.image | relative_url }}" alt="{{ p.title }} 화면" loading="lazy" decoding="async">
+  <span class="body">
+    <span class="meta">{{ p.meta }}</span>
+    <span class="title">{{ p.title }}{% if p.badge %}<span class="badge">{{ p.badge }}</span>{% endif %}</span>
+    <span class="desc">{{ p.description }}</span>
+    <span class="stack">{{ p.stack }}</span>
+  </span>
+</a>

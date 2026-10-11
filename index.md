@@ -1,9 +1,5 @@
 ---
-#
-# By default, content added below the "---" mark will appear in the home page
-# between the top bar and the list of recent posts.
-# To change the home page layout, edit the _layouts/home.html file.
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-#
-layout: default
+# 홈(이력) 페이지. 화면 구성은 _layouts/home.html, 문구는 _data/home.yml,
+# 경력 상세 본문은 _config.yml의 content(Experience·Skills·Education)를 사용한다.
+layout: home
 ---

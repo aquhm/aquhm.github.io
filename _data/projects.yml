@@ -1,0 +1,138 @@
+# 프로젝트 카드 데이터 — 홈(지나온 프로젝트·주요 프로젝트)과 /portfolio/ 목록이 함께 사용한다.
+# kind: work(회사) | side(개인), reel: 홈 연대기 띠에 표시할 짧은 분야명, featured: 홈 주요 프로젝트 노출 순서
+- id: digital_twin
+  kind: work
+  year: 2025
+  title: 디지털 트윈 건물 관제 시스템
+  meta: (주)이에이트 · 2025 – 현재
+  subtitle: 디지털 트윈 기반 건물 시뮬레이션 및 실시간 관제
+  description: Kafka·REST API 실시간 연동, 네트워크와 분리된 하이브리드 데이터 통신, 비주얼 스크립팅 코드 생성기와 멀티 사이트 빌드 도구를 개발했습니다. 국내 대형 전자 제조사 건물 3개 사이트의 실시간 관제에 적용했습니다.
+  stack: Unity, C#, Kafka, REST API
+  image: /images/portfolio/digital_twin_image1.webp
+  reel: 건물 관제
+  featured: 1
+
+- id: soma
+  kind: work
+  year: 2021
+  title: Soma
+  meta: (주)직방 · 2021 – 2024
+  subtitle: WebRTC 기반 3D 아바타 가상 오피스
+  description: 초기 개발부터 B2B 유료 런칭과 운영까지 참여한 WebRTC 기반 3D 가상 오피스입니다. Windows, macOS, Android, iOS를 지원하고 Objective-C 네이티브 플러그인과 Electron·TypeScript 런처도 개발·유지보수했습니다.
+  stack: Unity, C#, WebRTC, Objective-C, Electron
+  image: /images/portfolio/soma_image1.webp
+  reel: 가상 오피스
+  featured: 3
+
+- id: zigbang
+  kind: work
+  year: 2020
+  title: 직방 3D 단지 투어
+  meta: (주)직방 · 2020 – 2021
+  subtitle: 데이터 기반 아파트 단지 시뮬레이션
+  description: React Native 기반 직방 앱에 Unity Engine 모듈을 통합해 3D 아파트 단지 시뮬레이션 서비스를 개발했습니다. 매물 정보 시각화와 성능 최적화로 모바일에서도 원활하게 동작하게 했습니다.
+  stack: Unity, C#, React Native 연동
+  image: /images/portfolio/zigbang_image2.webp
+  reel: 부동산 3D
+
+- id: makers_games
+  kind: work
+  year: 2018
+  title: Conquest of Arkland
+  meta: 메이커스게임즈(주) · 2018 – 2020
+  subtitle: 쿼터뷰 모바일 전략 시뮬레이션 게임
+  description: 프로젝트 초기부터 소프트 런칭까지 참여한 모바일 전략 시뮬레이션입니다. XML 기반 성장·전투 콘텐츠와 Unity Editor 테스트 도구, Excel 데이터 변환·검증 흐름을 개발했습니다.
+  stack: Unity, C#, XML
+  image: /images/portfolio/maker_image1.webp
+  reel: 모바일 SLG
+
+- id: icarus
+  kind: work
+  year: 2015
+  title: 이카루스 온라인
+  meta: (주)위메이드엑스알 · 2015 – 2018
+  subtitle: PC 3D MMORPG 북미 서비스
+  description: 북미 런칭을 위해 Nexon America 플랫폼을 연동하고, 약 9만 개 파일의 병렬 패치·검증 시스템과 북미 사용자 대상 클라이언트 기능을 개발했습니다.
+  stack: C++, CryEngine3
+  image: /images/portfolio/icarus_image1.webp
+  reel: PC MMORPG
+
+- id: iris
+  kind: work
+  year: 2009
+  title: 아이리스 온라인
+  meta: (주)이야소프트 · 2009 – 2011
+  subtitle: PC 3D MMORPG
+  description: 상용화와 러시아 런칭을 준비하며 Twitter 연동과 주요 게임 기능을 개발했습니다. 클라이언트부터 서버·MSSQL Stored Procedure까지 콘텐츠 단위로 구현했습니다.
+  stack: C++, GameBryo, MSSQL
+  image: /images/portfolio/iris_image1.webp
+  reel: PC MMORPG
+
+- id: maumte
+  kind: side
+  year: 2026
+  title: 마음테
+  meta: 개인 프로젝트 · 2026
+  subtitle: 기기 안에서 도는 AI 회고 앱
+  description: 사진 한 장과 몇 줄의 글로 하루를 돌아보면 기기 안의 LLM이 회고 카드를 쓰고 TTS가 읽어 주는 Flutter 앱입니다. 백엔드 없이 기기 안에서 돌리되 로컬과 원격을 갈아 끼울 수 있게 설계했고, 2026년 10월 Google Play에 출시해 운영 중입니다.
+  stack: Flutter, Dart, 온디바이스 LLM
+  image: /images/portfolio/maumte_preview.webp
+  reel: AI 회고 앱
+  badge: 출시
+  featured: 2
+
+- id: comment_temperature
+  kind: side
+  year: 2026
+  title: 댓글온도
+  meta: 개인 프로젝트 · 2026
+  subtitle: 유튜브 댓글 분위기 분석 및 초안 제안 앱
+  description: 유튜브 링크를 넣으면 댓글 분위기를 보여주고 어울리는 댓글 초안을 뽑아 주는 앱입니다. Claude Code 기반 에이전트 개발 하네스를 직접 설계해 만들었고, 로컬 LLM을 내장한 Tauri 데스크톱 앱까지 확장했습니다.
+  stack: Next.js, TypeScript, Tauri
+  image: /images/portfolio/comment_temperature_image1.webp
+
+- id: unity_build
+  kind: side
+  year: 2026
+  title: Unity Build Wizard
+  meta: 개인 프로젝트 · 2026
+  subtitle: Unity 로컬 빌드 자동화 도구
+  description: Unity 빌드부터 Zip 압축, 폴더 전달, Git 연동, 자동 스케줄까지 한 흐름으로 처리하는 Windows 데스크톱 도구입니다. 표준 라이브러리만 사용해 EXE 하나로 설치 없이 동작합니다.
+  stack: Python, Tkinter
+  image: /images/portfolio/unity_build_image1.webp
+
+- id: puyo_puzzle
+  kind: side
+  title: 뿌요뿌요 퍼즐 게임
+  meta: 개인 프로젝트
+  subtitle: C++/SDL3 기반 네트워크 대전 퍼즐 게임
+  description: SDL3로 네트워크 대전이 가능한 뿌요뿌요 스타일 퍼즐 게임을 개발했습니다. P2P 기반의 서버·클라이언트 로직을 직접 구현했습니다.
+  stack: C++, SDL3
+  image: /images/portfolio/puzzle_image1.webp
+
+- id: git_action_runner
+  kind: side
+  title: Git Action Runner
+  meta: 개인 프로젝트
+  subtitle: GitHub Actions 워크플로우 관리 도구
+  description: Windows 데스크톱에서 GitHub Actions 워크플로우를 모니터링하고 실행하는 GUI 앱입니다. 완료되면 Windows 알림으로 바로 결과를 알려 줍니다.
+  stack: C#, WPF
+  image: /images/portfolio/git_action_runner_image1.webp
+
+- id: sheet_generator
+  kind: side
+  title: SheetGenerator
+  meta: 개인 프로젝트
+  subtitle: 데이터 및 코드 생성 도구
+  description: 구글 시트나 Excel 데이터를 바이너리·JSON으로 변환하고, 그 데이터를 다루는 C# 코드를 자동으로 생성하는 도구입니다.
+  stack: C#, .NET
+  image: /images/portfolio/sheet_generator_image.webp
+
+- id: finance_sheet_updater
+  kind: side
+  title: 금융 데이터 수집 및 저장 시스템
+  meta: 개인 프로젝트
+  subtitle: 자동화된 금융 데이터 파이프라인
+  description: 금융감독원 금융상품 API, 환율, 금속 시세 등 금융 데이터를 자동으로 수집해 Google Sheets와 AWS S3에 저장하는 Python 시스템입니다.
+  stack: Python, AWS, Google API
+  image: /images/portfolio/finance_sheet_updater_image1.webp
