@@ -18,21 +18,21 @@ image: /images/portfolio/maumte_preview.webp
   <h2>프로젝트 개요</h2>
 
   <div class="project-details">
-    <p><strong>개발 기간:</strong> 2026.05 - 진행 중 (Play 내부 테스트)</p>
-    <p><strong>플랫폼:</strong> Android, iOS</p>
+    <p><strong>개발 기간:</strong> 2026.05 - 2026.10 (2026.10 Google Play 출시, 운영 중)</p>
+    <p><strong>플랫폼:</strong> Android (Google Play) · iOS 준비 중</p>
     <p><strong>개발 환경:</strong> Flutter, Dart, Riverpod, drift(SQLite), flutter_gemma(MediaPipe LiteRT), ONNX Runtime</p>
     <p><strong>개발 규모:</strong> 개인 프로젝트. 기획부터 배포·운영까지 전 과정</p>
     <p><strong>개발 방식:</strong> AI 에이전트(Claude Code) 주도 개발. 설계 문서를 먼저 확정하고 작은 단위로 구현·검증</p>
-    <p><strong>랜딩페이지:</strong> <a href="https://www.jiteum.com/maumte" target="_blank" rel="noopener noreferrer">https://www.jiteum.com/maumte</a></p>
+    <p><strong>랜딩페이지:</strong> <a href="https://www.jiteum.com/" target="_blank" rel="noopener noreferrer">https://www.jiteum.com</a></p>
   </div>
 
   <div style="display:flex;align-items:center;gap:18px;flex-wrap:wrap;background:#fff;border:1px solid #eee;border-radius:12px;padding:14px 18px;margin:16px 0 6px;">
-    <a href="https://appdistribution.firebase.dev/i/41566751826e9f25" target="_blank" rel="noopener noreferrer" style="flex-shrink:0;">
-      <img src="{{ '/images/portfolio/maumte_install_qr.png' | relative_url }}" alt="마음테 테스트 앱 설치 QR 코드" width="96" height="96" decoding="async" style="display:block;border-radius:6px;">
+    <a href="https://play.google.com/store/apps/details?id=com.weight500.maumte" target="_blank" rel="noopener noreferrer" style="flex-shrink:0;">
+      <img src="{{ '/images/portfolio/maumte_play_qr.png' | relative_url }}" alt="마음테 Google Play 설치 QR 코드" width="96" height="96" decoding="async" style="display:block;border-radius:6px;">
     </a>
     <div style="min-width:200px;flex:1;">
-      <p style="margin:0 0 4px;"><strong><a href="https://appdistribution.firebase.dev/i/41566751826e9f25" target="_blank" rel="noopener noreferrer">테스트 앱 설치하기</a></strong></p>
-      <p style="margin:0;font-size:0.85rem;color:#777;">비공개 테스트 중 — QR을 스캔하거나 링크에서 Google 계정으로 로그인하면 설치할 수 있습니다 (Android · 약 320MB)</p>
+      <p style="margin:0 0 4px;"><strong><a href="https://play.google.com/store/apps/details?id=com.weight500.maumte" target="_blank" rel="noopener noreferrer">Google Play에서 설치하기</a></strong></p>
+      <p style="margin:0;font-size:0.85rem;color:#777;">2026년 10월 Google Play 출시, 운영 중 — QR을 스캔하거나 링크에서 바로 설치할 수 있습니다 (Android · iOS 준비 중)</p>
     </div>
   </div>
 
@@ -77,7 +77,7 @@ image: /images/portfolio/maumte_preview.webp
           <rect x="415" y="40" width="92" height="44" rx="11" fill="#EAF3FB" stroke="#cfe0f0"/>
           <text x="461" y="68" font-size="15" font-weight="600" fill="#333" text-anchor="middle">배포</text>
           <text x="461" y="106" font-size="11" fill="#666" text-anchor="middle">Codemagic</text>
-          <text x="461" y="121" font-size="11" fill="#666" text-anchor="middle">Play 내부 테스트</text>
+          <text x="461" y="121" font-size="11" fill="#666" text-anchor="middle">Google Play 출시</text>
           <text x="461" y="136" font-size="11" fill="#666" text-anchor="middle">스토어 자산</text>
           <rect x="516" y="40" width="92" height="44" rx="11" fill="#FBF2EB" stroke="#ecd4c0"/>
           <text x="562" y="68" font-size="15" font-weight="600" fill="#333" text-anchor="middle">운영</text>
@@ -88,7 +88,7 @@ image: /images/portfolio/maumte_preview.webp
           <text x="663" y="68" font-size="15" font-weight="600" fill="#333" text-anchor="middle">랜딩</text>
           <text x="663" y="106" font-size="11" fill="#666" text-anchor="middle">정적 HTML</text>
           <text x="663" y="121" font-size="11" fill="#666" text-anchor="middle">GitHub Pages</text>
-          <text x="663" y="136" font-size="11" fill="#666" text-anchor="middle">jiteum.com/maumte</text>
+          <text x="663" y="136" font-size="11" fill="#666" text-anchor="middle">jiteum.com</text>
         </g>
         <g stroke="#8a8a8a" stroke-width="1.6" fill="none">
           <line x1="103" y1="62" x2="111" y2="62" marker-end="url(#ov-arw)"/>
@@ -134,7 +134,7 @@ image: /images/portfolio/maumte_preview.webp
       <li>원격 운영 — 정적 JSON 매니페스트 한 장으로 문구·프롬프트·가격을 릴리스 없이 교체 (Cloudflare R2)</li>
       <li>운영 콘솔 — 게시 전용 Flutter Windows 데스크탑 앱. 앱과 스키마 파서를 공유</li>
       <li>CI/CD — PR 게이트(GitHub Actions), Slack <code>/build</code> 한 줄로 도는 QA 배포, 릴리스(Codemagic → Play)</li>
-      <li>랜딩페이지(<a href="https://www.jiteum.com/maumte" target="_blank" rel="noopener noreferrer">www.jiteum.com/maumte</a>), 스토어 등록 자산, 법적 고지 3종</li>
+      <li>랜딩페이지(<a href="https://www.jiteum.com/" target="_blank" rel="noopener noreferrer">www.jiteum.com</a>), 스토어 등록 자산, 법적 고지 3종</li>
     </ul>
   </div>
 </div>
@@ -350,7 +350,7 @@ image: /images/portfolio/maumte_preview.webp
     <h3>추가 빌드 없이 반영되는 원격 설정</h3>
     <p>문구와 프롬프트, 글귀, 공지, 가격 정책처럼 자주 바뀌는 값은 앱에 고정하지 않고 JSON 데이터로 분리해 원격에서 내려받도록 연동했습니다. 설정 JSON은 Cloudflare R2에, LLM·TTS 모델 가중치는 Hugging Face에 올리고, 정적 JSON 매니페스트 한 장이 이들을 가리키도록 해 앱은 부팅 시 그 파일만 읽습니다. 덕분에 값을 고치거나 모델을 바꿀 때 추가 빌드나 스토어 심사 없이 바로 대응할 수 있습니다. 원격 설정이 실패하면 번들 기본값으로 조용히 돌아가 겉으로 드러나지 않기 때문에, 폐기한 주소가 코드에 되살아나면 테스트가 실패하도록 안전장치를 두었습니다.</p>
     <figure class="ops-diagram" style="margin:18px auto 6px;max-width:680px;overflow-x:auto;-webkit-overflow-scrolling:touch;">
-      <svg viewBox="0 0 720 540" width="100%" style="min-width:600px;display:block;font-family:inherit;" role="img" aria-label="운영·배포 흐름: 운영 콘솔 → Cloudflare R2(매니페스트·설정 JSON) → 앱, Hugging Face(모델) → 앱. 코드는 PR 게이트(GitHub Actions) → main, Slack /build → 웹훅 → GitHub Actions → Firebase App Distribution → 테스트 폰, 버전 태그 → Codemagic → Google Play 내부 테스트">
+      <svg viewBox="0 0 720 540" width="100%" style="min-width:600px;display:block;font-family:inherit;" role="img" aria-label="운영·배포 흐름: 운영 콘솔 → Cloudflare R2(매니페스트·설정 JSON) → 앱, Hugging Face(모델) → 앱. 코드는 PR 게이트(GitHub Actions) → main, Slack /build → 웹훅 → GitHub Actions → Firebase App Distribution → 테스트 폰, 버전 태그 → Codemagic → Google Play 스토어 릴리스">
         <defs>
           <marker id="ops-arw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
             <path d="M0,0 L10,5 L0,10 z" fill="#8a8a8a"/>
@@ -442,7 +442,7 @@ image: /images/portfolio/maumte_preview.webp
 
           <rect x="406" y="446" width="150" height="56" rx="12" fill="#EEF6EE" stroke="#cfe3cf"/>
           <text x="481" y="469">Google Play</text>
-          <text x="481" y="487" font-size="11" font-weight="400" fill="#666">내부 테스트 트랙</text>
+          <text x="481" y="487" font-size="11" font-weight="400" fill="#666">스토어 릴리스</text>
         </g>
         <g stroke="#8a8a8a" stroke-width="1.6" fill="none">
           <line x1="124" y1="294" x2="158" y2="294" marker-end="url(#ops-arw)"/>
@@ -479,7 +479,7 @@ image: /images/portfolio/maumte_preview.webp
 
     <p>온디바이스 AI는 예상보다 제약이 많았습니다. 클라우드 환경에서는 프롬프트 문제로 끝났을 일이 기기에서는 메모리, 발열, 취소, 모델 배포 문제로 이어졌습니다. 그러나 그 제약이 fallback 계층과 취소 경로 같은 설계를 만들어 냈고, 게임 개발에서 하드웨어 제약 속에 코드를 다듬던 경험과 맞닿아 있어 익숙하게 접근할 수 있었습니다.</p>
 
-    <p>가장 어려웠던 것은 기능을 더하는 일보다 멈추는 판단이었습니다. 붙이고 싶은 기능은 끝이 없었지만, 초기에 문서로 정해 둔 "3분 안에 끝나는 회고"라는 경계에 기대어 여러 번 범위를 줄였습니다. 지금은 Play 내부 테스트를 진행하며 스토어 출시를 준비하고 있습니다.</p>
+    <p>가장 어려웠던 것은 기능을 더하는 일보다 멈추는 판단이었습니다. 붙이고 싶은 기능은 끝이 없었지만, 초기에 문서로 정해 둔 "3분 안에 끝나는 회고"라는 경계에 기대어 여러 번 범위를 줄였습니다. 그렇게 범위를 지킨 덕분에 2026년 10월 Google Play에 출시했고, 지금은 사용자 반응을 보며 운영하고 있습니다.</p>
   </div>
 </div>
 
@@ -554,7 +554,7 @@ image: /images/portfolio/maumte_preview.webp
       </div>
       <div class="gallery-item">
         <img src="{{ '/images/portfolio/maumte_website1.webp' | relative_url }}" alt="마음테 랜딩페이지 히어로 섹션" width="1200" height="1076" loading="lazy" decoding="async">
-        <p>랜딩페이지 — 정적 HTML, GitHub Pages · <a href="https://www.jiteum.com/maumte" target="_blank" rel="noopener noreferrer">www.jiteum.com/maumte</a></p>
+        <p>랜딩페이지 — 정적 HTML, GitHub Pages · <a href="https://www.jiteum.com/" target="_blank" rel="noopener noreferrer">www.jiteum.com</a></p>
       </div>
       <div class="gallery-item">
         <img src="{{ '/images/portfolio/maumte_website2.webp' | relative_url }}" alt="마음테 랜딩페이지 밤하늘 스크롤 섹션" width="1200" height="1083" loading="lazy" decoding="async">
@@ -565,13 +565,13 @@ image: /images/portfolio/maumte_preview.webp
   <div class="video-container">
     <h3>직접 설치해 보기</h3>
     <div style="display:flex;align-items:center;gap:28px;flex-wrap:wrap;background:#fff;border-radius:12px;padding:20px 24px;">
-      <a href="https://appdistribution.firebase.dev/i/41566751826e9f25" target="_blank" rel="noopener noreferrer" style="flex-shrink:0;">
-        <img src="{{ '/images/portfolio/maumte_install_qr.png' | relative_url }}" alt="마음테 테스트 앱 설치 QR 코드" width="160" height="160" loading="lazy" decoding="async" style="display:block;border-radius:8px;">
+      <a href="https://play.google.com/store/apps/details?id=com.weight500.maumte" target="_blank" rel="noopener noreferrer" style="flex-shrink:0;">
+        <img src="{{ '/images/portfolio/maumte_play_qr.png' | relative_url }}" alt="마음테 Google Play 설치 QR 코드" width="160" height="160" loading="lazy" decoding="async" style="display:block;border-radius:8px;">
       </a>
       <div style="min-width:220px;flex:1;">
-        <p style="margin:0 0 8px;">현재 Google Play 비공개 테스트 중입니다. QR을 스캔하거나 아래 링크를 열고 Google 계정으로 로그인하면 테스터로 참여해 앱을 설치할 수 있습니다.</p>
-        <p style="margin:0 0 8px;"><a href="https://appdistribution.firebase.dev/i/41566751826e9f25" target="_blank" rel="noopener noreferrer">테스트 앱 설치하기 (Firebase App Distribution)</a></p>
-        <p style="margin:0;font-size:0.85rem;color:#777;">Android 전용 · arm64 기기(2018년 이후 대부분의 폰) 지원 · 설치 파일 약 320MB</p>
+        <p style="margin:0 0 8px;">2026년 10월 Google Play에 출시해 운영 중입니다. QR을 스캔하거나 아래 링크에서 바로 설치할 수 있습니다.</p>
+        <p style="margin:0 0 8px;"><a href="https://play.google.com/store/apps/details?id=com.weight500.maumte" target="_blank" rel="noopener noreferrer">Google Play에서 마음테 설치하기</a></p>
+        <p style="margin:0;font-size:0.85rem;color:#777;">Android 전용 (iOS 준비 중) · arm64 기기(2018년 이후 대부분의 폰) 지원</p>
       </div>
     </div>
   </div>

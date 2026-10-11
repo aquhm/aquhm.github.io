@@ -173,7 +173,7 @@ scripts:
       <div class="project-category">Dart, Flutter</div>
       <h2 class="project-title">마음테</h2>
       <p class="project-subtitle">기기 안에서 도는 AI 회고 앱</p>
-      <p class="project-description">사진 한 장과 몇 줄의 글로 하루를 돌아보면 기기 안의 Gemma가 회고 카드를 쓰고 Supertonic TTS가 읽어 주는 Flutter 앱입니다. MVP는 백엔드 없이 기기 안에서 돌리되 로컬과 원격을 갈아 끼울 수 있는 구조로 설계했고, 문구·프롬프트·가격을 릴리스 없이 바꾸는 원격 운영 계층과 운영 콘솔(Windows)까지 직접 만들었습니다.</p>
+      <p class="project-description">사진 한 장과 몇 줄의 글로 하루를 돌아보면 기기 안의 Gemma가 회고 카드를 쓰고 Supertonic TTS가 읽어 주는 Flutter 앱입니다. MVP는 백엔드 없이 기기 안에서 돌리되 로컬과 원격을 갈아 끼울 수 있는 구조로 설계했고, 문구·프롬프트·가격을 릴리스 없이 바꾸는 원격 운영 계층과 운영 콘솔(Windows)까지 직접 만들었고, 2026년 10월 Google Play에 출시해 운영 중입니다.</p>
       <div class="project-link">프로젝트 보기 →</div>
     </div>
     <div class="project-image">
