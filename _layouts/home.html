@@ -20,7 +20,7 @@ layout: page
     <aside class="card-me" aria-label="프로필 요약">
       <div class="top">
         <img src="{{ site.about_profile_image | relative_url }}" alt="{{ site.name }} 프로필 사진" width="96" height="128">
-        <div><p class="name">{{ site.name }}</p><p class="aff">{{ H.profile.affiliation }}</p></div>
+        <div><p class="name">{{ site.name }}</p><p class="aff">{{ site.title }}</p></div>
       </div>
       <dl>
         {%- for f in H.profile.facts %}
