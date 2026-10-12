@@ -39,9 +39,9 @@ layout: page
 <section class="reel" aria-labelledby="reel-title">
   <div class="wrap">
     <h2 id="reel-title">지나온 프로젝트</h2>
-    <p class="desc">2009년 PC MMORPG부터 2026년 온디바이스 AI 앱까지, 연도순으로 넘겨 보세요.</p>
-    <div class="strip" tabindex="0" aria-label="연도순 프로젝트 목록">
-      {%- assign reel = P | where_exp: "p", "p.reel" | sort: "year" -%}
+    <p class="desc">2026년 온디바이스 AI 앱부터 2009년 PC MMORPG까지, 최신순으로 넘겨 보세요.</p>
+    <div class="strip" tabindex="0" aria-label="최신순 프로젝트 목록">
+      {%- assign reel = P | where_exp: "p", "p.reel" | sort: "year" | reverse -%}
       {%- for p in reel %}
       <a class="frame" href="{{ '/portfolio/' | append: p.id | append: '/' | relative_url }}">
         <img src="{{ p.image | relative_url }}" alt="{{ p.title }} 화면" loading="lazy" decoding="async">
