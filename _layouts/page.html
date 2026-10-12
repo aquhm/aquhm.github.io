@@ -26,5 +26,9 @@
 {%- for script in page.scripts %}
 <script src="{{ script | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
 {%- endfor %}
+<script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
