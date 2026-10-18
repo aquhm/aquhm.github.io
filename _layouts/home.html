@@ -111,7 +111,7 @@ layout: page
       </dl>
       <h2 class="mt">학력</h2>
       {%- for e in education.content %}
-      <p class="edu"><b>{{ e.title }}</b> {{ e.sub_title }}<span>{{ e.caption }}</span></p>
+      <p class="edu"><b>{{ e.title }}</b> {{ e.sub_title }}{% if e.quote %} · {{ e.quote }}{% endif %}<span>{{ e.caption }}</span></p>
       {%- endfor %}
     </div>
   </div>
